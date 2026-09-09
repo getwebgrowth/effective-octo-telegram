@@ -1,0 +1,372 @@
+[
+  {
+    "source": "/projects/abhisheknayak",
+    "destination": "/projects/tandem-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/airmodels",
+    "destination": "/projects/hubspotauto-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/arun-tiwari",
+    "destination": "/projects/avitech-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/azamosh",
+    "destination": "/projects/azamosh-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/balakrishnandev",
+    "destination": "/projects/commute-timer-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/bikker20",
+    "destination": "/projects/yay-search-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/blueboynl",
+    "destination": "/projects/blueboynl-automator",
+    "permanent": true
+  },
+  {
+    "source": "/projects/brandynscott",
+    "destination": "/projects/tweetgpt-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/ccred1995",
+    "destination": "/projects/ccred-auto-apply-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/chris-julian",
+    "destination": "/projects/distinct-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/coomarketing",
+    "destination": "/projects/coomarketing-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/danielalcanja",
+    "destination": "/projects/streamcapture-pro-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/davidhodgson359",
+    "destination": "/projects/leadharvester-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/dear-beeta",
+    "destination": "/projects/promptcraft-ai-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/dev-sabbir",
+    "destination": "/projects/pos-print-shortcut-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/dk8148",
+    "destination": "/projects/amazon-product-scraper-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/dollanyapp",
+    "destination": "/projects/dollany-auto-poster-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/ethanjohnsrud",
+    "destination": "/projects/ethan-scraper-suite-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/fares-911",
+    "destination": "/projects/gopay-express-checkout-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/firebase-chrome-extension-auth",
+    "destination": "/projects/firebase-auth-bridge",
+    "permanent": true
+  },
+  {
+    "source": "/projects/giwings",
+    "destination": "/projects/datapipe-automator",
+    "permanent": true
+  },
+  {
+    "source": "/projects/hrt",
+    "destination": "/projects/hrt-recruiter-copilot",
+    "permanent": true
+  },
+  {
+    "source": "/projects/itamarguez",
+    "destination": "/projects/pricetracker-pro-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/jack45726",
+    "destination": "/projects/jobsync-automator",
+    "permanent": true
+  },
+  {
+    "source": "/projects/jainilparikh",
+    "destination": "/projects/smartform-autofill-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/jamessmith374",
+    "destination": "/projects/listing-sniper-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/jdavison02",
+    "destination": "/projects/quickquote-generator-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/john34645",
+    "destination": "/projects/marketwatch-monitor-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/jonnychn",
+    "destination": "/projects/vendorportal-bridge",
+    "permanent": true
+  },
+  {
+    "source": "/projects/jonnycutuli",
+    "destination": "/projects/socialauditor-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/karthikeleven-data-scrape",
+    "destination": "/projects/multisite-scraper-hub-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/karthikeleven-textupload",
+    "destination": "/projects/cloudtext-uploader-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/karthikeleven",
+    "destination": "/projects/leadengine-automator",
+    "permanent": true
+  },
+  {
+    "source": "/projects/kaysfiver",
+    "destination": "/projects/taskmaster-copilot",
+    "permanent": true
+  },
+  {
+    "source": "/projects/lambdaomegagama",
+    "destination": "/projects/ecomsync-suite-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/lildepressed",
+    "destination": "/projects/reviewbooster-ai-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/lost-found-seed-key-deriver",
+    "destination": "/projects/hd-multi-seed-key-deriver",
+    "permanent": true
+  },
+  {
+    "source": "/projects/loveskiz",
+    "destination": "/projects/smartscrape-studio-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/lukaskoucky",
+    "destination": "/projects/crm-sync-connector-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/marcclever1986",
+    "destination": "/projects/autoinvoice-generator-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/martinek16",
+    "destination": "/projects/inventoryalert-monitor-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/mattlenhard",
+    "destination": "/projects/shiftsniper-automator",
+    "permanent": true
+  },
+  {
+    "source": "/projects/mdenterprises",
+    "destination": "/projects/orderdispatch-assistant-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/michastachyra",
+    "destination": "/projects/webdata-miner-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/michelelondon",
+    "destination": "/projects/catalogsync-bridge",
+    "permanent": true
+  },
+  {
+    "source": "/projects/mowoseni",
+    "destination": "/projects/admetrics-tracker",
+    "permanent": true
+  },
+  {
+    "source": "/projects/mynguyet3",
+    "destination": "/projects/dropshipflow-copilot",
+    "permanent": true
+  },
+  {
+    "source": "/projects/n2something",
+    "destination": "/projects/bidsniper-engine-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/nikolaa2k19",
+    "destination": "/projects/ticketmaster-flow-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/nuwodesign",
+    "destination": "/projects/assetextractor-pro-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/raved-musthaves",
+    "destination": "/projects/trendscout-monitor-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/readify",
+    "destination": "/projects/readify-ai-reader-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/recruitly",
+    "destination": "/projects/recruitly-candidate-parser-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/sajianu",
+    "destination": "/projects/multiaccount-switcher-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/scambaitid18293",
+    "destination": "/projects/sitesafety-shield-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/seanconneely",
+    "destination": "/projects/automailer-assistant-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/shadhawk",
+    "destination": "/projects/listingscraper-pro-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/shottaaa",
+    "destination": "/projects/leadprospector-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/sleeper9",
+    "destination": "/projects/speeddial-automator",
+    "permanent": true
+  },
+  {
+    "source": "/projects/snowpatrick",
+    "destination": "/projects/flighttrack-copilot",
+    "permanent": true
+  },
+  {
+    "source": "/projects/soheil",
+    "destination": "/projects/cryptoprice-alert-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/sri-tang",
+    "destination": "/projects/amazonfba-copilot",
+    "permanent": true
+  },
+  {
+    "source": "/projects/steveewart",
+    "destination": "/projects/dealfinder-assistant-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/stlucian1",
+    "destination": "/projects/orderfulfill-hub-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/surajlulla",
+    "destination": "/projects/salesnavigator-scraper-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/surf-n-code",
+    "destination": "/projects/codesnippet-sync-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/tolga-kaygsuz",
+    "destination": "/projects/omnichannel-bridge",
+    "permanent": true
+  },
+  {
+    "source": "/projects/tulipstudio101",
+    "destination": "/projects/mediadownloader-pro-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/vipinpr",
+    "destination": "/projects/formfiller-enterprise-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/vushishoq",
+    "destination": "/projects/cryptoportfolio-watch-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/webauftrittbonn",
+    "destination": "/projects/siteaudit-inspector-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/zak",
+    "destination": "/projects/bitunix-trading-helper-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/zerokuhl",
+    "destination": "/projects/searchfilter-boost-extension",
+    "permanent": true
+  },
+  {
+    "source": "/projects/zohar",
+    "destination": "/projects/contentcensor-ai-extension",
+    "permanent": true
+  }
+]

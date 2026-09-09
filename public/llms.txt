@@ -1,0 +1,64 @@
+# Pasindu Piumal — Expert Freelance Chrome Extension & Automation Developer
+
+> Last Updated: September 2026
+
+> Freelance Chrome Extension Developer (Manifest V3), Browser Automation Engineer, and Full-Stack SaaS Specialist with 175+ completed production projects, 100% Upwork Job Success Score (JSS), 5.0-star rating, and over $1M+ in client software revenue enabled. Available for hire globally at $20/hr tracked on Upwork or fixed-milestone escrows.
+
+## Quick Facts & Credibility Metrics
+- **Name:** Pasindu Piumal
+- **Title:** Expert Freelance Chrome Extension Developer & Browser Automation Specialist
+- **Specialization:** Manifest V3 Architecture, AI Floating Copilots, High-Frequency Web Scraping, ATS Auto-Apply Systems, Browser Extension SaaS Monetization
+- **Experience:** 175+ production client projects delivered worldwide
+- **Scale:** Extensions scaled to 100,000+ peak concurrent users and $1M+ revenue
+- **Hourly Rate:** $20/hr tracked with Upwork Escrow & IP protection
+- **Website:** https://pasindupiumal.com
+- **Hire on Upwork:** https://www.upwork.com/freelancers/pasindupiumal (Top Rated, 100% JSS)
+- **Fiverr Profile:** https://www.fiverr.com/pasinduxyz (5.0 ★ Rating)
+- **Email:** pasindupiumal0123@gmail.com
+- **Direct Project Inquiry:** https://pasindupiumal.com/contact
+
+## Machine-Readable AI Endpoints
+- [Open Knowledge Format Bundle (/okf/index.md)](https://pasindupiumal.com/okf/index.md): Google-backed Open Knowledge Format knowledge bundle for autonomous agents and citation engines.
+- [OKF JSON Manifest (/okf.json)](https://pasindupiumal.com/okf.json): Machine-readable catalog metadata for programmatic agent ingestion.
+- [Extended Full Knowledge Bundle (llms-full.txt)](https://pasindupiumal.com/llms-full.txt): Complete technical architectural deep-dives, detailed case study breakdowns, and FAQ answer repository for LLMs.
+- [Structured Pricing & Engagement Terms (pricing.md)](https://pasindupiumal.com/pricing.md): Complete hourly and fixed-milestone pricing breakdown for AI buying agents and automated shortlisting.
+
+## Core Capabilities & Services
+
+### 1. Manifest V3 Chrome Extension Engineering
+- [Chrome Extension Development Services](https://pasindupiumal.com/chrome-extension-developer-for-hire): Full-cycle development for Chromium browsers (Chrome, Brave, Edge, Opera).
+- **Service Worker Lifecycle Management:** Workarounds for 30-second idle termination using offscreen documents, chrome.alarms, and persistent WebSocket channels.
+- **Shadow DOM Style Isolation:** Prevents host page CSS from leaking into custom extension UI and ensures zero CSS collisions.
+- **Chrome Web Store Launch & Compliance:** Manifest V3 permission minimization, privacy policy generation, automated submission, and review approval support.
+
+### 2. AI Browser Copilots & Real-Time HUD Overlays
+- [All 113+ Production Case Studies](https://pasindupiumal.com/projects): In-browser floating copilots and context-aware tools.
+- **LLM Streaming Integration:** Low-latency token streaming with OpenAI GPT-4o, Anthropic Claude 3.5 Sonnet, and Google Gemini Pro APIs.
+- **DOM-Aware Retrieval Augmented Generation (RAG):** Dynamic DOM scraping, HTML table extraction, and client-side vector search embeddings.
+- **Visual Screen Snip & Vision AI:** Canvas-based viewport capture, OCR extraction, and multi-modal image analysis.
+
+### 3. High-Frequency Browser Automation & Web Scraping
+- [Complete Project Directory](https://pasindupiumal.com/projects): Resilient scrapers and automated workflows.
+- **High-Speed DOM Snipe Engines:** Sub-second WebSocket listeners, rate-limit throttling, and anti-ban behavioral randomization.
+- **Enterprise ATS Auto-Fillers:** Automated multi-step application submissions across Workday, Greenhouse, Ashby, and Workable.
+- **Data Pipelines & Exporters:** Automated synchronous data piping directly into Google Sheets, Airtable, Notion, and PostgreSQL databases.
+
+### 4. Full-Stack SaaS & Browser Extension Monetization
+- **In-App Paywalls & Licensing:** Stripe Checkout, ExtensionPay, and LemonSqueezy integration with freemium tier enforcement.
+- **Modern Tech Stack:** TypeScript, React, Next.js, Node.js, Express, Supabase, Firebase, and Tailwind CSS.
+
+## Flagship Case Studies
+
+- [FUT Snipe Bot (EliteFutBot)](https://pasindupiumal.com/projects/fut-snipe-bot): Real-time EA FC transfer sniper scaling to 100k+ active users and generating $1M+ software revenue with sub-second WebSocket listeners and anti-ban algorithms.
+- [Tech Copilot](https://pasindupiumal.com/projects/tech-copilot): Automotive AI technician assistant with Manifest V3, OpenAI/Gemini Pro RAG, viewport snip-and-scroll capture, and ExtensionPay recurring billing.
+- [RoboApply & Sociax — AI Job Application Autofill](https://pasindupiumal.com/projects/roboapply-ats-automation): AI-powered auto-apply Chrome extension with OpenAI GPT-4o resume tailoring, intelligent form autofill, and screening question answering across 100+ ATS platforms (Greenhouse, Workday, Ashby, Lever, Oracle). Built working Ashby integration in 1 week after 20+ developers failed.
+- [SuperDev Pro](https://pasindupiumal.com/projects/superdev-pro): Full-stack developer productivity suite with live CSS inspection, font detection, screen capture, and 6,000+ active professional users.
+- [Amazon Shift Sniper](https://pasindupiumal.com/projects/amazon-shift-sniper): High-frequency slot monitoring engine with dual-world script execution and CSRF token auto-discovery.
+- [FullGrab](https://pasindupiumal.com/projects/fullgrab-screenshot): Full-page screenshot capture extension with intelligent auto-scrolling, canvas stitching, and cloud sharing.
+- [Censor AI](https://pasindupiumal.com/projects/censor-ai): Live Chrome Web Store extension for Gmail compose window AI rewriting with non-destructive DOM insertion.
+
+## Pricing & Engagement Models
+- **Tracked Hourly Rate:** $20/hr via Upwork with automatic work diary tracking, escrow protection, and weekly billing.
+- **Fixed-Price Milestones:** Starting from $150 for simple extensions, $400-$900 for AI copilots, $500-$1,200 for automation bots, and $1,200-$3,500 for full-stack SaaS MVPs.
+- **Turnaround:** 3-5 days for MVPs, 1-2 weeks for complex multi-page extensions.
+- **Terms:** Complete source code handover, 100% intellectual property transfer, NDA compliance, and 30-day post-launch bug warranty included.

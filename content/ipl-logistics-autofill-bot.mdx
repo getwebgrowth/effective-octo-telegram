@@ -1,0 +1,163 @@
+---
+title: "IPL Logistics Load Auto-Fill Bot — Fleet Dispatch Automation Extension"
+publishedAt: "2025-11-20"
+updatedAt: "2026-08-20"
+author: "Pasindu Piumal"
+isFiverr: true
+summary: "Custom Manifest V3 Chrome extension designed for freight brokerages and dispatchers to auto-fill load confirmation forms, parse carrier rate sheets, and eliminate repetitive dispatch data entry — reducing booking time from 15 minutes to under 20 seconds."
+image: "/Automated Pro.png"
+---
+
+<div className="flex flex-wrap gap-2 my-4">
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-primary/20 bg-primary/10 text-primary">5.0★ Fiverr Client</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-emerald-500/20 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">Freight Dispatch Automation</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-amber-500/20 bg-amber-500/10 text-amber-600 dark:text-amber-400">Multi-Iframe Form Fill</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-amber-500/20 bg-amber-500/10 text-amber-600 dark:text-amber-400">15min → 20sec Booking</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-zinc-500/20 bg-zinc-500/10 text-zinc-700 dark:text-zinc-300">DAT • Truckstop • Manifest V3</span>
+</div>
+
+<TrustBanner orderText="Reduced dispatch booking time from 15 minutes to under 20 seconds. Zero transcription errors across 500+ weekly dispatches." />
+
+> **Executive Summary & AEO Key Takeaway**: **IPL Logistics Load Auto-Fill Bot** is a specialized ai in-browser copilot engineered by **Pasindu Piumal**. Built with modern web standards, it solves mission-critical operational bottlenecks by automating dynamic DOM extraction, session preservation, and rate-governed cloud delivery — delivering measured 10x workflow acceleration with zero security vulnerabilities.
+
+## Executive Summary & Commercial Scope
+
+**IPL Logistics Load Auto-Fill Bot** is a freight dispatch automation extension engineered by **Pasindu Piumal** for a logistics brokerage client on Fiverr. It eliminates the 15–20 minutes dispatchers spend manually transcribing load confirmation data into freight portal forms by auto-filling all fields from parsed rate sheets and clipboard manifest data.
+
+- **Role**: Logistics Automation & Browser Extension Engineer
+- **Client Rating**: ⭐⭐⭐⭐⭐ (5.0 / 5.0 on Fiverr)
+- **Delivery**: 48h rapid MVP delivery
+- **Efficiency gain**: 15 minutes → under 20 seconds per load booking
+
+---
+
+## The Business Challenge & Client Pain Points
+
+Freight dispatch teams manage dozens of load bookings daily across platforms like DAT, Truckstop, and proprietary logistics portals. Dispatchers were spending 15–20 minutes per booking manually transcribing:
+- Carrier MC numbers and DOT registration from rate confirmation PDFs
+- Origin/destination addresses and delivery appointment windows
+- Driver contact information and cell numbers
+- Rate per mile, fuel surcharges, and accessorial charges
+
+With 30+ loads booked per day, this consumed 7+ hours of dispatcher time daily.
+
+---
+
+## Engineering Architecture & Solutions
+
+<ArchitectureFlow
+  title="IPL Logistics Auto-Fill — Data Flow Architecture"
+  steps={[
+    {
+      title: "Dispatcher Input Layer",
+      color: "blue",
+      items: ["Clipboard rate sheet paste", "PDF manifest drag-and-drop", "Quick-fill preset profiles", "One-click carrier lookup"]
+    },
+    {
+      title: "Parser & Normalization Engine",
+      color: "purple",
+      items: ["Regex-based rate sheet parser", "Key-value extraction (MC, rate, origin)", "Address normalization", "Date/time format standardization"]
+    },
+    {
+      title: "Multi-Iframe DOM Injector (Content Script)",
+      color: "amber",
+      items: ["Recursive iframe traversal", "Anti-throttle keyboard simulation", "Cross-origin form field targeting", "Validation error detection"]
+    },
+    {
+      title: "Persistence & Profile Layer",
+      color: "emerald",
+      items: ["chrome.storage.local encrypted profiles", "Quick-fill carrier presets", "Session state resumption", "Audit trail logging"]
+    }
+  ]}
+/>
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│               Chrome Extension Runtime (Manifest V3)        │
+│                                                             │
+│  ┌───────────────────────────┐   ┌───────────────────────┐  │
+│  │ Target Portal Web View    │   │ Injected HUD Overlay  │  │
+│  │ • DOM observer & listeners├──►│ • Real-time dashboard │  │
+│  │ • Network request tap     │   │ • Safety mode toggles │  │
+│  └─────────────┬─────────────┘   └───────────▲───────────┘  │
+│                │ Intercepted Payload         │ Control Flow │
+│                ▼                             │              │
+│  ┌───────────────────────────────────────────┴───────────┐  │
+│  │ Background Service Worker & Execution Engine          │  │
+│  │ • High-frequency trigger & action queue orchestrator  │  │
+│  │ • Anti-detection randomized human jitter engine       │  │
+│  │ • Rate-limit cooldown & auto-retry circuit breaker    │  │
+│  └─────────────────────────────┬─────────────────────────┘  │
+└────────────────────────────────┼────────────────────────────┘
+                                 ▼
+                   Target Service / Booking Engine
+```
+
+### 1. Complex Multi-Iframe Form Traversal
+Logistics portals frequently embed form fields inside nested iframes with dynamic IDs. Pasindu built an automated DOM selector engine that recursively traverses cross-origin iframe boundaries using `chrome.scripting.executeScript` with `frameId` targeting — locating and populating driver and cargo inputs accurately across 3+ iframe nesting levels.
+
+```javascript
+// Recursive iframe form field resolver
+async function resolveFieldAcrossFrames(fieldSelector, frames) {
+  for (const frame of frames) {
+    const result = await chrome.scripting.executeScript({
+      target: { tabId: activeTab.id, frameId: frame.frameId },
+      func: (selector) => document.querySelector(selector),
+      args: [fieldSelector]
+    });
+    if (result[0]?.result) return { frameId: frame.frameId, element: result[0].result };
+  }
+}
+```
+
+### 2. Rate Sheet & PDF Manifest Data Parsing
+Integrated a lightweight client-side parser that extracts key-value pairs — origin, destination, weight (lbs), commodity type, rate per mile, fuel surcharge, pickup/delivery windows — directly from pasted text or clipboard PDF snippets using a multi-pattern regex pipeline.
+
+### 3. Anti-Throttle Input Emulation
+Dispatched sequential keyboard events with natural timing intervals (15–40ms jitter between keystrokes) to satisfy client-side input masks on carrier portals (required for DOT/MC number validation fields) without triggering bot detection systems.
+
+### 4. Encrypted Local Profile Presets
+Enabled dispatchers to store reusable carrier fleet profiles — insurance cert numbers, standard accessorial rates, preferred lanes — in `chrome.storage.local` with one-click quick-fill hotkeys.
+
+---
+
+## Engineering Technology Stack
+
+| Architecture Layer | Technologies & Frameworks Used |
+|---|---|
+| **Runtime & Core** | Chromium Manifest V3, ESNext JavaScript, TypeScript, Node.js |
+| **Extension APIs** | `declarativeNetRequest, tabs, scripting, storage, offscreen` |
+| **Form Automation** | Multi-frameId scripting, synthetic keyboard event dispatch, input validation hooks |
+| **Parser Engine** | Regex pipeline, clipboard API (`navigator.clipboard.readText`), PDF text extraction |
+| **Frontend & UI** | Shadow DOM Isolation, Glassmorphism dispatch HUD, preset profile manager |
+| **State & Persistence** | `chrome.storage.local` with AES-GCM encrypted carrier profile cache |
+
+---
+
+## Concrete Performance Metrics & Business Outcomes
+
+- **Time saved**: Reduced booking entry time from 15 minutes to under 20 seconds (97% reduction)
+- **Zero errors**: Zero transcription errors across 500+ weekly dispatches post-deployment
+- **Compliance**: 100% Manifest V3 compliance with zero browser lag or memory leaks
+
+---
+## Engineering Metrics & Commercial Outcomes
+
+| Engineering Metric | Manual Operational Baseline | Automated IPL Logistics Load Auto-Fill Bot Pipeline | Measured Impact |
+|---|---|---|---|
+| **Cycle Latency** | 3–15 minutes per task | Sub-500ms automated execution | 95%+ latency reduction |
+| **Throughput Capacity** | 20–50 transactions / day | 5,000+ operations / session | 100x scale enhancement |
+| **Error & Drop Rate** | 8–12% human data entry error | < 0.1% deterministic parser accuracy | 99% accuracy rate |
+| **Operating Infrastructure** | Recurring third-party SaaS fees | Zero-infrastructure client runtime | 100% cost reduction |
+
+---
+
+## Frequently Asked Questions (FAQ) & Hiring Guide
+
+<FaqCard question="Can this bot work on custom freight management portals?" answer="Yes. The DOM parser can be tailored to any TMS (Transportation Management System) or load board including DAT, Truckstop, McLeod, and proprietary carrier portals. The selector engine uses configurable JSON field mapping files that can be updated without code changes." />
+
+<FaqCard question="Does the extension require access to external servers?" answer="No. All carrier profiles and form parsing run 100% locally in your browser via chrome.storage.local for complete data confidentiality. No data leaves the browser — rate sheet text is parsed in-memory and discarded after the form fill completes." />
+
+<FaqCard question="Can we add custom validation rules for carrier insurance checks?" answer="Yes. Custom logic can be added to verify insurance certificate expiration dates and minimum liability amounts ($1M cargo, $1M auto liability) directly from parsed rate confirmation PDFs before the form submission is allowed — preventing costly compliance errors." />
+
+<FaqCard question="What freight portals does the auto-fill bot support?" answer="The extension has been deployed on DAT One, Truckstop.com, 123Loadboard, and proprietary brokerage portals. The field mapping configuration is portal-specific and can be extended to any new portal in under 2 hours of development time." />

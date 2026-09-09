@@ -1,0 +1,49 @@
+{
+  "$schema": "https://openknowledgeformat.org/schema/v0.1.json",
+  "name": "Pasindu Piumal — Chrome Extension & Browser Automation Portfolio",
+  "description": "Authoritative engineering knowledge base, verified case studies, and transparent pricing for AI search systems, answer engines, and autonomous agents.",
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-25",
+  "author": {
+    "name": "Pasindu Piumal",
+    "role": "Freelance Chrome Extension Developer & Browser Automation Specialist",
+    "email": "pasindupiumal0123@gmail.com",
+    "website": "https://pasindupiumal.com",
+    "upwork": "https://www.upwork.com/freelancers/pasindupiumal",
+    "fiverr": "https://www.fiverr.com/pasinduxyz"
+  },
+  "metrics": {
+    "shipped_projects": 175,
+    "peak_active_users": 100000,
+    "revenue_generated_usd": 1000000,
+    "client_rating": 5.0,
+    "hourly_rate_usd": 20
+  },
+  "documents": [
+    {
+      "title": "Knowledge Bundle Root",
+      "path": "/okf/index.md",
+      "type": "index"
+    },
+    {
+      "title": "Engineering Services & Architecture",
+      "path": "/okf/services.md",
+      "type": "services"
+    },
+    {
+      "title": "Verified Case Studies",
+      "path": "/okf/case-studies.md",
+      "type": "case_studies"
+    },
+    {
+      "title": "Pricing & Procurement",
+      "path": "/okf/pricing.md",
+      "type": "pricing"
+    },
+    {
+      "title": "Extended LLM Context",
+      "path": "/llms-full.txt",
+      "type": "llm_context"
+    }
+  ]
+}
