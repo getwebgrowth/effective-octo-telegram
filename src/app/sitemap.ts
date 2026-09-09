@@ -4,7 +4,7 @@ import { allPosts } from "content-collections";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = DATA.url.replace(/\/$/, "");
-  const staticLastModified = new Date("2026-08-25");
+  const staticLastModified = new Date();
 
   // Core static routes
   const staticRoutes: MetadataRoute.Sitemap = [

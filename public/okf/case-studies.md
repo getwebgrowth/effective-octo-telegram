@@ -21,9 +21,9 @@ Pasindu Piumal has engineered and deployed 113+ production browser extensions, A
 - **URL**: [https://pasindupiumal.com/projects/amazon-shift-sniper](https://pasindupiumal.com/projects/amazon-shift-sniper)
 - **Summary**: High-frequency slot monitoring and automated booking Chrome extension (Manifest V3). Features dual-layer script injection (Isolated & Main World), dynamic session token discovery, and CloudFront 403 error auto-cooldown recovery.
 
-### FUT Snipe Bot (EliteFutBot) — High-Scale FIFA EA FC Transfer Market Sniper Chrome Extension
+### Chrome Extension + SaaS → 100,000+ Users & $1M+ Revenue (EliteFutBot / FUT Snipe Bot)
 - **URL**: [https://pasindupiumal.com/projects/fut-snipe-bot](https://pasindupiumal.com/projects/fut-snipe-bot)
-- **Summary**: High-scale real-time browser extension and automated transfer market sniper for EA FC / FIFA Ultimate Team. Scaled to 100,000+ active users and enabled over $1M+ in software revenue with sub-250ms execution, Futbin live price API sync, Humanization++ anti-ban physics, and native Chrome Side Panel UI.
+- **Summary**: A Manifest V3 Chrome Extension + Next.js SaaS monorepo built solo and scaled to 100,000+ active users generating $1M+ in subscription revenue. Features a sub-250ms WebSocket snipe engine, Humanization++ anti-ban mouse physics (< 0.01% ban rate), native chrome.sidePanel UI, Stripe billing with hardware-locked license keys, and Supabase/PostgreSQL backend. Proof-of-concept for any founder looking to hire a Chrome Extension + SaaS developer.
 
 ### RoboApply & Sociax — AI Job Application Autofill & Multi-ATS Auto-Apply Chrome Extension
 - **URL**: [https://pasindupiumal.com/projects/roboapply-ats-automation](https://pasindupiumal.com/projects/roboapply-ats-automation)

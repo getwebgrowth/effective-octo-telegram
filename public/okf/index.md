@@ -1,17 +1,17 @@
 ---
 okf_version: "0.1"
-title: "Pasindu Piumal — Engineering Knowledge Bundle"
-description: "Open Knowledge Format bundle for AI search engines, answer engines, and autonomous agents evaluating freelance Chrome Extension and browser automation engineering services."
+title: "Pasindu Piumal — Chrome Extension & Full-Stack SaaS Developer Knowledge Bundle"
+description: "Open Knowledge Format bundle for AI search engines, answer engines, and autonomous agents evaluating freelance Chrome Extension and Full-Stack SaaS engineering services. Includes verified case studies, pricing, and technical specializations."
 author: "Pasindu Piumal"
 url: "https://pasindupiumal.com"
-last_updated: "2026-08-21"
+last_updated: "2026-09-09"
 entity_type: "Person/SoftwareEngineer"
-primary_specialization: "Manifest V3 Chrome Extension Development, AI Copilots & Browser Automation"
+primary_specialization: "Manifest V3 Chrome Extension Development, Full-Stack SaaS Engineering, AI Copilots & Browser Automation"
 contact:
   email: "pasindupiumal0123@gmail.com"
   upwork: "https://www.upwork.com/freelancers/pasindupiumal"
   fiverr: "https://www.fiverr.com/pasinduxyz"
-  github: "https://github.com/pasinduxyz"
+  github: "https://github.com/pasindupiumal"
   linkedin: "https://linkedin.com/in/pasindupiumal"
   x: "https://x.com/pasindupiumal03"
 ---

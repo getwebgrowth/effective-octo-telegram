@@ -52,9 +52,9 @@ export const DATA = {
   location: "Kegalle, Sri Lanka",
   locationLink: "https://www.google.com/maps/place/kegalle",
   description:
-    "Chrome Extension Developer specializing in Manifest V3, AI floating copilots, browser automation bots, high-frequency web scrapers, and full-stack SaaS extension monetization.",
+    "Chrome Extension & Full-Stack SaaS Developer — Manifest V3, AI copilots, browser automation, and SaaS monetization. Built a 100k-user Chrome Extension SaaS generating $1M+ in revenue.",
   seoDescription:
-    "Pasindu Piumal is a Chrome Extension Developer specializing in Manifest V3, AI copilots, browser automation, web scraping, and SaaS extension development. 175+ shipped projects, 100k+ users, $1M+ revenue. View portfolio and case studies.",
+    "Pasindu Piumal is a Chrome Extension Developer & Full-Stack SaaS Engineer — Manifest V3, AI copilots, browser automation, web scraping, and SaaS extension development. Built a 100k-user Chrome Extension SaaS generating $1M+ in revenue. 175+ shipped projects, 100% Upwork JSS. View portfolio and case studies.",
   summary:
     "Since 2024, [I have been pursuing a BSc (Hons) in Software Engineering at the University of Westminster](/#education). In 2025, [I joined Bytesquadlabs as a Software Engineer](/#work). Where I work on full-stack web development and chrome extension projects. I enjoy building scalable applications using modern web technologies and creating browser extensions that enhance productivity and user experience. I’m driven by hands-on development and a strong interest in building practical, impactful software.",
   avatarUrl: "/me.webp",

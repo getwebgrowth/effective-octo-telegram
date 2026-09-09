@@ -45,9 +45,9 @@
   - URL: https://pasindupiumal.com/projects/amazon-shift-sniper
   - Overview: High-frequency slot monitoring and automated booking Chrome extension (Manifest V3). Features dual-layer script injection (Isolated & Main World), dynamic session token discovery, and CloudFront 403 error auto-cooldown recovery.
 
-- **FUT Snipe Bot (EliteFutBot) — High-Scale FIFA EA FC Transfer Market Sniper Chrome Extension**
+- **Chrome Extension + SaaS → 100,000+ Users & $1M+ Revenue (EliteFutBot / FUT Snipe Bot)**
   - URL: https://pasindupiumal.com/projects/fut-snipe-bot
-  - Overview: High-scale real-time browser extension and automated transfer market sniper for EA FC / FIFA. Scaled to 100,000+ active users and enabled over $1M+ in software revenue with sub-second WebSocket listeners, rate-limit throttling, and anti-ban behavioral randomization.
+  - Overview: A Manifest V3 Chrome Extension + Next.js SaaS monorepo built and scaled solo to 100,000+ active users generating $1M+ in subscription revenue. Features a sub-250ms WebSocket snipe engine (packet interception before DOM renders), Humanization++ anti-ban mouse physics with cubic Bézier trajectories and Gaussian dwell timing (< 0.01% ban rate across 100k accounts), native chrome.sidePanel UI, Stripe billing with hardware-locked license keys, Futbin live API integration, and Supabase/PostgreSQL backend. The flagship proof-point for Chrome Extension + SaaS developer capabilities.
 
 - **RoboApply & Sociax — AI Job Application Autofill & Multi-ATS Auto-Apply Chrome Extension**
   - URL: https://pasindupiumal.com/projects/roboapply-ats-automation

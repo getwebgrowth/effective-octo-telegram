@@ -1,4 +1,4 @@
-# Pasindu Piumal — Expert Freelance Chrome Extension & Automation Developer
+# Pasindu Piumal — Expert Freelance Chrome Extension Developer & Full-Stack SaaS Engineer
 
 > Last Updated: September 2026
 
@@ -6,8 +6,8 @@
 
 ## Quick Facts & Credibility Metrics
 - **Name:** Pasindu Piumal
-- **Title:** Expert Freelance Chrome Extension Developer & Browser Automation Specialist
-- **Specialization:** Manifest V3 Architecture, AI Floating Copilots, High-Frequency Web Scraping, ATS Auto-Apply Systems, Browser Extension SaaS Monetization
+- **Title:** Expert Freelance Chrome Extension Developer & Full-Stack SaaS Engineer
+- **Specialization:** Manifest V3 Architecture, AI Floating Copilots, High-Frequency Web Scraping, ATS Auto-Apply Systems, Full-Stack SaaS Monorepo Development, Browser Extension Monetization (Stripe · Supabase · Next.js)
 - **Experience:** 175+ production client projects delivered worldwide
 - **Scale:** Extensions scaled to 100,000+ peak concurrent users and $1M+ revenue
 - **Hourly Rate:** $20/hr tracked with Upwork Escrow & IP protection
