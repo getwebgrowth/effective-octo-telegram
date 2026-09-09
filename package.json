@@ -11,8 +11,6 @@
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
-  },
-  "packageManager": "pnpm@9.15.4",
   "dependencies": {
     "@content-collections/core": "^0.13.1",
     "@content-collections/mdx": "^0.2.2",
