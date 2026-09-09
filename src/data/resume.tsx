@@ -224,6 +224,7 @@ export const DATA = {
       href: "/projects/fut-snipe-bot",
       dates: "Jan 2026 - Present",
       active: true,
+      featured: true,
       description:
         "High-scale real-time browser extension and automated transfer market sniper for EA FC / FIFA. Scaled to 100,000+ active users and enabled over $1M+ in software revenue with sub-second WebSocket listeners, rate-limit throttling, and anti-ban behavioral randomization.",
       technologies: [

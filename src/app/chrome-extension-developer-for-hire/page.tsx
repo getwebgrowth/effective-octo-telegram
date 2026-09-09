@@ -257,10 +257,10 @@ const SERVICES = [
   {
     icon: Zap,
     title: "High-Frequency Sniping & Slot Automation",
-    badge: "Sub-Second • Anti-Bot • CSRF",
+    badge: "Sub-Second • Anti-Bot • CSRF • AWS WAF Bypass",
     description:
-      "Automated booking, monitoring, and auction engines. Dual-layer Isolated & Main World execution to discover dynamic session tokens, bypass rigid CSRF headers, and auto-cooldown through 403 / CloudFront rate-limiting blocks.",
-    projects: "Featured in: Amazon Shift Sniper, FUT Snipe Bot (100k+ users), Shift Monitor",
+      "Battle-tested Amazon automation toolkit: sub-second slot detection, OTP capture via IMAP, multi-profile broadcast triggering, AWS WAF & Shadow DOM CAPTCHA bypass, portal session auto-recovery, and real-time stat dashboards. 6 Upwork-verified contracts. Dual-layer Isolated & Main World execution to bypass CSRF headers, 403 CloudFront rate-limiting, and active bot detection.",
+    projects: "Featured in: Amazon Shift Sniper (6 Upwork contracts), FUT Snipe Bot (100k+ users, $1M+ revenue), Amazon Portal Session Recovery, AWS WAF Auto-Recovery",
   },
   {
     icon: Layers,
