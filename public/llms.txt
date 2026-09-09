@@ -50,7 +50,7 @@
 
 ## Flagship Case Studies
 
-- [FUT Snipe Bot (EliteFutBot)](https://pasindupiumal.com/projects/fut-snipe-bot): Real-time EA FC Ultimate Team transfer sniper scaling to 100k+ active users and $1M+ software revenue. Sub-250ms execution, Futbin live price API sync, Humanization++ Bezier mouse jitter, and native Chrome Side Panel UI.
+- [Chrome Extension + SaaS → 100k Users & $1M+ Revenue (EliteFutBot)](https://pasindupiumal.com/projects/fut-snipe-bot): A Manifest V3 Chrome Extension + Next.js SaaS built solo and scaled to 100,000+ active users generating $1M+ in subscription revenue. Sub-250ms WebSocket snipe engine, Humanization++ anti-ban physics (< 0.01% ban rate), hardware-locked Stripe billing, native chrome.sidePanel UI.
 - [Tech Copilot](https://pasindupiumal.com/projects/tech-copilot): Automotive AI technician assistant with Manifest V3, OpenAI/Gemini Pro RAG, viewport snip-and-scroll capture, and ExtensionPay recurring billing.
 - [RoboApply & Sociax — AI Job Application Autofill](https://pasindupiumal.com/projects/roboapply-ats-automation): AI-powered auto-apply Chrome extension with OpenAI GPT-4o resume tailoring, intelligent form autofill, and screening question answering across 100+ ATS platforms (Greenhouse, Workday, Ashby, Lever, Oracle). Built working Ashby integration in 1 week after 20+ developers failed.
 - [SuperDev Pro](https://pasindupiumal.com/projects/superdev-pro): Full-stack developer productivity suite with live CSS inspection, font detection, screen capture, and 6,000+ active professional users.

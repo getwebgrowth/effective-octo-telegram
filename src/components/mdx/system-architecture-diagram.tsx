@@ -110,63 +110,65 @@ export function SystemArchitectureDiagram({ title }: SystemArchitectureDiagramPr
         <span className="text-[10px] uppercase font-mono text-muted-foreground tracking-wider">Manifest V3</span>
       </div>
 
-      {/* Diagram body */}
-      <div className="p-5 sm:p-6 space-y-0 overflow-x-auto">
-        {/* Layer 1: Browser-facing layer */}
-        <div className="flex items-stretch gap-3 justify-center">
-          <DiagramNode label="EA FC Web App" sublabel="Target website" color="zinc" size="md" />
-          <HorizontalArrow label="WebSocket" />
-          <DiagramNode label="Main World Script" sublabel="Injected — intercepts WS stream" color="blue" size="lg" />
-          <HorizontalArrow label="postMessage" />
-          <DiagramNode label="Side Panel HUD" sublabel="Native chrome.sidePanel" color="purple" size="md" />
-        </div>
-
-        {/* Arrow down */}
-        <div className="flex justify-center pl-24">
-          <Arrow label="raw packets" />
-        </div>
-
-        {/* Layer 2: Core Engine */}
-        <div className="rounded-xl border-2 border-amber-500/30 bg-amber-500/5 dark:bg-amber-500/10 p-4">
-          <div className="text-[10px] font-bold uppercase tracking-widest text-amber-700 dark:text-amber-300 mb-3 text-center">
-            ⚡ Background Service Worker — Core Engine
+      {/* Diagram body — min-width forces horizontal scroll on very small screens */}
+      <div className="overflow-x-auto">
+        <div className="p-4 sm:p-6 space-y-0 min-w-[480px]">
+          {/* Layer 1: Browser-facing layer */}
+          <div className="flex items-stretch gap-2 sm:gap-3 justify-center">
+            <DiagramNode label="EA FC Web App" sublabel="Target website" color="zinc" size="md" />
+            <HorizontalArrow label="WebSocket" />
+            <DiagramNode label="Main World Script" sublabel="Injected — intercepts WS stream" color="blue" size="lg" />
+            <HorizontalArrow label="postMessage" />
+            <DiagramNode label="Side Panel HUD" sublabel="Native chrome.sidePanel" color="purple" size="md" />
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-            <DiagramNode label="Sub-250ms Snipe Engine" sublabel="Atomic buy payload dispatcher" color="amber" size="sm" />
-            <DiagramNode label="Humanization++ Physics" sublabel="Bézier mouse + Gaussian jitter" color="amber" size="sm" />
-            <DiagramNode label="Futbin Price API" sublabel="30s live margin calculator" color="amber" size="sm" />
-            <DiagramNode label="Rate-Limit Throttle" sublabel="Dynamic RPM virtualizer" color="amber" size="sm" />
+
+          {/* Arrow down */}
+          <div className="flex justify-center pl-24">
+            <Arrow label="raw packets" />
           </div>
-        </div>
 
-        {/* Arrow down */}
-        <div className="flex justify-center">
-          <Arrow label="license + stats" />
-        </div>
-
-        {/* Layer 3: Cloud backend */}
-        <div className="flex items-stretch gap-3 justify-center">
-          <DiagramNode label="EliteFutBot Cloud API" sublabel="License auth · Stripe billing" color="emerald" size="md" />
-          <HorizontalArrow label="webhook" />
-          <DiagramNode label="Discord Alerts" sublabel="Real-time trade receipts" color="blue" size="sm" />
-          <HorizontalArrow label="DB" />
-          <DiagramNode label="Supabase / PostgreSQL" sublabel="100k+ user accounts" color="emerald" size="sm" />
-        </div>
-
-        {/* Legend */}
-        <div className="mt-5 flex flex-wrap gap-3 justify-center pt-4 border-t border-border/40">
-          {[
-            { color: "bg-zinc-500", label: "Host Environment" },
-            { color: "bg-blue-500", label: "Extension Layer" },
-            { color: "bg-purple-500", label: "Chrome APIs" },
-            { color: "bg-amber-500", label: "Core Engine" },
-            { color: "bg-emerald-500", label: "Cloud Backend" },
-          ].map((l) => (
-            <div key={l.label} className="flex items-center gap-1.5 text-[10px] text-muted-foreground font-medium">
-              <span className={`size-2.5 rounded-sm ${l.color} opacity-80`} />
-              {l.label}
+          {/* Layer 2: Core Engine */}
+          <div className="rounded-xl border-2 border-amber-500/30 bg-amber-500/5 dark:bg-amber-500/10 p-3 sm:p-4">
+            <div className="text-[10px] font-bold uppercase tracking-widest text-amber-700 dark:text-amber-300 mb-3 text-center">
+              ⚡ Background Service Worker — Core Engine
             </div>
-          ))}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <DiagramNode label="Sub-250ms Snipe Engine" sublabel="Atomic buy payload dispatcher" color="amber" size="sm" />
+              <DiagramNode label="Humanization++ Physics" sublabel="Bézier mouse + Gaussian jitter" color="amber" size="sm" />
+              <DiagramNode label="Futbin Price API" sublabel="30s live margin calculator" color="amber" size="sm" />
+              <DiagramNode label="Rate-Limit Throttle" sublabel="Dynamic RPM virtualizer" color="amber" size="sm" />
+            </div>
+          </div>
+
+          {/* Arrow down */}
+          <div className="flex justify-center">
+            <Arrow label="license + stats" />
+          </div>
+
+          {/* Layer 3: Cloud backend */}
+          <div className="flex items-stretch gap-2 sm:gap-3 justify-center">
+            <DiagramNode label="EliteFutBot Cloud API" sublabel="License auth · Stripe billing" color="emerald" size="md" />
+            <HorizontalArrow label="webhook" />
+            <DiagramNode label="Discord Alerts" sublabel="Real-time trade receipts" color="blue" size="sm" />
+            <HorizontalArrow label="DB" />
+            <DiagramNode label="Supabase / PostgreSQL" sublabel="100k+ user accounts" color="emerald" size="sm" />
+          </div>
+
+          {/* Legend */}
+          <div className="mt-5 flex flex-wrap gap-2 sm:gap-3 justify-center pt-4 border-t border-border/40">
+            {[
+              { color: "bg-zinc-500", label: "Host Environment" },
+              { color: "bg-blue-500", label: "Extension Layer" },
+              { color: "bg-purple-500", label: "Chrome APIs" },
+              { color: "bg-amber-500", label: "Core Engine" },
+              { color: "bg-emerald-500", label: "Cloud Backend" },
+            ].map((l) => (
+              <div key={l.label} className="flex items-center gap-1.5 text-[10px] text-muted-foreground font-medium">
+                <span className={`size-2.5 rounded-sm ${l.color} opacity-80`} />
+                {l.label}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

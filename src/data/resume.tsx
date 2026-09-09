@@ -99,6 +99,7 @@ export const DATA = {
   contact: {
     email: "pasindupiumal0123@gmail.com",
     tel: "+94717123826",
+    whatsapp: "https://wa.me/94717123826",
     social: {
       GitHub: {
         name: "GitHub",
