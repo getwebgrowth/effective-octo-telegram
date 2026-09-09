@@ -23,7 +23,7 @@ import {
   SiJavascript,
   SiPython,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
@@ -39,11 +39,12 @@ import {
   SiGit,
   SiGithub,
   SiDocker,
-  SiAmazonwebservices,
+
   SiVercel,
   SiGooglegemini,
   SiSolana,
 } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 export const DATA = {
   name: "Pasindu Piumal",
@@ -63,7 +64,7 @@ export const DATA = {
     { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
     { name: "Python", icon: Python },
     { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
-    { name: "CSS3", icon: SiCss3, color: "#1572B6" },
+    { name: "CSS3", icon: SiCss, color: "#1572B6" },
     { name: "React.js", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
@@ -84,7 +85,7 @@ export const DATA = {
     { name: "Git", icon: SiGit, color: "#F05032" },
     { name: "GitHub", icon: SiGithub, color: "#181717" },
     { name: "Docker", icon: SiDocker, color: "#2496ED" },
-    { name: "AWS", icon: SiAmazonwebservices, color: "#FF9900" },
+    { name: "AWS", icon: FaAws, color: "#FF9900" },
     { name: "Vercel", icon: SiVercel },
     { name: "AI RAG", icon: Sparkles, color: "#8B5CF6" },
     { name: "Google Gemini", icon: SiGooglegemini, color: "#8E75FF" },
