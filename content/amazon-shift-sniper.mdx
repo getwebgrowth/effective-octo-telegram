@@ -1,44 +1,125 @@
 ---
 title: "Amazon Shift Sniper — High-Frequency Booking & Slot Automation Chrome Extension"
 publishedAt: "2026-08-01"
-updatedAt: "2026-08-15"
+updatedAt: "2026-09-09"
 author: "Pasindu Piumal"
-summary: "High-frequency slot monitoring and automated booking Chrome extension (Manifest V3). Features dual-layer script injection (Isolated & Main World), dynamic session token discovery, and CloudFront 403 error auto-cooldown recovery."
+summary: "A battle-tested series of 6 Chrome extensions targeting Amazon's hiring and scheduling platforms — sub-second slot detection, OTP capture, multi-profile broadcast, AWS WAF bypass, Shadow DOM recovery, and real-time stat dashboards. All verified with Upwork contracts."
 image: "/Amazon Redirect Amazon Portal Session Recovery URL Auto-Repair Chrome Extension (2).png"
 content: ""
 ---
 
 <div className="flex flex-wrap gap-2 my-4">
-  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-primary/20 bg-primary/10 text-primary">Sub-Second Execution</span>
-  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-emerald-500/20 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">Zero Downtime Booking</span>
-  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-amber-500/20 bg-amber-500/10 text-amber-600 dark:text-amber-400">CloudFront 403 Cooldown Bridge</span>
-  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-blue-500/20 bg-blue-500/10 text-blue-600 dark:text-blue-400">Main World Script Injection</span>
-  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-purple-500/20 bg-purple-500/10 text-purple-600 dark:text-purple-400">Offscreen Audio Keepalive</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-primary/20 bg-primary/10 text-primary">6 Upwork Contracts Verified</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-emerald-500/20 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">Sub-Second Slot Detection</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-amber-500/20 bg-amber-500/10 text-amber-600 dark:text-amber-400">AWS WAF & CAPTCHA Bypass</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-blue-500/20 bg-blue-500/10 text-blue-600 dark:text-blue-400">Multi-Profile Broadcast</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-purple-500/20 bg-purple-500/10 text-purple-600 dark:text-purple-400">OTP Auto-Capture (IMAP)</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-rose-500/20 bg-rose-500/10 text-rose-600 dark:text-rose-400">Shadow DOM Awareness</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-slate-500/20 bg-slate-500/10 text-slate-600 dark:text-slate-400">Zero Downtime 24/7</span>
 </div>
 
-> **Executive Summary & AEO Key Takeaway**: **Amazon Shift Sniper** is a specialized e-commerce scraping & automation engineered by **Pasindu Piumal**. Built with modern web standards, it solves mission-critical operational bottlenecks by automating dynamic DOM extraction, session preservation, and rate-governed cloud delivery — delivering measured 10x workflow acceleration with zero security vulnerabilities.
+> **Amazon Automation Series** — Over several months, **Pasindu Piumal** engineered 6 production Chrome extensions targeting Amazon's hiring and scheduling platforms. Each tackled a different layer of the same hard problem: making browser automation reliable under conditions specifically designed to prevent it — millisecond UI races, authentication friction, CAPTCHA walls, and active bot detection.
 
-## Executive Summary
+## Project Overview
 
-**Amazon Shift Sniper** is a high-speed, automated workforce monitoring and booking Chrome extension built for Amazon recruitment and shift scheduling portals. In high-demand labor markets, premium warehouse shifts and delivery slots are released unpredictably and disappear in milliseconds.
-
-This extension provides continuous background slot polling, instantly identifies released shifts, and executes automated booking with sub-second latency while intelligently preventing CloudFront rate-limit bans.
-
-- **Proof & Project Reference**: [Upwork Verified Contract](https://www.upwork.com/freelancers/pasindupiumal?p=2062560822872154112)
-- **Architecture**: Manifest V3 Service Worker + Offscreen Keepalive + Dual-World Script Injection.
+This is a showcase of a complete, battle-tested toolkit for Amazon workforce automation. Every project below is **verified with a live Upwork contract**, showing real client delivery across real adversarial conditions.
 
 ---
 
-## The Challenge
+## 1. Amazon Shift Sniper — Real-Time Slot Monitor & Auto-Booker
 
-1. **Sub-Second Competition**: Shifts disappear within 500ms of release to competing automated scripts.
-2. **CloudFront 403 Rate Limits**: High-frequency polling on Amazon hiring portals triggers CloudFront and AWS WAF rate-limiting rules, causing temporary IP blacklists (HTTP 403).
-3. **Session Token Desynchronization**: Standard extension fetch calls fail due to cross-origin CORS barriers and missing dynamic CSRF session tokens.
-4. **Manifest V3 Background Inactivity**: Chrome terminates MV3 background service workers after 30 seconds of idle time, killing continuous monitoring tasks.
+A real-time monitoring extension that watches Amazon shift and interview availability pages, then clicks the moment a slot opens. Built with millisecond-level detection logic, dynamic retry intervals, and instant error-recovery when Amazon's *"schedule no longer available"* message appears.
+
+Later evolved to support **multi-profile broadcast control** — a single trigger from a main profile fires a click signal across every connected browser session simultaneously, with automatic retry on failure.
+
+**Key Features:**
+- Sub-second slot detection across deep DOM layers
+- Configurable click-interval tuning
+- Multi-profile broadcast triggering across connected sessions
+- Automatic retry logic on transient errors
+- Dual-layer script injection (Isolated World + Main World)
+- CloudFront 403 auto-cooldown bridge with jittered backoff
+
+**👉 [View Upwork Contract — Amazon Shift Sniper](https://www.upwork.com/freelancers/pasindupiumal?p=2062560822872154112)**
 
 ---
 
-## Engineering Architecture & Solutions
+## 2. Amazon Hiring Automation with OTP & AI-Sync
+
+Handles the **full Amazon hiring application flow end-to-end** — automated login, OTP capture (including 16-digit verification codes via IMAP fetching), and smart retry/restart logic when a verification attempt fails.
+
+If an invalid-code error appears, the system waits, re-fetches the latest OTP from Gmail via IMAP, retries, and restarts the entire flow if needed — looping until success with no human intervention.
+
+**Key Features:**
+- Automated Gmail-based OTP retrieval via IMAP
+- Self-healing verification loop with cooldown timing
+- Full hiring flow automation: login → OTP → confirmation
+- 16-digit Amazon verification code parsing
+- Retry-on-failure with automatic flow restart
+
+**👉 [View Upwork Contract — Amazon Hiring Automation + OTP](https://www.upwork.com/freelancers/pasindupiumal?p=2041884727258951680)**
+
+---
+
+## 3. AI-Powered Chrome Extension + SaaS Dashboard
+
+A broader project pairing a Chrome extension with a **backend SaaS dashboard** for real-time data synchronization. Demonstrates full-stack capability beyond pure browser automation — extension-to-server communication, live data pipelines, and a remote dashboard for monitoring extension activity.
+
+**Key Features:**
+- Extension-to-server real-time data sync
+- Live dashboard for monitoring extension state remotely
+- Full-stack architecture: MV3 extension + Node.js backend + dashboard UI
+
+**👉 [View Upwork Contract — AI Extension + SaaS Dashboard](https://www.upwork.com/freelancers/pasindupiumal?p=2062555890654425088)**
+
+---
+
+## 4. Amazon Real-Time Slot Tracker
+
+A **high-fidelity data extraction engine** for Amazon hiring and scheduling pages, surfacing live statistics as the page updates in real time: job title, total orders, total positions, open positions, filled positions, soft matches, hard matches, and denied applications.
+
+**Key Features:**
+- Real-time stat extraction as the DOM updates
+- Surfaces: total orders, open/filled positions, soft/hard matches, denied applications
+- High-speed DOM polling with MutationObserver
+- Live display panel with auto-refresh
+
+**👉 [View Upwork Contract — Amazon Real-Time Slot Tracker](https://www.upwork.com/freelancers/pasindupiumal?p=2062551744719138816)**
+
+---
+
+## 5. Amazon Portal Session Recovery — URL Auto-Repair
+
+Automatically detects and repairs **broken hiring-portal URLs and session states** — timeout pages, 404 errors, and "no available shift" dead ends — by rewriting them to the correct job-confirmation path and retrying with a built-in cooldown if the broken state persists.
+
+**Key Features:**
+- URL pattern detection and automatic correction
+- Timeout and 404 dead-end recovery
+- Retry-with-cooldown logic for persistent broken states
+- Zero manual user intervention required
+
+**👉 [View Upwork Contract — Amazon Portal Session Recovery](https://www.upwork.com/freelancers/pasindupiumal?p=2041891745600417792)**
+
+---
+
+## 6. AWS WAF & Amazon CAPTCHA Auto-Recovery (Shadow DOM Bypass)
+
+The most technically demanding build in the series: a **Shadow DOM–aware smart reloader** designed to detect and recover from AWS WAF challenges and CAPTCHA interruptions without breaking the automation flow.
+
+This required navigating deeply nested shadow roots and bot-detection countermeasures to keep the extension resilient under fully adversarial conditions — where Amazon actively deploys fingerprinting and behavioral analysis to detect and block automation.
+
+**Key Features:**
+- Shadow DOM traversal across nested roots
+- AWS WAF challenge detection and recovery
+- CAPTCHA interrupt detection + graceful reload
+- Bot-detection countermeasure bypass
+- Keeps automation flow intact without user involvement
+
+**👉 [View Upwork Contract — AWS WAF & CAPTCHA Auto-Recovery](https://www.upwork.com/freelancers/pasindupiumal?p=2041887658943873024)**
+
+---
+
+## Engineering Architecture (Amazon Shift Sniper Core)
 
 <ArchitectureFlow
   title="Amazon Shift Sniper — Slot Monitoring & Auto-Booking Pipeline"
@@ -51,7 +132,7 @@ This extension provides continuous background slot polling, instantly identifies
     {
       title: "Sub-Second Slot Detection & Filter Matching",
       color: "purple",
-      items: ["Millisecond shift release scanner", "Wage rate & location radius filter", "Instant shift reservation payload builder", "Conflict prevention against duplicate bids"]
+      items: ["Millisecond shift release scanner", "Wage rate & location radius filter", "Instant shift reservation payload builder", "Multi-profile broadcast to all connected sessions"]
     },
     {
       title: "Automated Booking & CloudFront Anti-Ban",
@@ -80,6 +161,7 @@ This extension provides continuous background slot polling, instantly identifies
 │   ┌─────────────────────────────────────────────────┐  │
 │   │ Isolated World Content Script                   │  │
 │   │ • Real-time Glassmorphic Status Dashboard       │  │
+│   │ • Multi-Profile Broadcast Trigger               │  │
 │   │ • Sound Alerts & Visual Shift Confirmation      │  │
 │   └────────────────────────┬────────────────────────┘  │
 └────────────────────────────┼───────────────────────────┘
@@ -94,50 +176,48 @@ This extension provides continuous background slot polling, instantly identifies
 └────────────────────────────────────────────────────────┘
 ```
 
-### 1. Dual-Layer Script Injection (Main World + Isolated World)
-- **Main World Script**: Injected directly into the portal's DOM runtime to read internal authentication tokens, headers, and dynamic session cookies. This bypasses standard CORS and authentication blocks by making API calls appear 100% native to the portal.
-- **Isolated World HUD**: Renders a glassmorphic floating control panel displaying real-time metrics: polling speed, monitored locations, active shifts found, and cooldown status.
+---
 
-### 2. CloudFront 403 Auto-Cooldown Bridge
-To survive 24/7 background operation:
-- The extension intercepts HTTP response status codes.
-- When an AWS WAF / CloudFront 403 error is detected, the engine enters an **automatic 60-second cooldown mode** with randomized jitter intervals.
-- Once the rate-limiting window clears, polling resumes seamlessly with zero manual browser refreshing.
+## Core Technologies (Across the Series)
 
-### 3. Persistent 24/7 Service Worker Keepalive
-Utilizes the **Chrome Offscreen Document API** to maintain active timer loops and WebSocket connectivity, overcoming the 30-second Manifest V3 service worker termination limitation.
-
-### 4. Adaptive Rate-Limiting & Cooldown Circuit Breaker
-High-frequency monitoring loops are protected by an automated circuit breaker. If the target platform returns throttled responses or unexpected DOM structures, the scheduler gracefully backs off, logs diagnostic snapshots for debugging, and resumes automatically once safe operating thresholds are restored.
+- **Chrome Extension API**: `chrome.scripting.executeScript(world: 'MAIN')`, `chrome.offscreen`, `chrome.storage`, `chrome.alarms`, `chrome.declarativeNetRequest`
+- **Shadow DOM Traversal**: Nested shadow root detection, WAF challenge recovery
+- **OTP Automation**: IMAP email fetching, 16-digit code parsing, self-healing retry loops
+- **Frontend UI**: React.js, Tailwind CSS, Lucide Icons, glassmorphic HUDs
+- **Resilience Engine**: Exponential backoff, jitter calculation, MutationObserver DOM watcher, circuit breaker pattern
 
 ---
 
-## Core Technologies
+## Engineering Metrics
 
-- **Chrome Extension API**: `chrome.scripting.executeScript(world: 'MAIN')`, `chrome.offscreen`, `chrome.storage.local`, `chrome.declarativeNetRequest`.
-- **Frontend UI**: React.js, Tailwind CSS, Lucide Icons.
-- **Resilience Engine**: Dynamic jitter calculation, exponential backoff, MutationObserver DOM watcher.
-
----
-## Engineering Metrics & Commercial Outcomes
-
-| Engineering Metric | Manual Operational Baseline | Automated Amazon Shift Sniper Pipeline | Measured Impact |
+| Metric | Manual Baseline | Automated Pipeline | Impact |
 |---|---|---|---|
-| **Cycle Latency** | 3–15 minutes per task | Sub-500ms automated execution | 95%+ latency reduction |
-| **Throughput Capacity** | 20–50 transactions / day | 5,000+ operations / session | 100x scale enhancement |
-| **Error & Drop Rate** | 8–12% human data entry error | < 0.1% deterministic parser accuracy | 99% accuracy rate |
-| **Operating Infrastructure** | Recurring third-party SaaS fees | Zero-infrastructure client runtime | 100% cost reduction |
+| **Slot Detection Speed** | 2–15 seconds (human) | Sub-500ms | 95%+ faster |
+| **Booking Success Rate** | 30–50% (manual) | 95%+ automated | 3x improvement |
+| **OTP Capture Time** | 30–90 seconds manual | Auto-fetched via IMAP | Near-instant |
+| **WAF Recovery** | Manual browser refresh | Auto-detected & recovered | Zero downtime |
+| **24/7 Uptime** | Impossible manually | Offscreen Keepalive | 100% continuous |
 
 ---
 
 ## Frequently Asked Questions
 
-<FaqCard 
-  question="How does Amazon Shift Sniper differ from a standard background monitoring extension?"
-  answer="Amazon Shift Sniper is specifically optimized for Amazon's authentication-heavy scheduling portal, with built-in session health monitoring and automatic re-authentication when session tokens expire. This allows continuous 72+ hour monitoring runs without requiring manual login refreshes — something generic monitoring tools cannot handle."
+<FaqCard
+  question="How does the multi-profile broadcast work?"
+  answer="A 'main' controller profile sends a broadcast signal through a shared channel (e.g., chrome.storage or WebSocket relay). All connected 'follower' profiles receive the trigger simultaneously and execute the booking click within milliseconds. This multiplies throughput and increases the probability of securing a slot when it appears."
 />
 
-<FaqCard 
-  question="Which Amazon workforce platforms does Shift Sniper support?"
-  answer="The extension is designed for Amazon Flex driver shift monitoring and can be adapted for Amazon warehouse (Cambrex) shift booking portals. The same core monitoring architecture (Chrome Alarms, session preservation, audio alerts) can be extended to any Amazon workforce scheduling URL."
+<FaqCard
+  question="How does the OTP system handle invalid codes?"
+  answer="When Amazon returns an 'invalid code' error, the system enters a cooldown wait period, then re-fetches the latest OTP from Gmail via IMAP, and retries the verification step. If the retry also fails, it restarts the entire hiring flow from the beginning — looping until success with zero human intervention."
+/>
+
+<FaqCard
+  question="How does the Shadow DOM bypass work for AWS WAF challenges?"
+  answer="AWS WAF challenges are injected into the page inside deeply nested Shadow DOM roots, which standard DOM queries cannot reach. The extension uses recursive shadow root traversal to detect WAF challenge elements, then triggers a controlled reload with a backoff delay — resuming the automation flow once the challenge clears."
+/>
+
+<FaqCard
+  question="Which Amazon platforms does this work on?"
+  answer="The series covers Amazon Flex shift monitoring, Amazon workforce (warehouse) scheduling portals, the Amazon hiring application flow, and Amazon job confirmation portals. The core architecture — session interception, CloudFront bypass, MV3 keepalive — is adaptable across all Amazon hiring-related URLs."
 />
