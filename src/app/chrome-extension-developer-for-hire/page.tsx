@@ -267,8 +267,8 @@ const SERVICES = [
     title: "AI Job Application Autofill & Auto-Apply Bots",
     badge: "AI Autofill • Workday • Greenhouse • Ashby",
     description:
-      "Intelligent AI-powered job application autofill that auto-fills and submits applications across 100+ ATS platforms. OpenAI GPT-4o resume tailoring, screening question answering, cover letter generation, and multi-step form navigation — completing applications in under 5 seconds vs. 10-15 minutes manually.",
-    projects: "Featured in: RoboApply & Sociax (100+ job boards), AI Apply Helper, Positional",
+      "Intelligent AI-powered job application autofill that auto-fills and submits applications across 100+ ATS platforms. OpenAI GPT-4o resume tailoring, screening question answering, cover letter generation, and multi-step form navigation — completing applications in under 5 seconds vs. 10-15 minutes manually. Engineered working Ashby integration in 1 week after 20+ prior developers failed.",
+    projects: "Featured in: RoboApply & Sociax (100+ ATS platforms), AI Apply Helper, Positional",
   },
   {
     icon: Database,

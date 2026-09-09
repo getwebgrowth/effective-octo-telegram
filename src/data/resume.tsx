@@ -284,6 +284,7 @@ export const DATA = {
       href: "/projects/roboapply-ats-automation",
       dates: "May 2026 - Jun 2026",
       active: true,
+      featured: true,
       description:
         "AI-powered job application autofill Chrome extension that auto-fills and submits applications across 100+ ATS platforms (Greenhouse, Workday, Ashby, Lever, Oracle). Uses OpenAI GPT-4o for AI resume tailoring and screening question answering. Built Ashby integration in 1 week after 20+ prior developers failed.",
       technologies: [
