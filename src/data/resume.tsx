@@ -246,19 +246,22 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Tech Copilot — Automotive AI Overlay Chrome Extension",
+      title: "Tech Copilot — Automotive AI Chrome Extension (Live SaaS · $5.99/mo)",
       href: "/projects/tech-copilot",
       dates: "Jun 2026 - Jul 2026",
       active: true,
+      featured: true,
       description:
-        "A floating, draggable AI assistant for automotive technicians reading OEM manuals. Built with Manifest V3, OpenAI API, Gemini Pro RAG integration, snip & scroll screen capture, and an ExtensionPay freemium subscription paywall (usage limits with auto-reset).",
+        "Live Chrome Web Store AI assistant for automotive technicians — diagnose faster with VIN decoding, AI-driven TSB search, screenshot OCR (Tesseract.js, on-device), voice input, and streaming GPT-4o responses in a side panel. Monetized at $5.99/mo via ExtensionPay + Stripe. 5.0 ★ Upwork · 6 paid milestones ($1,875+).",
       technologies: [
         "Manifest V3",
-        "OpenAI API",
+        "OpenAI GPT-4o",
         "Gemini Pro RAG",
+        "VIN Decoding",
+        "Tesseract.js OCR",
+        "Voice Input",
         "ExtensionPay",
-        "Screen Capture",
-        "TailwindCSS",
+        "Stripe",
       ],
       links: [
         {
@@ -268,11 +271,11 @@ export const DATA = {
         },
         {
           type: "Website",
-          href: "https://techaicopilot.com/how-it-works-1",
+          href: "https://www.techaicopilot.com",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "Automated Pro.png",
+      image: "tech-copilot-hero.png",
       video: "",
     },
     {
