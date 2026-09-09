@@ -60,6 +60,14 @@ export const metadata: Metadata = {
     siteName: `${DATA.name} Portfolio`,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: `${DATA.url}/me.webp`,
+        width: 1200,
+        height: 630,
+        alt: `${DATA.name} | Freelance Chrome Extension Developer`,
+      },
+    ],
   },
   robots: {
     index: true,
@@ -78,6 +86,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     creator: "@pasindupiumal03",
     site: "@pasindupiumal03",
+    images: [`${DATA.url}/me.webp`],
   },
   formatDetection: {
     email: false,
