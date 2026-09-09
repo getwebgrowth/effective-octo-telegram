@@ -25,7 +25,9 @@ last_updated: "2026-08-21"
 - **Anti-Bot Navigation**: Natural mouse movements, jittered keystroke simulation, humanized delay intervals, and CSRF token extraction.
 - **Data Pipelines**: Synchronous two-way data syncing into Google Sheets (Google Apps Script API), Airtable, Notion, and PostgreSQL databases.
 
-## 4. Full-Stack Browser SaaS & Monetization
-- **In-App Paywalls**: In-extension licensing and billing via Stripe Checkout, ExtensionPay, and LemonSqueezy.
-- **Licensing & Authentication**: Supabase Auth, Firebase Auth, JWT validation, and freemium feature gating.
-- **Modern Tech Stack**: TypeScript, React, Next.js, Node.js, Express, Tailwind CSS, and Webpack/Vite.
+## 4. Full-Stack SaaS & Monorepo Architecture
+- **Dedicated Landing Page**: [Full-Stack SaaS Developer for Hire](https://pasindupiumal.com/full-stack-saas-developer-for-hire)
+- **Monorepo Architecture**: Unified full-stack systems combining Manifest V3 browser extensions with Next.js web applications, shared database schemas, and single-sign-on auth.
+- **In-App Paywalls & Subscriptions**: Full-cycle Stripe Billing workflows (tiered plans, metered usage, customer portals, webhook listeners, dunning management) and ExtensionPay.
+- **Licensing & Authentication**: Supabase Auth, Clerk, NextAuth, PostgreSQL Row-Level Security (RLS), and freemium feature gating.
+- **Modern Tech Stack**: TypeScript, React 19, Next.js 15/16 App Router, Node.js, Express, PostgreSQL, Prisma/Drizzle, Redis, and Tailwind CSS.

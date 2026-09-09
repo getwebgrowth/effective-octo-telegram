@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/full-stack-saas-developer-for-hire`,
+      lastModified: staticLastModified,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/projects`,
       lastModified: staticLastModified,
       changeFrequency: "weekly",

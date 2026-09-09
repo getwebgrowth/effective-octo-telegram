@@ -44,6 +44,7 @@
 - **Data Pipelines & Exporters:** Automated synchronous data piping directly into Google Sheets, Airtable, Notion, and PostgreSQL databases.
 
 ### 4. Full-Stack SaaS & Browser Extension Monetization
+- [Full-Stack SaaS Development Services](https://pasindupiumal.com/full-stack-saas-developer-for-hire): Turnkey SaaS MVP buildout, Next.js architecture, AI copilots, Stripe subscription billing, and micro-SaaS monorepos.
 - **In-App Paywalls & Licensing:** Stripe Checkout, ExtensionPay, and LemonSqueezy integration with freemium tier enforcement.
 - **Modern Tech Stack:** TypeScript, React, Next.js, Node.js, Express, Supabase, Firebase, and Tailwind CSS.
 

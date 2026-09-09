@@ -24,7 +24,11 @@
 3. **High-Frequency Automation & Anti-Bot Evasion**:
    - Sub-second DOM mutation listeners and synthetic event dispatching with randomized Bezier curve mouse jitter.
    - Dual-world script injection (Main World session token interception paired with Isolated World HUD rendering).
-   - Rate-limiting circuit breakers, exponential backoff, and Cloudflare / ThreatMetrix anti-detection strategies.
+4. **Full-Stack SaaS Engineering & Monorepo Architecture**:
+   - URL: https://pasindupiumal.com/full-stack-saas-developer-for-hire
+   - Next.js 15/16 App Router, React 19, TypeScript, Node.js, Express, and PostgreSQL/Supabase with Row-Level Security.
+   - Micro-SaaS browser extension monorepos pairing Manifest V3 extensions with web dashboards, shared auth, and database sync.
+   - End-to-end Stripe Billing integrations (tiered subscriptions, metered usage, customer portals, and resilient webhook handlers).
 
 ---
 
