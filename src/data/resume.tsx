@@ -230,10 +230,12 @@ export const DATA = {
       technologies: [
         "100k+ Users",
         "$1M+ Revenue",
+        "Sub-250ms Snipe",
+        "Humanization++",
+        "Futbin API Sync",
+        "Side Panel UI",
         "Manifest V3",
         "WebSockets",
-        "Anti-Ban Randomization",
-        "Rate Throttling",
         "Discord Webhooks",
       ],
       links: [
@@ -243,7 +245,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "Automated Pro (1).png",
+      image: "elitefutbot-hero.png",
       video: "",
     },
     {

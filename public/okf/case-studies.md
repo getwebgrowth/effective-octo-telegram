@@ -23,7 +23,7 @@ Pasindu Piumal has engineered and deployed 113+ production browser extensions, A
 
 ### FUT Snipe Bot (EliteFutBot) — High-Scale FIFA EA FC Transfer Market Sniper Chrome Extension
 - **URL**: [https://pasindupiumal.com/projects/fut-snipe-bot](https://pasindupiumal.com/projects/fut-snipe-bot)
-- **Summary**: High-scale real-time browser extension and automated transfer market sniper for EA FC / FIFA. Scaled to 100,000+ active users and enabled over $1M+ in software revenue with sub-second WebSocket listeners, rate-limit throttling, and anti-ban behavioral randomization.
+- **Summary**: High-scale real-time browser extension and automated transfer market sniper for EA FC / FIFA Ultimate Team. Scaled to 100,000+ active users and enabled over $1M+ in software revenue with sub-250ms execution, Futbin live price API sync, Humanization++ anti-ban physics, and native Chrome Side Panel UI.
 
 ### RoboApply & Sociax — AI Job Application Autofill & Multi-ATS Auto-Apply Chrome Extension
 - **URL**: [https://pasindupiumal.com/projects/roboapply-ats-automation](https://pasindupiumal.com/projects/roboapply-ats-automation)
