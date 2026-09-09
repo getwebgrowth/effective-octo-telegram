@@ -11,119 +11,145 @@ content: ""
 <div className="flex flex-wrap gap-2 my-4">
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-emerald-500/20 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">100,000+ Active Users Scaled</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-amber-500/20 bg-amber-500/10 text-amber-600 dark:text-amber-400">$1,000,000+ Software Revenue Enabled</span>
-  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-primary/20 bg-primary/10 text-primary">Manifest V3 Chrome Extension</span>
+  <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-primary/20 bg-primary/10 text-primary">Chrome Extension + SaaS Platform</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-blue-500/20 bg-blue-500/10 text-blue-600 dark:text-blue-400">Sub-250ms Buy Execution</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-purple-500/20 bg-purple-500/10 text-purple-600 dark:text-purple-400">Humanization++ Anti-Ban Physics</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-cyan-500/20 bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">Futbin Live API Integration</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-lime-500/20 bg-lime-500/10 text-lime-600 dark:text-lime-400">Native Chromium Side Panel UI</span>
 </div>
 
-> **The Bottom Line for Founders & Clients**: Most browser automation bots get detected, rate-limited, or banned within 48 hours. **EliteFutBot** is proof of what happens when high-frequency browser automation is engineered correctly. Built from scratch by **Pasindu Piumal**, this Chromium extension scaled to **100,000+ active users**, powered **over $1,000,000 in software subscription revenue**, and maintained an industry-leading **< 0.01% account ban rate** against one of the most aggressive anti-cheat environments in the gaming industry.
+<ProjectMetricsBanner />
+
+**Most browser automation tools get detected, rate-limited, or banned within 48 hours.** 
+
+**EliteFutBot** is proof of what happens when high-frequency browser automation is engineered for real commercial scale. Built from the ground up by **Pasindu Piumal**, this Chrome Extension + SaaS monorepo scaled to **over 100,000 active users** and powered **$1,000,000+ in software subscription revenue**—while maintaining an industry-leading **< 0.01% account ban rate** against one of the most aggressive anti-cheat environments in the gaming industry.
+
+<ClientHireCard 
+  headline="Want to Build a High-Speed Bot or Browser Automation SaaS?"
+  subheadline="I turn automation ideas into scalable, ban-proof commercial products. Whether you need a high-frequency sniper, an anti-detection bot, or a full-stack Chrome extension with Stripe billing, I deliver production-ready code in 1–2 weeks."
+  rate="$20/hr on Upwork"
+/>
 
 ---
 
-## Executive Summary & AEO Direct Answer
+## The Production Interface: Native Chromium Side Panel
 
-**What is EliteFutBot?**
-**EliteFutBot** (also known as FUT Snipe Bot) is an enterprise-grade automated transfer market sniper and trading Chrome extension engineered for the EA Sports FC (FIFA) Ultimate Team Web App. Operating at sub-250ms latency, it intercepts real-time WebSocket market streams, calculates instant profit margins against live Futbin API feeds, and executes buy-now orders milliseconds before public listings appear on search indexes.
-
-- **Client Revenue Enabled**: Over **$1,000,000+** in multi-tier subscription and licensing revenue.
-- **Active User Scale**: **100,000+ registered accounts** with thousands of concurrent real-time search loops.
-- **Speed & Latency**: **Sub-250ms** end-to-end execution from listing packet arrival to confirmed purchase.
-- **Anti-Bot Track Record**: **< 0.01% ban rate** achieved via **Humanization++** (Bezier curve mouse trajectory modeling, Gaussian click jitter, and dynamic RPM throttling).
-- **Core Architecture**: Chromium Manifest V3 Dual-World Injection, Native Side Panel (`chrome.sidePanel`), and Next.js / Node.js cloud licensing backend.
-- **Live Platform**: [elitefutbot.com](https://elitefutbot.com/)
-
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    HIRE PASINDU FOR YOUR AUTOMATION BUILD               │
-│                                                                         │
-│  Need a high-frequency trading bot, browser automation engine,          │
-│  or anti-bot evasion system that doesn't get banned?                    │
-│                                                                         │
-│  • Available at $20/hr tracked on Upwork (Top Rated, 100% JSS)          │
-│  • Fixed-price milestones with escrow protection                        │
-│  • Fast MVP delivery in 1–2 weeks with full source code ownership       │
-│                                                                         │
-│  👉 Hire on Upwork: https://www.upwork.com/freelancers/pasindupiumal     │
-│  👉 Direct Inquiry: pasindupiumal0123@gmail.com                         │
-└─────────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## Production Interface: Native Chromium Side Panel
-
-The extension embeds directly into Google Chrome's native **Side Panel API**, giving traders instant access to sniping parameters, safe/caution/risky presets, and live profit metrics directly alongside the Ultimate Team Web App without intrusive overlays or canvas interference:
+The extension embeds directly into Google Chrome's native **Side Panel API**, giving traders real-time control, live profit metrics, and instant risk presets without intrusive web page overlays or breaking when site styles update:
 
 ![EliteFutBot — High-Scale EA FC Ultimate Team Transfer Market Sniper Extension](/elitefutbot-hero.png)
 
 ---
 
-## The Engineering Challenge: Why 99% of Automation Bots Fail
+## Why 99% of Automation Bots Fail (And How We Solved It)
 
-Building high-frequency automation on adversarial platforms like EA FC, Ticketmaster, Amazon, or sneaker drops is notoriously difficult. Most freelance developers produce brittle scripts that fail for four predictable reasons:
+Building high-frequency automation on adversarial platforms (like EA Sports, Ticketmaster, Amazon, or sneaker drops) is notoriously difficult. Most freelance scripts fail because:
 
-1. **Detection via Fixed Timing Cadence**: Naive `setInterval()` or fixed sleep timers create unmistakable algorithmic signatures that anti-cheat heuristics flag immediately.
-2. **Robotic Click Physics**: Firing synthetic `.click()` events directly at element center coordinates triggers behavioral flags. Real humans click with randomized offsets, variable dwell times, and natural trajectory drift.
-3. **DOM Polling Latency**: Querying the HTML DOM repeatedly introduces 800ms–2,500ms of lag. By the time a listing is rendered in the DOM, competing institutional bots have already sniped it.
-4. **Rate-Limit Penalties (HTTP 429)**: Exceeding aggressive Requests-Per-Minute (RPM) thresholds triggers temporary account lockouts, market bans, and Cloudflare challenges.
+1. **Predictable Timing**: Static intervals trigger automated bot detection within hours.
+2. **Robotic Clicks**: Clicking identical pixel coordinates triggers instant behavioral flags.
+3. **DOM Lag**: Reading HTML elements takes 800ms–2,500ms—far too slow to beat competing bots.
+4. **Rate-Limit Lockouts**: Unchecked request spikes trigger IP blocks and Cloudflare captchas.
 
-Pasindu engineered EliteFutBot specifically to solve every one of these failure modes at enterprise scale.
-
----
-
-## 11 Core Modules & Capabilities (What I Build for Clients)
-
-Each module in EliteFutBot represents a battle-tested technical capability ready to be adapted for your custom trading, sniping, or automation project:
-
-### 01 // Auto Snipe (Sub-Second Market Execution Loop)
-- **Technical Mechanism**: Bypasses the DOM entirely. Intercepts raw market WebSocket payloads in the browser's Main World and fires atomic purchase requests in **under 250 milliseconds**.
-- **Client Value**: Beats competing human buyers and third-party bots to undervalued inventory 100% of the time, guaranteeing first-look transaction execution.
-
-### 02 // Auto List & Auto Sell (Hands-Free Arbitrage Pipeline)
-- **Technical Mechanism**: Listens for purchase confirmation tokens and triggers automated background relisting workflows using target price formulas or Futbin market medians.
-- **Client Value**: Creates an end-to-end automated flipping loop. Users can run overnight trading sessions without manually managing club inventory.
-
-### 03 // Smart Filters (Multi-Parametric Verification)
-- **Technical Mechanism**: High-speed client-side rule validator evaluating min/max buy bounds, card tiers, chemistry styles, ratings, and max buy caps per session.
-- **Client Value**: Protects user capital by ensuring the bot never overbids, buys misidentified items, or depletes balances during market flash crashes.
-
-### 04 // Futbin Price Reference (Live Financial API Integration)
-- **Technical Mechanism**: Asynchronous REST bridge with client-side caching that pulls live market values across PlayStation, Xbox, and PC every 30 seconds.
-- **Client Value**: Eliminates static pricing guesswork. Users snipe based on real-time market liquidity and mathematically verified profit margins.
-
-### 05 // Anti-Detection Engine (Configurable Request Cadence)
-- **Technical Mechanism**: Randomized temporal spacing based on Gaussian distributions, breaking predictable request rhythms.
-- **Client Value**: Distributes search volume naturally across time, preventing server-side heuristics from cataloging bot-like regularity.
-
-### 06 // Humanization++ (Physics-Based Mouse & Click Simulator)
-- **Technical Mechanism**: Generates natural non-linear mouse paths using cubic Bezier curve trajectory smoothing, randomized click coordinates within button bounding boxes, and variable micro-dwell times.
-- **Client Value**: The breakthrough feature that achieved a **< 0.01% ban rate** across 100,000+ active accounts. Accounts behave indistinguishably from organic human players.
-
-### 07 // Native Side Panel UI (Zero DOM Pollution)
-- **Technical Mechanism**: Built on the modern Chromium `chrome.sidePanel` Manifest V3 API rather than injecting floating iframe overlays into the target page.
-- **Client Value**: Zero style collisions, no broken layout shifts when the host app updates its CSS, and complete resistance to host-page DOM scanning scripts.
-
-### 08 // Centralized Web Dashboard (SaaS Monorepo Architecture)
-- **Technical Mechanism**: Full-stack Next.js and Node.js management portal with tokenized license keys, hardware/profile binding, and preset syncing.
-- **Client Value**: Turns a simple extension into a scalable SaaS product. Founders can manage subscriptions, revoke keys, and push global configuration updates remotely.
-
-### 09 // Real-Time Discord Alerts & Community Support
-- **Technical Mechanism**: Secure webhook event bus streaming instant transaction receipts, profit calculations, and rate-limit warnings directly to private Discord channels.
-- **Client Value**: High-engagement community retention. Users share successful filter presets, driving organic word-of-mouth subscription growth.
-
-### 10 // Live Stats Sync & P&L Telemetry HUD
-- **Technical Mechanism**: Lightweight in-memory session accumulator reporting real-time metrics: coins earned, snipes completed, session duration, and hourly run rates.
-- **Client Value**: Builds user trust by providing immediate, undeniable proof of software ROI and profitability during live sessions.
-
-### 11 // Secure Cloud Authentication (EliteFutBot Licensing API)
-- **Technical Mechanism**: Tokenized one-time login flow with cryptographic license verification and anti-piracy session locks.
-- **Client Value**: Completely prevents unauthorized license sharing, cracked builds, and revenue leakage for the software founder.
+**EliteFutBot was engineered to eliminate every single one of these bottlenecks**, delivering sub-250ms speed with mathematical humanization that keeps accounts completely safe.
 
 ---
 
-## Technical Architecture: Dual-World Execution Pipeline
+## 11 Production Modules & Features
+
+Every module below represents a battle-tested technical capability ready to be deployed into your custom automation or SaaS product:
+
+<ClientFeatureGrid>
+  <ClientFeatureCard 
+    number="01"
+    tag="High Speed"
+    title="Sub-250ms Auto-Snipe"
+    description="Intercepts raw market data streams before they reach the DOM. Executes purchase orders in under 250ms the moment an underpriced item drops."
+    businessBenefit="Guarantees your users beat competitors to inventory 100% of the time."
+  />
+
+  <ClientFeatureCard 
+    number="02"
+    tag="Automation"
+    title="Auto List & Real-Time Sell"
+    description="Automatically calculates target resale margins and lists sniped items onto the transfer market immediately without manual intervention."
+    businessBenefit="Creates a fully automated, hands-free flipping loop that runs 24/7."
+  />
+
+  <ClientFeatureCard 
+    number="03"
+    tag="Risk Control"
+    title="Smart Dynamic Filters"
+    description="Validates pricing thresholds, rating bounds, and session purchase limits in real-time before firing buy orders."
+    businessBenefit="Protects user balances from flash crashes and errant overbids."
+  />
+
+  <ClientFeatureCard 
+    number="04"
+    tag="Live Data"
+    title="Futbin Market API Sync"
+    description="Pulls live market values across PlayStation, Xbox, and PC every 30 seconds via an intelligent cached API bridge."
+    businessBenefit="Zero pricing guesswork—every transaction is based on verified live liquidity."
+  />
+
+  <ClientFeatureCard 
+    number="05"
+    tag="Anti-Ban"
+    title="Intelligent Request Cadence"
+    description="Varies request rhythms using randomized Gaussian time distributions to mimic organic human browsing sessions."
+    businessBenefit="Keeps continuous search loops completely undetected by server heuristics."
+  />
+
+  <ClientFeatureCard 
+    number="06"
+    tag="Biometrics"
+    title="Humanization++ Mouse Physics"
+    description="Simulates natural arm and wrist motion using cubic Bézier curves and randomized Gaussian coordinate micro-jitter."
+    businessBenefit="Maintained a < 0.01% ban rate across 100,000+ active user accounts."
+  />
+
+  <ClientFeatureCard 
+    number="07"
+    tag="Modern UI"
+    title="Chromium Native Side Panel"
+    description="Runs inside Chrome's native side panel rather than injecting floating iframe overlays into the host website."
+    businessBenefit="Zero style collisions, no broken layout shifts, and immune to DOM detection."
+  />
+
+  <ClientFeatureCard 
+    number="08"
+    tag="Architecture"
+    title="Dual-World Packet Tap"
+    description="Executes in the page's Main World to capture WebSocket streams while isolating core business logic in extension storage."
+    businessBenefit="Bypasses client-side synthetic event blocks and anti-bot traps."
+  />
+
+  <ClientFeatureCard 
+    number="09"
+    tag="Massive Scale"
+    title="100,000+ User Virtualization"
+    description="Distributes rate-limiting to the client layer so hundreds of thousands of users trade simultaneously without central server crashes."
+    businessBenefit="Enterprise stability with minimal cloud infrastructure costs."
+  />
+
+  <ClientFeatureCard 
+    number="10"
+    tag="Monetization"
+    title="SaaS Licensing & Stripe Sync"
+    description="Built-in recurring subscriptions, hardware-bound license keys, and real-time activation verification."
+    businessBenefit="Generated over $1,000,000 in software revenue with zero license piracy."
+  />
+
+  <ClientFeatureCard 
+    number="11"
+    tag="Reliability"
+    title="Auto CAPTCHA & Soft-Ban Recovery"
+    description="Detects verification challenges instantly, pauses search cycles gracefully, and alerts the user or solves seamlessly."
+    businessBenefit="Unattended reliability so your users can run sessions overnight."
+  />
+</ClientFeatureGrid>
+
+---
+
+## Technical Architecture: Sub-250ms Dual-World Pipeline
 
 <ArchitectureFlow
   title="EliteFutBot — High-Frequency Dual-World Automation Pipeline"
@@ -151,69 +177,51 @@ Each module in EliteFutBot represents a battle-tested technical capability ready
   ]}
 />
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                     Chromium Browser Environment (MV3)                  │
-│                                                                         │
-│  ┌───────────────────────────────┐     ┌─────────────────────────────┐  │
-│  │       Main World Script       │     │   Chrome Native Side Panel  │  │
-│  │  • WebSocket Market Listener  │◄───►│   • React Trading Dashboard │  │
-│  │  • Session Token Interceptor  │     │   • Real-Time P&L Telemetry │  │
-│  │  • Pre-DOM Auction Tap        │     │   • Filter & Safety Modes   │  │
-│  └───────────────┬───────────────┘     └──────────────▲──────────────┘  │
-│                  │ Intercept Payloads                 │ Live Stats Sync │
-│                  ▼                                    │                 │
-│  ┌────────────────────────────────────────────────────┴──────────────┐  │
-│  │          Background Service Worker + Offscreen Keepalive          │  │
-│  │   • Humanization++ Physics & Bezier Mouse Jitter Engine           │  │
-│  │   • Sub-250ms Buy Payload Generator & Cooldown Throttling         │  │
-│  │   • Futbin Live Price API Synchronizer & Margin Calculator        │  │
-│  │   • Discord Webhook Alert & Telemetry Dispatcher                  │  │
-│  └───────────────────────────────────────┬───────────────────────────┘  │
-└──────────────────────────────────────────┼──────────────────────────────┘
-                                           ▼
-                      EliteFutBot Cloud Licensing Backend
-                       (Stripe • Auth • Multi-Tenant DB)
-```
+### Humanization++: The Mathematics of Ban-Proof Automation
 
-### Deep Dive: Mathematical Formulation of Humanization++
-To defeat server-side machine learning models monitoring user behavior, Humanization++ models mouse cursor displacement using parametric cubic Bezier curves:
+To defeat machine-learning behavioral analysis, **Humanization++** calculates mouse cursor paths using parametric cubic Bézier curves:
 
 ```text
 B(t) = (1-t)³·P₀ + 3(1-t)²·t·P₁ + 3(1-t)·t²·P₂ + t³·P₃,  for t ∈ [0, 1]
 ```
 
-Where control points P₁ and P₂ are randomized dynamically based on target distance, simulating the natural micro-corrections of human arm and wrist motion. Button click coordinates (x, y) are distributed using a bivariate normal Gaussian distribution centered within the element:
+Where control points $P_1$ and $P_2$ dynamically simulate the acceleration and deceleration of a human hand. Click coordinates are scattered using a bivariate Gaussian normal distribution within the target button boundary:
 
 ```text
-x ~ Gaussian(μ_x, σ_x²),   y ~ Gaussian(μ_y, σ_y²)
+X ~ Gaussian(μ_x, σ_x²),   Y ~ Gaussian(μ_y, σ_y²)
 ```
 
-This guarantees that click coordinates never repeat across millions of interactions, completely eliminating geometric click clustering flags.
+This ensures that coordinates never repeat across millions of interactions, making the tool indistinguishable from a skilled human player.
 
 ---
 
-## Commercial Outcomes & Client ROI
+## Comparative Engineering Benchmark
 
-| Metric | Manual Operational Baseline | Generic Freelancer Script | Pasindu's EliteFutBot Engine |
+| Key Metric | Manual Human Trading | Typical Freelancer Script | Pasindu's EliteFutBot Engine |
 |---|---|---|---|
-| **Execution Latency** | 1,200ms – 3,500ms (Human) | 600ms – 1,200ms (DOM lag) | **< 250ms** (Raw WebSocket tap) |
-| **Account Ban Rate** | 0% (Low volume) | 15% – 40% (Banned in days) | **< 0.01%** (100k+ users safe) |
-| **Pricing Intelligence** | Manual tab switching | Static hardcoded prices | **Live Futbin API real-time sync** |
+| **Execution Latency** | 1,200ms – 3,500ms (Slow) | 600ms – 1,200ms (DOM lag) | **< 250ms** (Raw WebSocket packet tap) |
+| **Account Ban Rate** | 0% (Low volume) | 15% – 40% (Banned in 48 hrs) | **< 0.01%** (100k+ accounts safe) |
+| **Pricing Intelligence** | Manual tab switching | Static hardcoded prices | **Live Futbin API 30s auto-sync** |
 | **User Interface** | None | Clunky floating div overlay | **Native Chromium Side Panel** |
 | **Commercial Model** | Single user | Personal script | **$1M+ Monetized SaaS Platform** |
-| **Platform Scalability**| 1 user | 50 users (Crashes) | **100,000+ Concurrent Accounts** |
+| **Platform Scalability**| 1 user | 50 users (Server crashes) | **100,000+ Concurrent Accounts** |
 
 ---
 
 ## What I Can Build For You
 
-Whether you are launching a commercial automation tool or streamlining internal high-frequency workflows, I provide end-to-end engineering for:
+Whether you are launching a commercial automation tool or upgrading an existing internal workflow, I offer full end-to-end engineering:
 
-1. **High-Speed Sniping & Automated Checkout Bots**: Custom high-frequency tools for ticketing, limited sneaker drops, auction marketplaces, domain registration, and inventory monitoring.
-2. **Anti-Bot & Anti-Detection Architecture**: Upgrading vulnerable automation tools with physics-based mouse simulations, dynamic RPM throttling, and session fingerprint rotation to bypass Cloudflare, DataDome, Akamai, or custom WAFs.
-3. **Micro-SaaS Monorepos (Extension + Web Dashboard)**: Building full-stack commercial products combining a Manifest V3 browser extension with a Next.js web application, Supabase database, and Stripe subscription billing.
+1. **High-Speed Sniping & Checkout Bots**: Custom high-frequency tools for ticketing, limited sneaker drops, auction marketplaces, domain flipping, and inventory monitoring.
+2. **Anti-Bot & Anti-Detection Architecture**: Upgrading vulnerable automation tools with biometric mouse physics, dynamic RPM throttling, and session fingerprint rotation to bypass Cloudflare, DataDome, Akamai, or custom WAFs.
+3. **Micro-SaaS Monorepos (Extension + Web Dashboard)**: Building full-stack commercial products combining a Manifest V3 browser extension with a Next.js web application, Supabase database, and Stripe recurring billing.
 4. **Real-Time Data Interception & Web Scraping**: Advanced Main World script injection, WebSocket listening, and GraphQL query interception to extract structured data before it hits the DOM.
+
+<ClientHireCard 
+  headline="Ready to Build Your Automation or Browser Extension?"
+  subheadline="Hire an engineer who has already scaled to 100k+ users and $1M+ in SaaS revenue. Fast delivery, 100% clean code, and zero fluff."
+  rate="$20/hr on Upwork"
+/>
 
 ---
 

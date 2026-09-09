@@ -3,6 +3,9 @@ import { MediaContainer } from "@/components/mdx/media-container";
 import { TrustBanner } from "@/components/mdx/trust-banner";
 import { FaqCard } from "@/components/mdx/faq-card";
 import { ArchitectureFlow } from "@/components/mdx/architecture-flow";
+import { ClientHireCard } from "@/components/mdx/client-hire-card";
+import { ProjectMetricsBanner } from "@/components/mdx/project-metrics-banner";
+import { ClientFeatureCard, ClientFeatureGrid } from "@/components/mdx/client-feature-card";
 import type { ComponentProps } from "react";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
@@ -16,6 +19,10 @@ export const mdxComponents = {
   TrustBanner,
   FaqCard,
   ArchitectureFlow,
+  ClientHireCard,
+  ProjectMetricsBanner,
+  ClientFeatureCard,
+  ClientFeatureGrid,
   h1: (props: ComponentProps<"h1">) => (
     <h2
       className="text-xl sm:text-2xl font-bold tracking-tight text-foreground mt-8 mb-4 pb-2 border-b border-border/60"
