@@ -6,6 +6,7 @@ import { ArchitectureFlow } from "@/components/mdx/architecture-flow";
 import { ClientHireCard } from "@/components/mdx/client-hire-card";
 import { ProjectMetricsBanner } from "@/components/mdx/project-metrics-banner";
 import { ClientFeatureCard, ClientFeatureGrid } from "@/components/mdx/client-feature-card";
+import { SystemArchitectureDiagram } from "@/components/mdx/system-architecture-diagram";
 import type { ComponentProps } from "react";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
@@ -23,6 +24,7 @@ export const mdxComponents = {
   ProjectMetricsBanner,
   ClientFeatureCard,
   ClientFeatureGrid,
+  SystemArchitectureDiagram,
   h1: (props: ComponentProps<"h1">) => (
     <h2
       className="text-xl sm:text-2xl font-bold tracking-tight text-foreground mt-8 mb-4 pb-2 border-b border-border/60"

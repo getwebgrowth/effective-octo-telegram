@@ -220,23 +220,23 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "FUT Snipe Bot (EliteFutBot) — High-Scale Transfer Engine",
+      title: "Chrome Extension + SaaS → 100,000+ Users & $1M+ Revenue (EliteFutBot)",
       href: "/projects/fut-snipe-bot",
       dates: "Jan 2026 - Present",
       active: true,
       featured: true,
       description:
-        "High-scale real-time browser extension and automated transfer market sniper for EA FC / FIFA. Scaled to 100,000+ active users and enabled over $1M+ in software revenue with sub-second WebSocket listeners, rate-limit throttling, and anti-ban behavioral randomization.",
+        "A Chrome Extension + SaaS monorepo I built solo and scaled to 100,000+ active users generating $1M+ in subscription revenue. Sub-250ms WebSocket snipe engine, Humanization++ anti-ban mouse physics (< 0.01% ban rate), native Side Panel UI, and Stripe billing with hardware-locked licenses.",
       technologies: [
         "100k+ Users",
         "$1M+ Revenue",
+        "Chrome Extension",
+        "SaaS Monorepo",
+        "Manifest V3",
         "Sub-250ms Snipe",
         "Humanization++",
-        "Futbin API Sync",
-        "Side Panel UI",
-        "Manifest V3",
-        "WebSockets",
-        "Discord Webhooks",
+        "Stripe Billing",
+        "Supabase",
       ],
       links: [
         {
