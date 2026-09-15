@@ -62,11 +62,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "9a263851a416d3d0",
-    yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || undefined,
+    yandex: "bcd1b987bf2eadf2",
     other: {
-      ...(process.env.NEXT_PUBLIC_BING_VERIFICATION
-        ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION }
-        : {}),
+      "msvalidate.01": "3262193E0F31163F347AECCC2440CFC5",
     },
   },
   openGraph: {
