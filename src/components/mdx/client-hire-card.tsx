@@ -79,6 +79,17 @@ export function ClientHireCard({
             <ArrowUpRight className="size-4" />
           </a>
 
+          <a
+            href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-amber-500/30 bg-amber-500/10 hover:bg-amber-500/20 text-foreground font-bold text-sm shadow-xs hover:scale-[1.02] active:scale-[0.98] transition-all"
+          >
+            <Icons.contra className="size-4 text-amber-600 dark:text-amber-400 fill-current" />
+            <span>Hire on Contra (0% Fee)</span>
+            <ArrowUpRight className="size-4" />
+          </a>
+
           <Link
             href="/contact"
             className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-border bg-card/80 hover:bg-muted text-foreground font-semibold text-sm transition-all"

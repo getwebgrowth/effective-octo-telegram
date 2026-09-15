@@ -475,7 +475,7 @@ const FAQS = [
   },
   {
     q: "What are your hiring rates and engagement models?",
-    a: "I offer both hourly contracts ($20/hr tracked on Upwork with full time tracking and work diary) and fixed-price milestone projects with clearly defined deliverables and acceptance criteria. You only pay for code that meets your specifications.",
+    a: "I offer both hourly contracts ($20/hr tracked on Upwork with full time tracking and work diary) and fixed-price milestone projects (commission-free via Contra or verified escrow) with clearly defined deliverables and acceptance criteria. You only pay for code that meets your specifications.",
   },
   {
     q: "How much does it cost to build a full-stack SaaS application?",
@@ -558,6 +558,16 @@ export default function FullStackSaaSDeveloperPage() {
                 <Button size="lg" className="rounded-xl h-11 px-6 font-bold shadow-md hover:shadow-lg transition-all text-xs sm:text-sm bg-primary hover:bg-primary/90 text-primary-foreground">
                   <Icons.upwork className="mr-2 size-4 fill-current" />
                   Hire Pasindu on Upwork ($20/hr)
+                </Button>
+              </Link>
+              <Link
+                href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" variant="outline" className="rounded-xl h-11 px-5 font-bold shadow-xs hover:shadow-md transition-all text-xs sm:text-sm border-amber-500/30 bg-amber-500/5 hover:bg-amber-500/10 text-foreground">
+                  <Icons.contra className="mr-2 size-4 text-amber-600 dark:text-amber-400 fill-current" />
+                  Hire on Contra (0% Fee)
                 </Button>
               </Link>
               <Link href="#saas-projects">
@@ -937,16 +947,28 @@ export default function FullStackSaaSDeveloperPage() {
                   </li>
                 </ul>
               </div>
-              <Link
-                href="https://www.upwork.com/freelancers/pasindupiumal"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="sm" className="w-full text-xs font-bold rounded-lg h-9 bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Icons.upwork className="mr-1.5 size-3.5 fill-current" />
-                  Hire on Upwork ($20/hr)
-                </Button>
-              </Link>
+              <div className="space-y-2">
+                <Link
+                  href="https://www.upwork.com/freelancers/pasindupiumal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="sm" className="w-full text-xs font-bold rounded-lg h-9 bg-primary hover:bg-primary/90 text-primary-foreground">
+                    <Icons.upwork className="mr-1.5 size-3.5 fill-current" />
+                    Hire on Upwork ($20/hr)
+                  </Button>
+                </Link>
+                <Link
+                  href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="sm" variant="outline" className="w-full text-xs font-semibold rounded-lg h-9 hover:bg-muted">
+                    <Icons.contra className="mr-1.5 size-3.5 fill-current" />
+                    Hire on Contra (0% Fee)
+                  </Button>
+                </Link>
+              </div>
             </div>
 
             <div className="p-5 sm:p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-muted/15 flex flex-col justify-between space-y-4 hover:border-border hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] dark:hover:shadow-[0_4px_20px_rgba(0,0,0,0.25)] transition-all duration-300">
@@ -1040,6 +1062,15 @@ export default function FullStackSaaSDeveloperPage() {
               className="hover:text-primary transition-colors underline underline-offset-4"
             >
               Upwork
+            </a>
+            <span>•</span>
+            <a
+              href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors underline underline-offset-4 font-semibold text-amber-600 dark:text-amber-400"
+            >
+              Contra (0% Fee)
             </a>
             <span>•</span>
             <a

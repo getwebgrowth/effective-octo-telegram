@@ -461,6 +461,15 @@ export default async function ProjectPage({
               <span>Order on Fiverr (5.0 ★)</span>
             </Link>
             <Link
+              href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-amber-600/30 bg-amber-500/10 text-amber-800 dark:text-amber-300 px-4 py-2.5 text-xs font-bold shadow-xs hover:bg-amber-500/20 transition-colors"
+            >
+              <Icons.contra className="size-4 fill-current" />
+              <span>Hire on Contra (0% Fee)</span>
+            </Link>
+            <Link
               href="/chrome-extension-developer-for-hire"
               className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-primary/40 bg-background hover:bg-muted px-4 py-2.5 text-xs font-semibold text-foreground transition-colors"
             >

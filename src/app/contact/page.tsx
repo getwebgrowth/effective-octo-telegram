@@ -52,6 +52,9 @@ const contactJsonLd = {
           DATA.contact.whatsapp,
           DATA.contact.social.GitHub.url,
           DATA.contact.social.LinkedIn.url,
+          DATA.contact.social.Upwork.url,
+          DATA.contact.social.Fiverr.url,
+          DATA.contact.social.Contra.url,
         ],
         availableLanguage: ["English", "Sinhala"],
         areaServed: {
@@ -117,25 +120,48 @@ export default function ContactPage() {
                         </p>
                     </BlurFade>
 
-                    {/* UPWORK DIRECT HIRE BANNER */}
+                    {/* FREELANCE PLATFORM ESCROW HIRING OPTIONS */}
                     <BlurFade delay={BLUR_FADE_DELAY * 2}>
-                        <div className="p-4 rounded-2xl border-2 border-primary/30 bg-primary/5 dark:bg-primary/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-left">
-                            <div className="space-y-0.5">
-                                <div className="flex items-center gap-2">
-                                    <Icons.upwork className="size-4 text-emerald-700 dark:text-emerald-400 fill-current" />
-                                    <span className="text-xs font-bold text-foreground">Upwork Top Rated (100% JSS)</span>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+                            {/* Upwork Direct Hire */}
+                            <div className="p-4 rounded-2xl border-2 border-primary/30 bg-primary/5 dark:bg-primary/10 flex flex-col justify-between gap-3">
+                                <div className="space-y-1">
+                                    <div className="flex items-center gap-2">
+                                        <Icons.upwork className="size-4 text-emerald-700 dark:text-emerald-400 fill-current" />
+                                        <span className="text-xs font-bold text-foreground">Upwork Top Rated (100% JSS)</span>
+                                    </div>
+                                    <p className="text-xs text-foreground/80 dark:text-muted-foreground">$20/hr tracked work diary or fixed milestone escrows with guaranteed IP protection.</p>
                                 </div>
-                                <p className="text-xs text-foreground/80 dark:text-muted-foreground">$20/hr tracked or milestone escrows with guaranteed IP security.</p>
+                                <Link
+                                    href="https://www.upwork.com/freelancers/pasindupiumal"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-primary-foreground text-xs font-bold shrink-0 hover:opacity-90 transition-opacity shadow-xs"
+                                >
+                                    <span>Hire on Upwork</span>
+                                    <ArrowUpRight className="size-3" />
+                                </Link>
                             </div>
-                            <Link
-                                href="https://www.upwork.com/freelancers/pasindupiumal"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-primary-foreground text-xs font-bold shrink-0 hover:opacity-90 transition-opacity shadow-xs"
-                            >
-                                <span>Hire on Upwork</span>
-                                <ArrowUpRight className="size-3" />
-                            </Link>
+
+                            {/* Contra Direct Hire */}
+                            <div className="p-4 rounded-2xl border-2 border-amber-500/30 bg-amber-500/5 dark:bg-amber-500/10 flex flex-col justify-between gap-3">
+                                <div className="space-y-1">
+                                    <div className="flex items-center gap-2">
+                                        <Icons.contra className="size-4 text-amber-600 dark:text-amber-400 fill-current" />
+                                        <span className="text-xs font-bold text-foreground">Hire on Contra (0% Commission)</span>
+                                    </div>
+                                    <p className="text-xs text-foreground/80 dark:text-muted-foreground">Zero client platform fees, custom milestone proposals, and secured escrow contracts.</p>
+                                </div>
+                                <Link
+                                    href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 text-xs font-bold shrink-0 hover:opacity-90 transition-opacity shadow-xs"
+                                >
+                                    <span>Hire on Contra</span>
+                                    <ArrowUpRight className="size-3" />
+                                </Link>
+                            </div>
                         </div>
                     </BlurFade>
                 </header>
@@ -220,6 +246,14 @@ export default function ContactPage() {
                                 <Link href="/full-stack-saas-developer-for-hire" className="font-semibold text-primary hover:underline">
                                     Full-Stack SaaS Services →
                                 </Link>
+                                <a
+                                    href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="font-semibold text-amber-600 dark:text-amber-400 hover:underline"
+                                >
+                                    Contra Profile ↗
+                                </a>
                                 <Link href="/projects" className="font-semibold text-foreground hover:underline">
                                     Browse 113+ Projects →
                                 </Link>

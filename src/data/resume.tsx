@@ -135,6 +135,12 @@ export const DATA = {
         icon: Icons.fiverr,
         navbar: true,
       },
+      Contra: {
+        name: "Contra",
+        url: "https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal",
+        icon: Icons.contra,
+        navbar: false,
+      },
       Gmail: {
         name: "Gmail",
         url: "/contact",

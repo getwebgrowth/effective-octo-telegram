@@ -234,13 +234,13 @@ export function ProjectsClient({
               </p>
             </div>
 
-            {/* UPWORK & FIVERR HIRE CALLOUT RIBBON */}
+            {/* UPWORK, CONTRA & FIVERR HIRE CALLOUT RIBBON */}
             <div className="w-full p-3.5 rounded-2xl border-2 border-primary/30 bg-primary/5 dark:bg-primary/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-left my-1">
               <div className="space-y-0.5">
                 <span className="text-xs font-bold text-foreground">Need a custom extension or automation bot?</span>
-                <p className="text-[11px] text-foreground/80 dark:text-muted-foreground">Available for $20/hr tracked work or fixed-milestone deliverables.</p>
+                <p className="text-[11px] text-foreground/80 dark:text-muted-foreground">Available for $20/hr tracked work, Contra 0% fee contracts, or fixed-milestone deliverables.</p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <a
                   href="https://www.upwork.com/freelancers/pasindupiumal"
                   target="_blank"
@@ -248,6 +248,14 @@ export function ProjectsClient({
                   className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-primary text-primary-foreground text-xs font-bold shadow-xs shrink-0 hover:opacity-90 transition-opacity"
                 >
                   Hire on Upwork ↗
+                </a>
+                <a
+                  href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-amber-600/30 bg-amber-500/10 text-amber-800 dark:text-amber-300 text-xs font-bold shadow-xs shrink-0 hover:bg-amber-500/20 transition-colors"
+                >
+                  Contra (0% Fee) ↗
                 </a>
                 <a
                   href="https://www.fiverr.com/pasinduxyz"

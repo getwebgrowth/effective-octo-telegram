@@ -595,6 +595,15 @@ export default function ChromeExtensionDeveloperForHirePage() {
                   <Icons.fiverr className="size-3.5 fill-current" />
                 </Link>
                 <Link
+                  href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="size-8 rounded-lg border bg-background/60 hover:bg-amber-500 hover:text-black hover:border-amber-500 transition-all flex items-center justify-center shadow-xs"
+                  aria-label="Contra Profile"
+                >
+                  <Icons.contra className="size-3.5 fill-current" />
+                </Link>
+                <Link
                   href={`mailto:${DATA.contact.email}`}
                   className="size-8 rounded-lg border bg-background/60 hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center shadow-xs"
                   aria-label="Send Email"
@@ -664,6 +673,16 @@ export default function ChromeExtensionDeveloperForHirePage() {
                   <Icons.upwork className="mr-1.5 size-4 fill-current" />
                   Hire on Upwork ($20/hr)
                   <ArrowRight className="ml-1.5 size-3.5" />
+                </Button>
+              </Link>
+              <Link
+                href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="sm" className="rounded-xl h-10 px-5 text-xs sm:text-sm font-semibold w-full sm:w-auto hover:bg-muted/80">
+                  <Icons.contra className="mr-1.5 size-3.5 fill-current" />
+                  Hire on Contra (0% Fee)
                 </Button>
               </Link>
               <Link href="#contact-section">
@@ -751,7 +770,8 @@ export default function ChromeExtensionDeveloperForHirePage() {
               <strong className="text-foreground">Available for hire globally</strong> at{" "}
               <strong className="text-foreground">$20/hr</strong> via{" "}
               <Link href="https://www.upwork.com/freelancers/pasindupiumal" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:opacity-80">Upwork</Link>{" "}
-              (with transparent work diary tracking), fixed-price milestone contracts, or direct engagement via{" "}
+              (with transparent work diary tracking), commission-free milestone contracts via{" "}
+              <Link href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:opacity-80">Contra</Link>, or direct engagement via{" "}
               <Link href="https://www.fiverr.com/pasinduxyz" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:opacity-80">Fiverr</Link>.{" "}
               Based in Sri Lanka, working remotely with clients across the US, UK, EU, and Australia across flexible time zones.
               Communication via Slack, Telegram, Discord, or Upwork Messages with daily async updates.
@@ -1149,16 +1169,28 @@ export default function ChromeExtensionDeveloperForHirePage() {
                   </li>
                 </ul>
               </div>
-              <Link
-                href="https://www.upwork.com/freelancers/pasindupiumal"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="sm" className="w-full text-xs font-bold rounded-lg h-9 bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Icons.upwork className="mr-1.5 size-3.5 fill-current" />
-                  Hire on Upwork ($20/hr)
-                </Button>
-              </Link>
+              <div className="space-y-2">
+                <Link
+                  href="https://www.upwork.com/freelancers/pasindupiumal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="sm" className="w-full text-xs font-bold rounded-lg h-9 bg-primary hover:bg-primary/90 text-primary-foreground">
+                    <Icons.upwork className="mr-1.5 size-3.5 fill-current" />
+                    Hire on Upwork ($20/hr)
+                  </Button>
+                </Link>
+                <Link
+                  href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="sm" variant="outline" className="w-full text-xs font-semibold rounded-lg h-9 hover:bg-muted">
+                    <Icons.contra className="mr-1.5 size-3.5 fill-current" />
+                    Hire on Contra (0% Fee)
+                  </Button>
+                </Link>
+              </div>
             </div>
 
             <div className="p-5 sm:p-6 rounded-2xl border border-border/60 bg-gradient-to-br from-background/80 to-muted/15 flex flex-col justify-between space-y-4 hover:border-border hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] dark:hover:shadow-[0_4px_20px_rgba(0,0,0,0.25)] transition-all duration-300">
@@ -1248,6 +1280,15 @@ export default function ChromeExtensionDeveloperForHirePage() {
               className="hover:text-primary transition-colors underline underline-offset-4"
             >
               Upwork
+            </a>
+            <span>•</span>
+            <a
+              href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors underline underline-offset-4 font-semibold text-amber-600 dark:text-amber-400"
+            >
+              Contra (0% Fee)
             </a>
             <span>•</span>
             <a

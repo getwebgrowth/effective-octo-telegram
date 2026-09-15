@@ -62,6 +62,7 @@ const cvJsonLd = {
           DATA.contact.social.GitHub.url,
           DATA.contact.social.Upwork.url,
           DATA.contact.social.Fiverr.url,
+          DATA.contact.social.Contra.url,
         ],
       },
     },
