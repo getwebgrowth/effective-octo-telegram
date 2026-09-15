@@ -69,10 +69,12 @@
   - Full security review ensuring 100% compliance with Google Web Store guidelines.
 
 ## Engagement Terms & Guarantees
-- **Intellectual Property:** 100% IP ownership and all source code transferred immediately upon milestone release.
+- **Timezone Overlap:** 100% Flexible Global Overlap — guaranteed 4–8 hours of daily live synchronous overlap with US (EST/PST), UK (GMT), Europe (CET), and Australia (AEST) with <1-hour response SLA.
+- **Curriculum Vitae (CV):** Full credentials viewable at [https://pasindupiumal.com/cv](https://pasindupiumal.com/cv) and official PDF download at [https://pasindupiumal.com/pasindu-piumal-cv.pdf](https://pasindupiumal.com/pasindu-piumal-cv.pdf).
+- **Intellectual Property:** 100% IP ownership and all unminified source code transferred immediately upon milestone release.
 - **Confidentiality:** Mutual Non-Disclosure Agreement (NDA) signed upon request.
 - **Escrow Security:** All funds held safely in Upwork Escrow until you review and approve deliverables.
-- **Communication:** Daily asynchronous updates via Slack, Telegram, Discord, or Upwork Messages; Loom video walkthroughs for major deliverables.
+- **Communication:** Daily asynchronous updates via Slack, Discord, WhatsApp (+94717123826), or Upwork Messages; Loom video walkthroughs for major deliverables.
 
 ## How to Get Started
 1. **Direct Message / Inquiry:** [https://pasindupiumal.com/contact](https://pasindupiumal.com/contact) or email `pasindupiumal0123@gmail.com`

@@ -1,6 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { ContactForm } from "@/components/contact-form";
-import { Mail, MapPin, Send, ArrowUpRight } from "lucide-react";
+import { Mail, MapPin, Send, ArrowUpRight, Globe, Clock } from "lucide-react";
 import { DATA } from "@/data/resume";
 import { Icons } from "@/components/icons";
 import Link from "next/link";
@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact & Hire | Freelance Chrome Extension Developer",
   description:
-    "Get in touch with Pasindu Piumal for freelance Chrome Extension development (Manifest V3), browser automation, web scraping, and custom web applications.",
+    "Get in touch with Pasindu Piumal for freelance Chrome Extension development (Manifest V3), browser automation, web scraping, and SaaS. 100% flexible timezone overlap across US, UK, EU, and Australia.",
   alternates: {
     canonical: "/contact",
   },
@@ -48,7 +48,7 @@ const contactJsonLd = {
       "@id": `${DATA.url}/contact#contact`,
       name: "Contact Pasindu Piumal | Chrome Extension Developer",
       description:
-        "Get in touch with Pasindu Piumal for freelance Chrome Extension development (Manifest V3), browser automation, and web scraping projects.",
+        "Get in touch with Pasindu Piumal for freelance Chrome Extension development (Manifest V3), browser automation, web scraping, and SaaS. 100% flexible timezone overlap worldwide across US (EST/PST), UK (GMT), EU (CET), and Australia (AEST).",
       url: `${DATA.url}/contact`,
       mainEntity: {
         "@type": "Person",
@@ -71,6 +71,7 @@ const contactJsonLd = {
           "@type": "GeoShape",
           name: "Worldwide",
         },
+        description: "Freelance Chrome Extension Developer & SaaS Engineer with 100% flexible timezone overlap across US, UK, Europe, and Australia.",
       },
     },
     {
@@ -171,6 +172,40 @@ export default function ContactPage() {
                                     <span>Hire on Contra</span>
                                     <ArrowUpRight className="size-3" />
                                 </Link>
+                            </div>
+                        </div>
+                    </BlurFade>
+
+                    {/* 100% FLEXIBLE TIMEZONE OVERLAP BANNER */}
+                    <BlurFade delay={BLUR_FADE_DELAY * 2.2}>
+                        <div className="p-4 sm:p-5 rounded-2xl border border-primary/25 bg-gradient-to-r from-primary/10 via-background to-emerald-500/10 backdrop-blur-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-left shadow-xs">
+                            <div className="flex items-start gap-3">
+                                <div className="size-9 rounded-xl bg-primary/15 text-primary flex items-center justify-center shrink-0 mt-0.5">
+                                    <Globe className="size-5" />
+                                </div>
+                                <div className="space-y-1">
+                                    <div className="flex flex-wrap items-center gap-2">
+                                        <h2 className="text-xs sm:text-sm font-bold text-foreground">100% Flexible Timezone Overlap</h2>
+                                        <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-500/15 px-2 py-0.5 rounded-full">
+                                            <Clock className="size-3" />
+                                            Any Timezone Worldwide
+                                        </span>
+                                    </div>
+                                    <p className="text-xs text-muted-foreground leading-relaxed">
+                                        I adapt my daily schedule to guarantee <strong>4–8 hours of live working overlap</strong> with your team in the <strong>US (EST/PST)</strong>, <strong>UK (GMT/BST)</strong>, <strong>Europe (CET)</strong>, and <strong>Australia (AEST)</strong> with rapid &lt;1hr response times.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex flex-wrap items-center gap-1.5 shrink-0 self-stretch sm:self-center justify-start sm:justify-end">
+                                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-foreground/90 bg-background/80 border px-2.5 py-1 rounded-lg">
+                                    🇺🇸 US EST/PST
+                                </span>
+                                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-foreground/90 bg-background/80 border px-2.5 py-1 rounded-lg">
+                                    🇬🇧 UK / EU
+                                </span>
+                                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-foreground/90 bg-background/80 border px-2.5 py-1 rounded-lg">
+                                    🇦🇺 AU AEST
+                                </span>
                             </div>
                         </div>
                     </BlurFade>

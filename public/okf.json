@@ -22,7 +22,8 @@
     "client_rating": 5.0,
     "hourly_rate_usd": 20,
     "upwork_jss": "100%",
-    "ban_rate_flagship": "0.01%"
+    "ban_rate_flagship": "0.01%",
+    "timezone_overlap": "100% Flexible Overlap Worldwide (US EST/PST, UK GMT, EU CET, AU AEST)"
   },
   "specializations": [
     "Manifest V3 Chrome Extension Development",
