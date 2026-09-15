@@ -64,6 +64,7 @@ function getProjectCategory(title: string, summary: string = "", content: string
   const text = (title + " " + summary + " " + content).toLowerCase();
 
   if (
+    t.includes("walmart") ||
     t.includes("google apps script") ||
     t.includes("business os") ||
     t.includes("freelancer workspace") ||
@@ -116,6 +117,17 @@ function parseProjectDate(dateString: string): Date {
   }
   
   return date;
+}
+
+export function getGasOrder(slugOrHref: string, title: string): number {
+  const s = (slugOrHref + " " + title).toLowerCase();
+  if (s.includes("walmart")) return 1; // 1st: Walmart Product Scraper (Top)
+  if (s.includes("office-os") || s.includes("office os")) return 2; // 2nd: Office OS
+  if (s.includes("zillow")) return 3; // 3rd: Zillow Scraper (3rd)
+  if (s.includes("amazon-product-scraper") || (s.includes("amazon") && s.includes("scraper"))) return 4;
+  if (s.includes("business-os") || s.includes("business os")) return 5;
+  if (s.includes("freelancer-workspace") || s.includes("freelancer workspace")) return 6;
+  return 10;
 }
 
 export default function ProjectsPage() {
@@ -229,6 +241,13 @@ export default function ProjectsPage() {
   });
 
   const allProjects = Array.from(projectMap.values()).sort((a, b) => {
+    // Priority order within Google Apps Script category
+    if (a.category === "google apps script" && b.category === "google apps script") {
+      const rankA = getGasOrder(a.href, a.title);
+      const rankB = getGasOrder(b.href, b.title);
+      if (rankA !== rankB) return rankA - rankB;
+    }
+
     // Projects hidden from featured (e.g. apps script tools with no priority) should not be hoisted
     if (a.hideFromFeatured && !b.hideFromFeatured) return 1;
     if (!a.hideFromFeatured && b.hideFromFeatured) return -1;

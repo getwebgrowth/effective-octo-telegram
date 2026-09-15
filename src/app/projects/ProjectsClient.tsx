@@ -29,6 +29,17 @@ export interface SerializedProject {
 
 const PAGE_SIZE = 16;
 
+function getGasOrder(slugOrHref: string, title: string): number {
+  const s = (slugOrHref + " " + title).toLowerCase();
+  if (s.includes("walmart")) return 1; // 1st: Walmart Product Scraper (Top)
+  if (s.includes("office-os") || s.includes("office os")) return 2; // 2nd: Office OS
+  if (s.includes("zillow")) return 3; // 3rd: Zillow Scraper (3rd)
+  if (s.includes("amazon-product-scraper") || (s.includes("amazon") && s.includes("scraper"))) return 4;
+  if (s.includes("business-os") || s.includes("business os")) return 5;
+  if (s.includes("freelancer-workspace") || s.includes("freelancer workspace")) return 6;
+  return 10;
+}
+
 export function ProjectsClient({
   initialProjects,
 }: {
@@ -81,7 +92,7 @@ export function ProjectsClient({
     const q = searchQuery.toLowerCase().trim();
     const searchTokens = q ? q.split(/\s+/).filter(Boolean) : [];
 
-    return initialProjects.filter((project) => {
+    const list = initialProjects.filter((project) => {
       // 1. Tab & Sub-filter Check
       let passesTab = false;
       if (activeTab === "all") {
@@ -104,6 +115,16 @@ export function ProjectsClient({
 
       return searchTokens.every((token) => project.searchCorpus.includes(token));
     });
+
+    if (activeTab === "google apps script" && searchTokens.length === 0) {
+      list.sort((a, b) => {
+        const rankA = getGasOrder(a.href, a.title);
+        const rankB = getGasOrder(b.href, b.title);
+        return rankA - rankB;
+      });
+    }
+
+    return list;
   }, [initialProjects, activeTab, fiverrSubFilter, searchQuery]);
 
   const displayedProjects = useMemo(() => {
