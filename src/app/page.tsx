@@ -22,8 +22,8 @@ const homeJsonLd = {
       url: DATA.url,
       name: `${DATA.name} | Freelance Chrome Extension Developer & Browser Automation Expert`,
       description: DATA.seoDescription,
-      dateModified: "2026-08-25",
-      lastReviewed: "2026-08-25",
+      dateModified: new Date().toISOString().split("T")[0],
+      lastReviewed: new Date().toISOString().split("T")[0],
       isPartOf: {
         "@type": "WebSite",
         "@id": `${DATA.url}/#website`,
@@ -45,6 +45,44 @@ const homeJsonLd = {
           "position": 1,
           "name": "Home",
           "item": DATA.url,
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${DATA.url}/#homepage-faq`,
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Who is Pasindu Piumal?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Pasindu Piumal is a Top Rated freelance Chrome Extension Developer and Full-Stack SaaS Engineer based in Kegalle, Sri Lanka. He specializes in Manifest V3 Chrome extensions, AI browser copilots (OpenAI GPT-4o, Gemini Pro), high-frequency browser automation, web scraping, and SaaS monetization. He has shipped 175+ production projects with 100% Upwork Job Success Score and his flagship extension scaled to 100,000+ users generating $1M+ in revenue.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does Pasindu Piumal charge for Chrome extension development?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Pasindu Piumal charges $20/hr tracked on Upwork with automatic work diary and escrow protection. He also offers fixed-price milestones: simple extensions from $150-$400, AI copilot extensions $400-$900, browser automation bots $500-$1,200, and full-stack SaaS platforms $1,200-$3,500. He is also available on Contra with 0% client commission.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is Pasindu Piumal's Upwork Job Success Score?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Pasindu Piumal has a 100% Job Success Score (JSS) on Upwork with Top Rated status. He has completed 175+ projects with a 5.0-star client rating across Upwork and Fiverr.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What technologies does Pasindu Piumal specialize in?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Pasindu Piumal specializes in Manifest V3 Chrome Extension Development, TypeScript, React, Next.js, Node.js, OpenAI GPT-4o, Google Gemini Pro, browser automation, web scraping, Shadow DOM traversal, Stripe/ExtensionPay monetization, Supabase, Firebase, MongoDB, and Google Apps Script.",
+          },
         },
       ],
     },
@@ -187,7 +225,7 @@ export default function Page() {
         <section id="about" aria-label="About Pasindu Piumal">
           <div className="flex min-h-0 flex-col gap-y-4">
             <BlurFade delay={BLUR_FADE_DELAY * 3}>
-              <h2 className="text-xl font-bold">About</h2>
+              <h2 className="text-xl font-bold">About Pasindu Piumal</h2>
             </BlurFade>
             <BlurFade delay={BLUR_FADE_DELAY * 4}>
               <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">

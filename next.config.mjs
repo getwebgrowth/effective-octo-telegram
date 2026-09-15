@@ -76,6 +76,10 @@ const nextConfig = {
             key: "X-Robots-Tag",
             value: "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
           },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
         ],
       },
     ];

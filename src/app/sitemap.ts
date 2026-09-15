@@ -4,7 +4,9 @@ import { allPosts } from "content-collections";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = DATA.url.replace(/\/$/, "");
-  const staticLastModified = new Date();
+  // Use a fixed date for static pages to avoid misleading search engines
+  // Update this date when static page content actually changes
+  const staticLastModified = new Date("2026-09-15");
 
   // Core static routes
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -43,54 +45,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: staticLastModified,
       changeFrequency: "weekly",
       priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/llms.txt`,
-      lastModified: staticLastModified,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/llms-full.txt`,
-      lastModified: staticLastModified,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/pricing.md`,
-      lastModified: staticLastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/okf.json`,
-      lastModified: staticLastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/okf/index.md`,
-      lastModified: staticLastModified,
-      changeFrequency: "monthly",
-      priority: 0.75,
-    },
-    {
-      url: `${baseUrl}/okf/services.md`,
-      lastModified: staticLastModified,
-      changeFrequency: "monthly",
-      priority: 0.75,
-    },
-    {
-      url: `${baseUrl}/okf/case-studies.md`,
-      lastModified: staticLastModified,
-      changeFrequency: "monthly",
-      priority: 0.75,
-    },
-    {
-      url: `${baseUrl}/okf/pricing.md`,
-      lastModified: staticLastModified,
-      changeFrequency: "monthly",
-      priority: 0.75,
     },
   ];
 

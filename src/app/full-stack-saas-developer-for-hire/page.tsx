@@ -71,6 +71,14 @@ export const metadata: Metadata = {
     siteName: `${DATA.name} Portfolio`,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: `${DATA.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Hire Expert Freelance Full-Stack SaaS Developer | Pasindu Piumal",
+      },
+    ],
   },
   twitter: {
     title: "Hire Expert Freelance Full-Stack SaaS Developer | Pasindu Piumal",
@@ -78,8 +86,52 @@ export const metadata: Metadata = {
       "Hire Pasindu Piumal — Top Rated Full-Stack SaaS Developer with 175+ shipped projects, $1M+ software revenue enabled, and 100k+ active users. Next.js, Node.js, AI integrations, Stripe monetization.",
     card: "summary_large_image",
     creator: "@pasindupiumal03",
+    images: [`${DATA.url}/og-image.jpg`],
   },
 };
+
+const FAQS = [
+  {
+    q: "How fast can you build and launch a functional SaaS MVP?",
+    a: "A standard SaaS MVP featuring user authentication, database architecture, the core functional workflow, a responsive UI dashboard, and Stripe subscription billing is typically delivered in 1 to 3 weeks. Comprehensive platforms with multi-role permissions or complex AI pipelines generally take 3 to 6 weeks, delivered in transparent weekly milestones.",
+  },
+  {
+    q: "What tech stack do you recommend for modern full-stack SaaS builds?",
+    a: "I recommend Next.js 15/16 (App Router, Server Actions) with React 19, TypeScript, and Tailwind CSS on the frontend. For backend services and persistence: Node.js, PostgreSQL with Supabase or Prisma, Redis for fast caching and rate limiting, and Stripe for payments. Deployments are automated on Vercel or AWS with Docker.",
+  },
+  {
+    q: "Can you build AI-native SaaS products with OpenAI, Claude, or Gemini?",
+    a: "Yes. I have deep hands-on experience building AI-native web apps: streaming LLM chat interfaces (GPT-4o, Claude 3.5 Sonnet, Gemini Pro), Retrieval-Augmented Generation (RAG) over PDFs and documents using vector embeddings, local and cloud OCR pipelines (Tesseract.js), and autonomous workflow agents.",
+  },
+  {
+    q: "Can you build a micro-SaaS pairing a Chrome extension with a web dashboard?",
+    a: "Yes. This is one of my greatest competitive advantages. I engineer unified monorepos where a Manifest V3 browser extension and a Next.js web application share a single authentication provider (Supabase, Clerk, NextAuth), unified user database, and synchronized Stripe subscriptions (e.g., SuperDev Pro, Tech Copilot, SuperX).",
+  },
+  {
+    q: "How do you implement Stripe subscription billing and monetization?",
+    a: "I handle the complete billing lifecycle: tiered monthly/annual subscriptions, usage-based metered billing, free trial management, self-serve Stripe Customer Portals, and resilient webhook handlers that keep user accounts and access permissions in sync automatically.",
+  },
+  {
+    q: "What are your hiring rates and engagement models?",
+    a: "I offer both hourly contracts ($20/hr tracked on Upwork with full time tracking and work diary) and fixed-price milestone projects (commission-free via Contra or verified escrow) with clearly defined deliverables and acceptance criteria. You only pay for code that meets your specifications.",
+  },
+  {
+    q: "How much does it cost to build a full-stack SaaS application?",
+    a: "A focused MVP SaaS ranges between $800 and $1,800. An AI-powered SaaS with RAG pipelines ranges from $1,500 to $3,500. Micro-SaaS monorepos pairing browser extensions with web dashboards range from $1,800 to $4,500. Dedicated development is $20/hr on Upwork.",
+  },
+  {
+    q: "Should I hire a freelance SaaS developer or an agency?",
+    a: "Agencies often charge $100–$200/hr, add unnecessary management layers, and frequently assign the real work to junior developers. Working with me gives you direct senior engineer communication, faster turnarounds, and top-tier craftsmanship at $20/hr with 100% accountability.",
+  },
+  {
+    q: "How do you handle database security, authentication, and user data privacy?",
+    a: "Every application is built with security best practices: secure session cookies via NextAuth/Clerk/Supabase Auth, PostgreSQL Row-Level Security (RLS) ensuring strict tenant isolation, encrypted environment variables, Zod schema validation on all inputs, API rate limiting, and automated database backups.",
+  },
+  {
+    q: "Where is Pasindu Piumal based and what time zones does he work with?",
+    a: "I am based in Kegalle, Sri Lanka (GMT+5:30) and work smoothly with founders across the US (EST/PST), UK (GMT), Europe (CET), and Australia (AEST). I maintain overlapping working hours and provide proactive daily asynchronous updates via Slack, Telegram, Discord, or Upwork.",
+  },
+];
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -116,24 +168,24 @@ const structuredData = {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Full-Stack SaaS MVP Development",
-              description: "Turnkey MVP engineering using Next.js App Router, TypeScript, PostgreSQL/Supabase, and modern auth delivered in 1-3 weeks.",
+              name: "Full-Stack SaaS MVP Engineering",
+              description: "Production-ready web application MVPs built on Next.js, React, Node.js, and PostgreSQL.",
             },
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "AI-Powered SaaS & Copilot Applications",
-              description: "Context-aware AI applications with OpenAI GPT-4o, Anthropic Claude, Gemini Pro RAG, vector embeddings, and streaming responses.",
+              name: "AI-Powered SaaS Copilots & RAG Pipelines",
+              description: "Streaming LLM chat interfaces, vector embeddings, semantic search, and document intelligence agents.",
             },
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Micro-SaaS & Browser Extension Monorepos",
-              description: "Unified platforms combining Manifest V3 Chrome extensions with Next.js web dashboards, synchronized state, and shared auth.",
+              name: "Chrome Extension + Web Dashboard Monorepos",
+              description: "Unified cross-platform micro-SaaS solutions sharing user auth, state sync, and Stripe subscriptions.",
             },
           },
           {
@@ -158,88 +210,14 @@ const structuredData = {
     {
       "@type": "FAQPage",
       "@id": `${DATA.url}/full-stack-saas-developer-for-hire#faq`,
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "How fast can you build and launch a full-stack SaaS MVP?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "A production-ready SaaS MVP with user authentication, database architecture, core functional workflow, responsive UI dashboard, and Stripe subscription billing is typically delivered in 1 to 3 weeks. Comprehensive enterprise or multi-tiered platforms take 3 to 6 weeks, broken down into testable weekly milestones.",
-          },
+      mainEntity: FAQS.map((faq) => ({
+        "@type": "Question",
+        name: faq.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.a,
         },
-        {
-          "@type": "Question",
-          name: "What tech stack do you use for full-stack SaaS development?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "For modern SaaS builds, I primarily use Next.js 15/16 (App Router, Server Actions, SSR), React 19, TypeScript, and Tailwind CSS on the frontend. On the backend, I leverage Node.js, Express, PostgreSQL with Prisma or Drizzle ORM, Supabase, Redis for caching/rate-limiting, Stripe for billing, and deploy to Vercel or AWS with Docker containers.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can you build AI-powered SaaS products with OpenAI, Claude, or Gemini?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. I have extensive production experience building AI-native SaaS products, including streaming LLM responses (GPT-4o, Claude 3.5 Sonnet, Gemini Pro), Retrieval-Augmented Generation (RAG) with vector databases (Pinecone, pgvector), document parsing, OCR pipelines (Tesseract.js), and intelligent automation agents.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can you build a micro-SaaS pairing a Chrome extension with a web dashboard?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, this is one of my strongest specializations. I build monorepo architectures where a Manifest V3 Chrome extension and a Next.js web application share a single authentication system (Clerk, NextAuth, or Supabase), unified database state, and synchronized Stripe subscriptions (such as SuperDev Pro, Tech Copilot, and SuperX).",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do you integrate Stripe subscription billing and monetization?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "I implement full-cycle Stripe Billing workflows: monthly and annual tiered subscription plans, free trial enforcement, metered usage-based billing, self-serve Stripe Customer Portals, resilient webhook handlers for payment events (charge.succeeded, customer.subscription.deleted), and dunning management.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What are your hiring rates and engagement models?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "I offer both hourly contracts at $20/hr tracked on Upwork (Top Rated with 100% Job Success Score and automated work diary) and fixed-price milestone escrows with clear functional deliverables, automated test suites, and transparent sprint reviews.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How much does it cost to build a full-stack SaaS product?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Core MVP SaaS builds generally range from $800 to $1,800. AI-native applications with RAG and LLM integrations range from $1,500 to $3,500. Micro-SaaS monorepos pairing browser extensions with web dashboards range from $1,800 to $4,500. Dedicated engineering is available at $20/hr on Upwork.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Should I hire a freelance full-stack developer or an agency?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Hiring a specialized freelance full-stack developer gives you direct senior engineer communication, zero agency overhead, faster iteration cycles, and significant cost savings. Agencies frequently charge $100–$200/hr while delegating the actual coding to junior staff. With Pasindu, you get senior-level craftsmanship directly at $20/hr.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do you handle security, authentication, and database integrity?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "I build with security-first architecture: secure session tokens via NextAuth/Clerk/Supabase Auth, PostgreSQL Row-Level Security (RLS) policies, environment variable encryption, CSRF protection, input validation via Zod schemas, rate-limiting on sensitive API endpoints with Redis, and regular dependency vulnerability audits.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Where is Pasindu Piumal based and what time zones does he support?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Pasindu Piumal is based in Kegalle, Sri Lanka (GMT+5:30) and works remotely with founders and teams across the United States (EST/PST), United Kingdom (GMT/BST), Europe (CET), and Australia (AEST) with overlapping working hours and daily async updates via Slack, Telegram, Discord, or Upwork Messages.",
-          },
-        },
-      ],
+      })),
     },
     {
       "@type": "BreadcrumbList",
@@ -452,48 +430,6 @@ const TESTIMONIALS = [
   },
 ];
 
-const FAQS = [
-  {
-    q: "How fast can you build and launch a functional SaaS MVP?",
-    a: "A standard SaaS MVP featuring user authentication, database architecture, the core functional workflow, a responsive UI dashboard, and Stripe subscription billing is typically delivered in 1 to 3 weeks. Comprehensive platforms with multi-role permissions or complex AI pipelines generally take 3 to 6 weeks, delivered in transparent weekly milestones.",
-  },
-  {
-    q: "What tech stack do you recommend for modern full-stack SaaS builds?",
-    a: "I recommend Next.js 15/16 (App Router, Server Actions) with React 19, TypeScript, and Tailwind CSS on the frontend. For backend services and persistence: Node.js, PostgreSQL with Supabase or Prisma, Redis for fast caching and rate limiting, and Stripe for payments. Deployments are automated on Vercel or AWS with Docker.",
-  },
-  {
-    q: "Can you build AI-native SaaS products with OpenAI, Claude, or Gemini?",
-    a: "Yes. I have deep hands-on experience building AI-native web apps: streaming LLM chat interfaces (GPT-4o, Claude 3.5 Sonnet, Gemini Pro), Retrieval-Augmented Generation (RAG) over PDFs and documents using vector embeddings, local and cloud OCR pipelines (Tesseract.js), and autonomous workflow agents.",
-  },
-  {
-    q: "Can you build a micro-SaaS pairing a Chrome extension with a web dashboard?",
-    a: "Yes. This is one of my greatest competitive advantages. I engineer unified monorepos where a Manifest V3 browser extension and a Next.js web application share a single authentication provider (Supabase, Clerk, NextAuth), unified user database, and synchronized Stripe subscriptions (e.g., SuperDev Pro, Tech Copilot, SuperX).",
-  },
-  {
-    q: "How do you implement Stripe subscription billing and monetization?",
-    a: "I handle the complete billing lifecycle: tiered monthly/annual subscriptions, usage-based metered billing, free trial management, self-serve Stripe Customer Portals, and resilient webhook handlers that keep user accounts and access permissions in sync automatically.",
-  },
-  {
-    q: "What are your hiring rates and engagement models?",
-    a: "I offer both hourly contracts ($20/hr tracked on Upwork with full time tracking and work diary) and fixed-price milestone projects (commission-free via Contra or verified escrow) with clearly defined deliverables and acceptance criteria. You only pay for code that meets your specifications.",
-  },
-  {
-    q: "How much does it cost to build a full-stack SaaS application?",
-    a: "A focused MVP SaaS ranges between $800 and $1,800. An AI-powered SaaS with RAG pipelines ranges from $1,500 to $3,500. Micro-SaaS monorepos pairing browser extensions with web dashboards range from $1,800 to $4,500. Dedicated development is $20/hr on Upwork.",
-  },
-  {
-    q: "Should I hire a freelance SaaS developer or an agency?",
-    a: "Agencies often charge $100–$200/hr, add unnecessary management layers, and frequently assign the real work to junior developers. Working with me gives you direct senior engineer communication, faster turnarounds, and top-tier craftsmanship at $20/hr with 100% accountability.",
-  },
-  {
-    q: "How do you handle database security, authentication, and user data privacy?",
-    a: "Every application is built with security best practices: secure session cookies via NextAuth/Clerk/Supabase Auth, PostgreSQL Row-Level Security (RLS) ensuring strict tenant isolation, encrypted environment variables, Zod schema validation on all inputs, API rate limiting, and automated database backups.",
-  },
-  {
-    q: "Where is Pasindu Piumal based and what time zones does he work with?",
-    a: "I am based in Kegalle, Sri Lanka (GMT+5:30) and work smoothly with founders across the US (EST/PST), UK (GMT), Europe (CET), and Australia (AEST). I maintain overlapping working hours and provide proactive daily asynchronous updates via Slack, Telegram, Discord, or Upwork.",
-  },
-];
 
 export default function FullStackSaaSDeveloperPage() {
   return (

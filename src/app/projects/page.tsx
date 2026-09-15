@@ -17,6 +17,22 @@ export const metadata: Metadata = {
     url: `${DATA.url}/projects`,
     siteName: `${DATA.name} Portfolio`,
     type: "website",
+    images: [
+      {
+        url: `${DATA.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Complete Project Portfolio & Case Studies | Pasindu Piumal",
+      },
+    ],
+  },
+  twitter: {
+    title: "Complete Project Portfolio & Case Studies | Pasindu Piumal",
+    description:
+      "Explore 113+ production Manifest V3 Chrome extensions, AI copilots, high-frequency web scrapers, and verified freelance deliverables.",
+    card: "summary_large_image",
+    creator: "@pasindupiumal03",
+    images: [`${DATA.url}/og-image.jpg`],
   },
 };
 

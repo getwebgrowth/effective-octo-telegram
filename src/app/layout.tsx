@@ -60,6 +60,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    google: "9a263851a416d3d0",
+    yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || undefined,
+    other: {
+      ...(process.env.NEXT_PUBLIC_BING_VERIFICATION
+        ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION }
+        : {}),
+    },
+  },
   openGraph: {
     title: `${DATA.name} | Freelance Chrome Extension Developer`,
     description: DATA.seoDescription,
@@ -69,10 +78,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${DATA.url}/me.webp`,
+        url: `${DATA.url}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: `${DATA.name} | Freelance Chrome Extension Developer`,
+        alt: `${DATA.name} — Chrome Extension Developer & Full-Stack SaaS Engineer | 175+ Projects, $1M+ Revenue`,
       },
     ],
   },
@@ -93,7 +102,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     creator: "@pasindupiumal03",
     site: "@pasindupiumal03",
-    images: [`${DATA.url}/me.webp`],
+    images: [`${DATA.url}/og-image.jpg`],
   },
   formatDetection: {
     email: false,
@@ -255,6 +264,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* AI/AEO Discovery Links — enables AI crawlers to find machine-readable knowledge bundles */}
+        <link rel="alternate" type="text/plain" title="LLM Context" href="/llms.txt" />
+        <link rel="alternate" type="text/plain" title="LLM Full Context" href="/llms-full.txt" />
+        <link rel="alternate" type="application/json" title="Open Knowledge Format" href="/okf.json" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

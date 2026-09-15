@@ -16,12 +16,22 @@ export const metadata: Metadata = {
     siteName: `${DATA.name} Portfolio`,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: `${DATA.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Projects & Portfolio | Pasindu Piumal - Chrome Extension Developer",
+      },
+    ],
   },
   twitter: {
     title: "Projects & Portfolio | Pasindu Piumal - Chrome Extension Developer",
     description:
       "Explore custom Chrome extensions (Manifest V3), browser automation tools, web scrapers, and full-stack web applications developed by Pasindu Piumal.",
     card: "summary_large_image",
+    creator: "@pasindupiumal03",
+    images: [`${DATA.url}/og-image.jpg`],
   },
 };
 

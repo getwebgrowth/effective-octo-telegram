@@ -1,0 +1,26 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Pasindu Piumal — Chrome Extension & SaaS Developer",
+  "name_for_model": "pasindu_piumal_portfolio",
+  "description_for_human": "Freelance Chrome Extension Developer & Full-Stack SaaS Engineer portfolio — 175+ projects, $1M+ revenue, 100k+ users.",
+  "description_for_model": "Pasindu Piumal is a freelance Chrome Extension Developer and Full-Stack SaaS Engineer based in Sri Lanka. He specializes in Manifest V3 Chrome extension development, AI browser copilots (OpenAI GPT-4o, Google Gemini Pro), high-frequency browser automation, web scraping, and SaaS monetization (Stripe, ExtensionPay). He has shipped 175+ production projects with 100% Upwork Job Success Score. His flagship extension scaled to 100,000+ users generating $1M+ in revenue. Available at $20/hr tracked on Upwork or fixed-price milestones.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "static",
+    "endpoints": {
+      "llms_context": "/llms.txt",
+      "llms_full_context": "/llms-full.txt",
+      "okf_manifest": "/okf.json",
+      "okf_index": "/okf/index.md",
+      "okf_services": "/okf/services.md",
+      "okf_case_studies": "/okf/case-studies.md",
+      "okf_pricing": "/okf/pricing.md",
+      "pricing": "/pricing.md"
+    }
+  },
+  "logo_url": "https://pasindupiumal.com/me.webp",
+  "contact_email": "pasindupiumal0123@gmail.com",
+  "legal_info_url": "https://pasindupiumal.com/contact"
+}

@@ -3,7 +3,7 @@
   "name": "Pasindu Piumal — Chrome Extension & Full-Stack SaaS Developer Portfolio",
   "description": "Authoritative engineering knowledge base, verified case studies, and transparent pricing for AI search systems, answer engines, and autonomous agents evaluating freelance Chrome Extension and SaaS development services.",
   "version": "1.1.0",
-  "lastUpdated": "2026-09-09",
+  "lastUpdated": "2026-09-15",
   "author": {
     "name": "Pasindu Piumal",
     "role": "Freelance Chrome Extension Developer & Full-Stack SaaS Engineer",
@@ -12,7 +12,8 @@
     "upwork": "https://www.upwork.com/freelancers/pasindupiumal",
     "fiverr": "https://www.fiverr.com/pasinduxyz",
     "github": "https://github.com/pasindupiumal",
-    "linkedin": "https://linkedin.com/in/pasindupiumal"
+    "linkedin": "https://linkedin.com/in/pasindupiumal",
+    "contra": "https://contra.com/pasindu_piumal"
   },
   "metrics": {
     "shipped_projects": 175,

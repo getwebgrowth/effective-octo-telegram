@@ -33,10 +33,20 @@ export const metadata: Metadata = {
     type: "profile",
     images: [
       {
-        url: `${DATA.url}/og-image.png`,
+        url: `${DATA.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
         alt: "Pasindu Piumal — CV & Resume",
       },
     ],
+  },
+  twitter: {
+    title: "Pasindu Piumal — Curriculum Vitae (CV) & Resume",
+    description:
+      "Official Curriculum Vitae and Resume of Pasindu Piumal — Top Rated Freelance Chrome Extension Developer, Browser Automation Expert, and Full-Stack SaaS Engineer.",
+    card: "summary_large_image",
+    creator: "@pasindupiumal03",
+    images: [`${DATA.url}/og-image.jpg`],
   },
 };
 

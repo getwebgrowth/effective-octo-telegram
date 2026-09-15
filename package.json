@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "@content-collections/core": "^0.13.1",

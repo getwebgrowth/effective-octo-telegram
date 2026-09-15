@@ -70,6 +70,14 @@ export const metadata: Metadata = {
     siteName: `${DATA.name} Portfolio`,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: `${DATA.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Hire Expert Freelance Chrome Extension Developer | Pasindu Piumal",
+      },
+    ],
   },
   twitter: {
     title: "Hire Expert Freelance Chrome Extension Developer (Manifest V3) | Pasindu Piumal",
@@ -77,8 +85,52 @@ export const metadata: Metadata = {
       "Hire Pasindu Piumal — Top Rated Chrome Extension Developer with 175+ shipped projects, $1M+ revenue generated, and 100k+ active users. Manifest V3, AI overlays, automation & SaaS monetization.",
     card: "summary_large_image",
     creator: "@pasindupiumal03",
+    images: [`${DATA.url}/og-image.jpg`],
   },
 };
+
+const FAQS = [
+  {
+    q: "How fast can you build and deliver a custom Chrome extension?",
+    a: "Simple extensions and MVPs are typically delivered within 3 to 7 days. Complex full-stack extensions (with custom backend APIs, AI models, multi-platform automations, or payment systems) usually take 2 to 4 weeks. Every project is structured with clear milestones so you can test early and iterate fast.",
+  },
+  {
+    q: "Do you help with Chrome Web Store submission and approval?",
+    a: "Yes, 100%. I handle extension bundling, manifest permission justifications, privacy policy requirements, and Single Purpose Policy compliance to ensure your extension gets approved on the Chrome Web Store and Edge Add-ons with zero compliance headaches.",
+  },
+  {
+    q: "How do you handle Manifest V3 service worker lifecycle limitations?",
+    a: "Manifest V3 automatically terminates idle background service workers after 30 seconds. I engineer robust solutions using chrome.storage state persistence, alarms API schedules, Chrome Offscreen API keep-alives, and declarativeNetRequest rules to ensure continuous, rock-solid operation.",
+  },
+  {
+    q: "Can the extension connect to my custom database, backend API, or AI models?",
+    a: "Absolutely. I regularly integrate Chrome extensions with REST and GraphQL APIs, WebSockets, Supabase, Firebase, Node.js/Express, MongoDB, PostgreSQL, OpenAI, and Gemini Pro endpoints with secure authorization token management.",
+  },
+  {
+    q: "What if other developers tried and couldn't get the automation working?",
+    a: "Many of my best projects come from clients whose previous developers hit a wall with modern SPAs, Shadow DOMs, CSRF headers, or anti-bot protections. For instance, on RoboApply, 20+ developers failed to get multi-ATS autofill working over a 12-month period — I built the working Ashby integration within one week and then rolled out the rest of the platforms.",
+  },
+  {
+    q: "How do we work together (hourly vs. fixed price)?",
+    a: "I work through Upwork (Top Rated, 100% Job Success Score at $20/hr with transparent time tracking) or via fixed-price milestone contracts where each feature is verified before milestone release.",
+  },
+  {
+    q: "How much does it cost to build a Chrome extension?",
+    a: "Costs vary by complexity. Simple Chrome extensions (popup, basic API calls) start at $150–$400. AI-powered copilot extensions with OpenAI or Gemini Pro integration typically range from $400–$900. Browser automation bots with anti-detection and multi-site support run $500–$1,200. Full-stack SaaS platforms with Chrome Web Store extensions, backend APIs, subscription billing, and user dashboards range from $1,200–$3,500. My hourly rate is $20/hr tracked on Upwork.",
+  },
+  {
+    q: "What is the best technology stack for building Chrome extensions?",
+    a: "For production Chrome extensions, I use Manifest V3 with React 19 or vanilla TypeScript for the popup and side panel UI, Tailwind CSS for styling, Chrome Extension APIs (chrome.storage, chrome.runtime, chrome.tabs, declarativeNetRequest), and Service Workers for background processing. For AI extensions, I integrate OpenAI GPT-4o or Google Gemini Pro via streaming APIs. For monetization, Stripe or ExtensionPay handles in-app subscriptions.",
+  },
+  {
+    q: "Should I hire a freelance Chrome extension developer or an agency?",
+    a: "For specialized Chrome extension work, a dedicated freelance developer with deep Manifest V3 expertise typically delivers faster and at lower cost than agencies. Agencies often charge $80–$150/hr and assign junior developers without Chrome API experience. I work directly as a senior engineer at $20/hr with transparent Upwork time tracking, full communication access, and hands-on architecture decisions — no middlemen or handoffs.",
+  },
+  {
+    q: "Where is Pasindu Piumal based and what time zones does he work with?",
+    a: "I'm based in Kegalle, Sri Lanka (GMT+5:30) and work remotely with clients across the US, UK, EU, and Australia. I maintain flexible hours to overlap with all major time zones and communicate daily via Slack, Telegram, Discord, or Upwork Messages with async updates and Loom video walkthroughs.",
+  },
+];
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -149,80 +201,14 @@ const structuredData = {
     {
       "@type": "FAQPage",
       "@id": `${DATA.url}/chrome-extension-developer-for-hire#faq`,
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "How fast can you build and deliver a custom Chrome extension?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Initial prototypes and MVPs are typically delivered within 3 to 7 days depending on scope. Complex full-stack extensions with multi-platform automations or AI integrations generally take 2 to 4 weeks, structured in transparent milestones.",
-          },
+      mainEntity: FAQS.map((faq) => ({
+        "@type": "Question",
+        name: faq.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.a,
         },
-        {
-          "@type": "Question",
-          name: "Do you handle Chrome Web Store submission and approval?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. I guide you through store packaging, permission justifications, privacy policy compliance, and review feedback to ensure smooth Chrome Web Store and Edge Add-ons approval.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do you handle Manifest V3 service worker lifecycle and rate limits?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Manifest V3 terminates idle service workers after 30 seconds. I engineer resilient state persistence via chrome.storage.local/session, Chrome Offscreen API keep-alives for continuous processing, and declarativeNetRequest rules for high-speed network interception.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can you fix broken extensions or complete projects where past developers failed?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Many of my clients come to me after past developers failed to get complex automations or ATS integrations working. For example, on the RoboApply platform, 20+ developers failed to build reliable multi-ATS autofill; I engineered the working Ashby integration within one week and then rolled out the remaining platforms.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What are your hiring and pricing models?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "I offer both hourly contracts ($20/hr on Upwork with full time tracking) and fixed-price milestone projects with defined deliverables and platform-by-platform testing.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How much does it cost to build a Chrome extension?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Costs vary by complexity. Simple Chrome extensions start at $150–$400. AI-powered copilot extensions range from $400–$900. Browser automation bots run $500–$1,200. Full-stack SaaS platforms with extensions range from $1,200–$3,500. Hourly rate is $20/hr tracked on Upwork.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the best technology stack for building Chrome extensions?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "For production Chrome extensions: Manifest V3 with React 19 or vanilla TypeScript, Tailwind CSS, Chrome Extension APIs (chrome.storage, chrome.runtime, chrome.tabs, declarativeNetRequest), and Service Workers. For AI extensions: OpenAI GPT-4o or Google Gemini Pro via streaming APIs. For monetization: Stripe or ExtensionPay.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Should I hire a freelance Chrome extension developer or an agency?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "For specialized Chrome extension work, a dedicated freelance developer with deep Manifest V3 expertise typically delivers faster and at lower cost than agencies. Agencies charge $80–$150/hr with junior handoffs. Pasindu Piumal works directly as a senior engineer at $20/hr with transparent Upwork time tracking.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Where is Pasindu Piumal based and what time zones does he work with?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Pasindu Piumal is based in Kegalle, Sri Lanka (GMT+5:30) and works remotely with clients across the US, UK, EU, and Australia with flexible hours and daily async communication via Slack, Telegram, Discord, or Upwork Messages.",
-          },
-        },
-      ],
+      })),
     },
     {
       "@type": "BreadcrumbList",
@@ -427,48 +413,6 @@ const TESTIMONIALS = [
   },
 ];
 
-const FAQS = [
-  {
-    q: "How fast can you build and deliver a custom Chrome extension?",
-    a: "Simple extensions and MVPs are typically delivered within 3 to 7 days. Complex full-stack extensions (with custom backend APIs, AI models, multi-platform automations, or payment systems) usually take 2 to 4 weeks. Every project is structured with clear milestones so you can test early and iterate fast.",
-  },
-  {
-    q: "Do you help with Chrome Web Store submission and approval?",
-    a: "Yes, 100%. I handle extension bundling, manifest permission justifications, privacy policy requirements, and Single Purpose Policy compliance to ensure your extension gets approved on the Chrome Web Store and Edge Add-ons with zero compliance headaches.",
-  },
-  {
-    q: "How do you handle Manifest V3 service worker lifecycle limitations?",
-    a: "Manifest V3 automatically terminates idle background service workers after 30 seconds. I engineer robust solutions using chrome.storage state persistence, alarms API schedules, Chrome Offscreen API keep-alives, and declarativeNetRequest rules to ensure continuous, rock-solid operation.",
-  },
-  {
-    q: "Can the extension connect to my custom database, backend API, or AI models?",
-    a: "Absolutely. I regularly integrate Chrome extensions with REST and GraphQL APIs, WebSockets, Supabase, Firebase, Node.js/Express, MongoDB, PostgreSQL, OpenAI, and Gemini Pro endpoints with secure authorization token management.",
-  },
-  {
-    q: "What if other developers tried and couldn't get the automation working?",
-    a: "Many of my best projects come from clients whose previous developers hit a wall with modern SPAs, Shadow DOMs, CSRF headers, or anti-bot protections. For instance, on RoboApply, 20+ developers failed to get multi-ATS autofill working over a 12-month period — I built the working Ashby integration within one week and then rolled out the rest of the platforms.",
-  },
-  {
-    q: "How do we work together (hourly vs. fixed price)?",
-    a: "I work through Upwork (Top Rated, 100% Job Success Score at $20/hr with transparent time tracking) or via fixed-price milestone contracts where each feature is verified before milestone release.",
-  },
-  {
-    q: "How much does it cost to build a Chrome extension?",
-    a: "Costs vary by complexity. Simple Chrome extensions (popup, basic API calls) start at $150–$400. AI-powered copilot extensions with OpenAI or Gemini Pro integration typically range from $400–$900. Browser automation bots with anti-detection and multi-site support run $500–$1,200. Full-stack SaaS platforms with Chrome Web Store extensions, backend APIs, subscription billing, and user dashboards range from $1,200–$3,500. My hourly rate is $20/hr tracked on Upwork.",
-  },
-  {
-    q: "What is the best technology stack for building Chrome extensions?",
-    a: "For production Chrome extensions, I use Manifest V3 with React 19 or vanilla TypeScript for the popup and side panel UI, Tailwind CSS for styling, Chrome Extension APIs (chrome.storage, chrome.runtime, chrome.tabs, declarativeNetRequest), and Service Workers for background processing. For AI extensions, I integrate OpenAI GPT-4o or Google Gemini Pro via streaming APIs. For monetization, Stripe or ExtensionPay handles in-app subscriptions.",
-  },
-  {
-    q: "Should I hire a freelance Chrome extension developer or an agency?",
-    a: "For specialized Chrome extension work, a dedicated freelance developer with deep Manifest V3 expertise typically delivers faster and at lower cost than agencies. Agencies often charge $80–$150/hr and assign junior developers without Chrome API experience. I work directly as a senior engineer at $20/hr with transparent Upwork time tracking, full communication access, and hands-on architecture decisions — no middlemen or handoffs.",
-  },
-  {
-    q: "Where is Pasindu Piumal based and what time zones does he work with?",
-    a: "I'm based in Kegalle, Sri Lanka (GMT+5:30) and work remotely with clients across the US, UK, EU, and Australia. I maintain flexible hours to overlap with all major time zones and communicate daily via Slack, Telegram, Discord, or Upwork Messages with async updates and Loom video walkthroughs.",
-  },
-];
 
 export default function ChromeExtensionDeveloperForHirePage() {
   return (
