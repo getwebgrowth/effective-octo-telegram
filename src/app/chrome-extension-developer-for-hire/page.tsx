@@ -681,6 +681,12 @@ export default function ChromeExtensionDeveloperForHirePage() {
                   Web Store Proof
                 </Button>
               </Link>
+              <Link href="/full-stack-saas-developer-for-hire">
+                <Button variant="ghost" size="sm" className="rounded-xl h-10 px-4 text-xs sm:text-sm font-medium text-muted-foreground hover:text-foreground w-full sm:w-auto">
+                  <Layers className="mr-1.5 size-3.5" />
+                  Full-Stack SaaS Services
+                </Button>
+              </Link>
             </div>
           </BlurFade>
         </section>
@@ -857,6 +863,26 @@ export default function ChromeExtensionDeveloperForHirePage() {
               </BlurFade>
             ))}
           </div>
+
+          {/* Cross-Link Callout to Full-Stack SaaS Developer Page */}
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <div className="p-4 sm:p-5 rounded-2xl border border-primary/25 bg-gradient-to-r from-primary/10 via-background to-muted/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-2xs">
+              <div className="space-y-1">
+                <div className="flex items-center gap-2">
+                  <span className="size-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="text-xs font-bold uppercase tracking-wider text-primary">Need More Than Just an Extension?</span>
+                </div>
+                <p className="text-xs sm:text-sm text-foreground/80 dark:text-muted-foreground leading-relaxed">
+                  I also build complete full-stack web applications, Supabase/PostgreSQL backends, Stripe licensing, and Next.js SaaS platforms.
+                </p>
+              </div>
+              <Link href="/full-stack-saas-developer-for-hire" className="shrink-0">
+                <Button size="sm" variant="outline" className="rounded-xl border-primary/30 hover:bg-primary/10 text-xs font-semibold">
+                  <span>Full-Stack SaaS Services →</span>
+                </Button>
+              </Link>
+            </div>
+          </BlurFade>
         </section>
 
         {/* CURATED FLAGSHIP CASE STUDIES FROM MASTER PROJECTS */}
@@ -1241,6 +1267,13 @@ export default function ChromeExtensionDeveloperForHirePage() {
             >
               GitHub
             </a>
+            <span>•</span>
+            <Link
+              href="/full-stack-saas-developer-for-hire"
+              className="hover:text-primary transition-colors underline underline-offset-4 font-semibold text-primary"
+            >
+              Full-Stack SaaS Services
+            </Link>
           </div>
         </section>
       </div>

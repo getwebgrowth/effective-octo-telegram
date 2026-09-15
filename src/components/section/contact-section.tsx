@@ -38,7 +38,14 @@ export default function ContactSection() {
             href="/chrome-extension-developer-for-hire"
             className="text-primary font-semibold hover:underline underline-offset-4"
           >
-            Chrome Extension Developer Services & Rates
+            Chrome Extension Services
+          </Link>{" "}
+          and{" "}
+          <Link
+            href="/full-stack-saas-developer-for-hire"
+            className="text-primary font-semibold hover:underline underline-offset-4"
+          >
+            Full-Stack SaaS Developer Services
           </Link>
           .
         </p>

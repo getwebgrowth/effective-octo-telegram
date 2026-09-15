@@ -213,9 +213,12 @@ export default function ContactPage() {
                     <BlurFade delay={BLUR_FADE_DELAY * 3.5}>
                         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-xl border bg-muted/20 text-xs text-muted-foreground">
                             <span>Prefer to review services first?</span>
-                            <div className="flex items-center gap-3">
+                            <div className="flex flex-wrap items-center gap-3">
                                 <Link href="/chrome-extension-developer-for-hire" className="font-semibold text-primary hover:underline">
                                     Chrome Extension Services →
+                                </Link>
+                                <Link href="/full-stack-saas-developer-for-hire" className="font-semibold text-primary hover:underline">
+                                    Full-Stack SaaS Services →
                                 </Link>
                                 <Link href="/projects" className="font-semibold text-foreground hover:underline">
                                     Browse 113+ Projects →
