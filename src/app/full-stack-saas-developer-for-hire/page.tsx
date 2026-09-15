@@ -269,7 +269,7 @@ const SAAS_CAPABILITIES = [
     badge: "Next.js 15/16 • React 19 • TailwindCSS",
     description:
       "High-performance user interfaces built with Next.js App Router, Server Components, and responsive Tailwind layouts. Clean interactive dashboards, real-time metrics charts, dark/light modes, keyboard shortcuts, and frictionless onboarding flows that convert visitors into paying subscribers.",
-    projects: "Featured in: SuperDev Pro (6k+ users), SuperX Analytics, Alphyre Platform",
+    projects: "Featured in: No-Code Web Scraper (Live SaaS), SuperDev Pro (6k+ users), SuperX Analytics",
   },
   {
     icon: Server,
@@ -293,7 +293,7 @@ const SAAS_CAPABILITIES = [
     badge: "Manifest V3 + Web Dashboard Sync",
     description:
       "Unified hybrid platforms where a browser extension works alongside a centralized web application. Synchronized database state, shared authentication sessions, live background data piping, and consolidated billing across both web and browser environments.",
-    projects: "Featured in: SuperDev Pro, Tech Copilot, FullGrab Screenshot Platform",
+    projects: "Featured in: No-Code Web Scraper (1k+ users, nocodewebscraper.com), SuperDev Pro, Tech Copilot",
   },
   {
     icon: CreditCard,

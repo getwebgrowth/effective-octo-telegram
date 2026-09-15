@@ -154,6 +154,7 @@ function getPriorityRank(href: string, title: string): number {
   if (h.includes("superdev-pro") || t.includes("superdev pro")) return 5;
   if (h.includes("superx") || t.includes("superx")) return 6;
   if (h.includes("alphyre") || t.includes("alphyre")) return 7;
+  if (h.includes("no-code-web-scraper") || t.includes("no-code web scraper") || t.includes("nocodewebscraper")) return 8;
   return 99;
 }
 
@@ -185,7 +186,8 @@ export default function ProjectsPage() {
     const hideFromFeatured = Boolean(
       post.hideFromFeatured === true ||
       slug === "business-os" ||
-      slug === "freelancer-workspace"
+      slug === "freelancer-workspace" ||
+      slug === "walmart-product-scraper"
     );
     
     const searchCorpus = (

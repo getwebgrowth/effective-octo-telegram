@@ -252,6 +252,38 @@ export const DATA = {
       video: "",
     },
     {
+      title: "No-Code Web Scraper — Visual Web Scraping & Data Extraction SaaS",
+      href: "/projects/no-code-web-scraper",
+      dates: "Jan 2026 - Present",
+      active: true,
+      featured: true,
+      description:
+        "Full-featured no-code web scraping Chrome extension and SaaS platform serving 1,000+ active users with 4.8★ rating on the Chrome Web Store. Visual point-and-click selector, automatic repeating list detection, bulk URL crawler, and 1-click export to Excel/CSV/JSON. Monetized with $99 Lifetime Access.",
+      technologies: [
+        "Manifest V3",
+        "Chrome Extension API",
+        "React.js",
+        "Node.js",
+        "Shadow DOM Traversal",
+        "SaaS Monetization",
+        "Excel / CSV Export",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://nocodewebscraper.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Store",
+          href: "https://chromewebstore.google.com/detail/no-code-web-scraper/dilajeboajcipcglgmbbkcjdddbbnppb",
+          icon: <Icons.store className="size-3" />,
+        },
+      ],
+      image: "/projects/no-code-web-scraper.png",
+      video: "https://c1.tablecdn.com/ncws/nocodewebscraper.mp4",
+    },
+    {
       title: "Tech Copilot — Automotive AI Chrome Extension (Live SaaS · $5.99/mo)",
       href: "/projects/tech-copilot",
       dates: "Jun 2026 - Jul 2026",
