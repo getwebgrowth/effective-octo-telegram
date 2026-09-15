@@ -319,7 +319,16 @@ export default async function ProjectPage({
 
           {post.summary && (
             <p className="text-muted-foreground text-sm sm:text-base leading-relaxed text-pretty pt-1 border-l-2 border-primary/40 pl-3.5 italic bg-primary/5 dark:bg-primary/5 py-1.5 rounded-r-lg">
-              {post.summary}
+              {post.summary.includes("Engineered working Ashby integration in 1 week after 20+ prior developers failed.") ? (
+                <>
+                  {post.summary.replace("Engineered working Ashby integration in 1 week after 20+ prior developers failed.", "").trim()}{" "}
+                  <span className="not-italic font-bold text-foreground bg-amber-500/20 dark:bg-amber-400/20 text-amber-900 dark:text-amber-200 px-2 py-0.5 rounded-md border border-amber-500/40 shadow-xs inline-block my-1">
+                    ⚡ Engineered working Ashby integration in 1 week after 20+ prior developers failed.
+                  </span>
+                </>
+              ) : (
+                post.summary
+              )}
             </p>
           )}
 

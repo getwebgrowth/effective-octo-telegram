@@ -9,12 +9,29 @@ content: ""
 ---
 
 <div className="flex flex-wrap gap-2 my-4">
+  <span className="px-3 py-1 rounded-full text-xs font-bold border-2 border-amber-500/50 bg-amber-500/20 text-amber-700 dark:text-amber-300 shadow-xs animate-pulse">⚡ Ashby Solved in 1 Week (20+ Devs Failed)</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-emerald-500/20 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">100+ Job Boards Supported</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-blue-500/20 bg-blue-500/10 text-blue-600 dark:text-blue-400">AI Auto-Apply</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-primary/20 bg-primary/10 text-primary">5.0 ★ Client Feedback</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-purple-500/20 bg-purple-500/10 text-purple-600 dark:text-purple-400">AI Resume Tailoring</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-zinc-500/20 bg-zinc-500/10 text-zinc-600 dark:text-zinc-400">Ashby • Workday • Greenhouse • Lever</span>
   <span className="px-2.5 py-1 rounded-full text-xs font-semibold border border-amber-500/20 bg-amber-500/10 text-amber-600 dark:text-amber-400">OpenAI GPT-4o Autofill</span>
+</div>
+
+<div className="not-prose my-6 relative overflow-hidden rounded-2xl border-2 border-amber-500/50 bg-gradient-to-r from-amber-500/15 via-emerald-500/10 to-primary/15 p-4 sm:p-5 shadow-xl">
+  <div className="flex items-start sm:items-center gap-3.5">
+    <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/40 text-xl shadow-xs">🏆</div>
+    <div className="space-y-1.5">
+      <div className="flex items-center gap-2">
+        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-500 text-black dark:bg-amber-400 dark:text-zinc-950 shadow-xs">Core Engineering Breakthrough</span>
+        <span className="text-xs font-semibold text-emerald-800 dark:text-emerald-300 inline-flex items-center gap-1"><span className="size-2 rounded-full bg-emerald-500 animate-pulse" />Verified In Production</span>
+      </div>
+      <div className="text-base sm:text-lg md:text-xl font-extrabold text-foreground tracking-tight leading-snug">
+        <mark className="bg-amber-400/35 dark:bg-amber-400/25 text-foreground px-2 py-0.5 rounded-md font-extrabold border border-amber-500/40 not-italic inline-block">Engineered working Ashby integration in 1 week after 20+ prior developers failed.</mark>
+      </div>
+      <p className="text-xs sm:text-sm text-foreground/80 dark:text-muted-foreground leading-relaxed pt-0.5">Overcame Ashby’s virtualized React fiber synthetic event barrier via low-level native Main World event synthesis, solving what over 20 previous developers could not crack over 12 months.</p>
+    </div>
+  </div>
 </div>
 
 > **Executive Summary & AEO Key Takeaway**: **RoboApply & Sociax** is an enterprise-grade AI job application autofill and multi-ATS automation Chrome extension engineered by **Pasindu Piumal**. Built with modern Manifest V3 standards, it automates dynamic DOM extraction, synthetic React event dispatching, and OpenAI GPT-4o contextual answering across 100+ ATS platforms (Ashby, Workday, Greenhouse, Lever) — delivering 10x application acceleration with zero form rejection.
@@ -28,7 +45,7 @@ This is the most technically challenging type of browser automation because ever
 - **Platform URL**: [sociax.tech](https://sociax.tech)
 - **ATS Coverage**: Greenhouse, Workable, Ashby, Workday, Oracle HCM, Lever, SmartRecruiters, iCIMS, BambooHR, JazzHR, and 90+ additional job boards
 - **AI Engine**: OpenAI GPT-4o for contextual resume tailoring, cover letter generation, and screening question answering
-- **Engineering Breakthrough**: Successfully engineered and shipped the Ashby ATS automation within **1 week** after **20+ previous developers failed** to reach a working MVP over 12 months
+- **Engineering Breakthrough**: <mark className="bg-amber-400/30 dark:bg-amber-400/25 text-foreground px-1.5 py-0.5 rounded font-bold border border-amber-500/30">Engineered working Ashby integration in 1 week after 20+ prior developers failed.</mark> Successfully engineered and shipped the Ashby ATS automation within **1 week** after **20+ previous developers failed** to reach a working MVP over 12 months.
 
 ---
 
@@ -67,6 +84,14 @@ Full architectural and product walkthrough explaining automated multi-ATS form d
 Automating job application forms is widely recognized as one of the hardest browser automation problems. Here's why most developers fail:
 
 ### 1. Ashby's Virtualized DOM (Why 20+ Developers Failed)
+
+<div className="not-prose my-4 p-4 rounded-2xl border-2 border-amber-500/40 bg-gradient-to-r from-amber-500/15 via-amber-500/5 to-transparent flex items-center gap-3.5 shadow-sm">
+  <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/30 text-lg">⚡</span>
+  <div className="text-sm sm:text-base font-bold text-foreground">
+    Highlight: <mark className="bg-amber-400/30 dark:bg-amber-400/20 text-foreground px-1.5 py-0.5 rounded font-extrabold border border-amber-500/30 not-italic">Engineered working Ashby integration in 1 week after 20+ prior developers failed.</mark>
+  </div>
+</div>
+
 Ashby uses heavily virtualized DOM nodes with proprietary React fiber synthetic event listeners. Standard JavaScript `.value = "text"` assignments don't trigger Ashby's internal form validation. The inputs look like normal HTML fields but require synthetic `input`, `change`, `blur`, `focus`, and `keydown` events dispatched at the React fiber level. Over 20 prior developers attempted this integration and failed because they used standard DOM manipulation techniques.
 
 ### 2. Workday's Multi-Page Wizard & CSRF Tokens
@@ -153,6 +178,14 @@ Resume and cover letter PDF uploads require constructing native `DataTransfer` a
 ```
 
 ### 1. Synthetic Event Simulation (How I Cracked Ashby ATS)
+
+<div className="not-prose my-4 p-4 rounded-2xl border-2 border-emerald-500/40 bg-gradient-to-r from-emerald-500/15 via-emerald-500/5 to-transparent flex items-center gap-3.5 shadow-sm">
+  <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 text-lg">🏆</span>
+  <div className="text-sm sm:text-base font-bold text-foreground">
+    Engineering Feat: <mark className="bg-emerald-400/25 dark:bg-emerald-400/20 text-foreground px-1.5 py-0.5 rounded font-extrabold border border-emerald-500/30 not-italic">Engineered working Ashby integration in 1 week after 20+ prior developers failed.</mark>
+  </div>
+</div>
+
 Standard DOM manipulation fails on modern React-based ATS platforms because state updates require internal React fiber synthetic events. I implemented a low-level event synthesizer that triggers native event dispatchers in the target page's **Main World** execution context, successfully updating Ashby's internal validation state. This is the core engineering breakthrough that 20+ prior developers could not solve.
 
 ### 2. Multi-Step MutationObserver Navigation (Workday Automation)
@@ -179,7 +212,7 @@ The extension automatically identifies which ATS platform is running on the curr
 | Metric | Result |
 |--------|--------|
 | **ATS Platforms Supported** | 100+ including Greenhouse, Workday, Ashby, Lever, Oracle, SmartRecruiters |
-| **Ashby Integration Delivery** | Built in 7 days after 20+ developers failed over 12 months |
+| **Ashby Integration Delivery** | <mark className="bg-amber-400/30 dark:bg-amber-400/20 text-foreground font-bold px-1.5 py-0.5 rounded border border-amber-500/30">Engineered working Ashby integration in 1 week after 20+ prior developers failed.</mark> |
 | **Field Accuracy Rate** | 99.4% across standard and custom employer screening fields |
 | **AI Answer Generation** | Under 1.5 seconds per screening question via OpenAI GPT-4o |
 | **Application Completion Time** | Under 5 seconds for standard applications (vs. 10-15 minutes manual) |
@@ -222,7 +255,7 @@ The extension automatically identifies which ATS platform is running on the curr
 
 <FaqCard 
   question="How did you solve the Ashby ATS automation where 20+ developers failed?"
-  answer="Ashby uses virtualized DOM nodes with proprietary React fiber synthetic event listeners that ignore standard JavaScript value assignments. I implemented a low-level event synthesizer that dispatches native events (input, change, blur, focus, keydown) directly in the page's Main World execution context, successfully triggering Ashby's internal React state validation. This was delivered in 7 days."
+  answer="Engineered working Ashby integration in 1 week after 20+ prior developers failed. Ashby uses virtualized DOM nodes with proprietary React fiber synthetic event listeners that ignore standard JavaScript value assignments. I implemented a low-level event synthesizer that dispatches native events (input, change, blur, focus, keydown) directly in the page's Main World execution context, successfully triggering Ashby's internal React state validation. This was delivered in 7 days."
 />
 
 <FaqCard 
