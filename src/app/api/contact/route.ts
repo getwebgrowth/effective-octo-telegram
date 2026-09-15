@@ -89,17 +89,20 @@ export async function POST(req: Request) {
       console.error("FormSubmit delivery failed, checking fallbacks...", err);
     }
 
-    // 3. Web3Forms fallback if access key provided
-    if (process.env.WEB3FORMS_ACCESS_KEY) {
+    // 3. Web3Forms fallback
+    const web3Key = process.env.WEB3FORMS_ACCESS_KEY || "abd550dd-1538-4d45-887d-1f1be20b2556";
+    if (web3Key) {
       try {
         const web3Res = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
+            Origin: "https://pasindupiumal.com",
+            Referer: "https://pasindupiumal.com/contact",
           },
           body: JSON.stringify({
-            access_key: process.env.WEB3FORMS_ACCESS_KEY,
+            access_key: web3Key,
             name: fullName,
             email: email,
             phone: phone || "N/A",
