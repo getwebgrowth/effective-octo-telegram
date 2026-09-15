@@ -160,7 +160,14 @@ function getPriorityRank(href: string, title: string): number {
 export default function ProjectsPage() {
   const mdxProjects: SerializedProject[] = allPosts.map((post) => {
     const slug = post._meta.path.replace(/\.mdx$/, "");
-    const isExplicitNonFiverr = post.isFiverr === false || slug === "business-os" || slug === "freelancer-workspace";
+    const isExplicitNonFiverr =
+      post.isFiverr === false ||
+      slug === "business-os" ||
+      slug === "freelancer-workspace" ||
+      slug === "bonk-terminal" ||
+      slug === "no-code-web-scraper" ||
+      slug === "office-os" ||
+      slug === "amazon-product-scraper";
     const isFiverr = 
       !isExplicitNonFiverr && (
         post.isFiverr === true ||
