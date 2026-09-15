@@ -94,7 +94,7 @@ export function ProjectsClient({
       setActiveTab("fiverr");
     } else if (target === "extensions") {
       setActiveTab("extensions");
-    } else if (target === "websites" || target === "saas") {
+    } else if (target === "websites" || target === "saas" || target === "web3") {
       setActiveTab("websites");
     } else if (target === "google apps script" || target === "gas") {
       setActiveTab("google apps script");

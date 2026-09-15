@@ -22,18 +22,26 @@ export const metadata: Metadata = {
 
 const ADDITIONAL_PROJECTS: any[] = [];
 
-function extractTechnologies(title: string, content: string = ""): string[] {
+function extractTechnologies(title: string, content: string = "", category: string = ""): string[] {
   const techs: string[] = [];
+  const t = title.toLowerCase();
   const text = (title + " " + content).toLowerCase();
   
-  if (text.includes("manifest v3") || text.includes("extension") || text.includes("chrome")) techs.push("Manifest V3", "Chrome Extension API");
-  if (text.includes("openai") || text.includes("gpt") || text.includes("ai")) techs.push("OpenAI API");
+  const isExtension = 
+    category === "extensions" ||
+    t.includes("extension") ||
+    text.includes("manifest v3") ||
+    text.includes("chrome extension") ||
+    text.includes("chrome web store");
+
+  if (isExtension) techs.push("Manifest V3", "Chrome Extension API");
+  if (text.includes("openai") || text.includes("gpt") || text.includes("ai copilot") || t.includes("ai")) techs.push("OpenAI API");
   if (text.includes("react")) techs.push("React.js");
   if (text.includes("next.js") || text.includes("nextjs")) techs.push("Next.js");
   if (text.includes("tailwind")) techs.push("TailwindCSS");
   if (text.includes("google apps script") || text.includes("sheets")) techs.push("Google Apps Script");
-  if (text.includes("dom") || text.includes("automation")) techs.push("DOM Automation");
-  if (text.includes("solana") || text.includes("web3") || text.includes("crypto")) techs.push("Web3.js");
+  if ((text.includes("dom") || text.includes("automation")) && isExtension) techs.push("DOM Automation");
+  if (text.includes("solana") || text.includes("web3") || text.includes("crypto") || text.includes("defi")) techs.push("Web3.js");
 
   if (techs.length === 0) {
     techs.push("TypeScript", "React.js", "Web Engineering");
@@ -76,21 +84,25 @@ function getProjectCategory(title: string, summary: string = "", content: string
     return "google apps script";
   }
 
+  const isDedicatedExtension = (t.includes("extension") || t.includes("chrome")) && !t.includes("superdev") && !t.includes("superx") && !t.includes("saas platform");
+
   if (
-    t.includes("solana") ||
-    t.includes("web3") ||
-    t.includes("saas platform") ||
-    t.includes("superdev pro") ||
-    t.includes("superx") ||
-    t.includes("fraktom") ||
-    t.includes("polybiuos") ||
-    t.includes("alphyre") ||
-    t.includes("design system") ||
-    t.includes("api design") ||
-    t.includes("portfolio") ||
-    t.includes("git workflow") ||
-    t.includes("next.js") ||
-    (t.includes("saas") && !t.includes("chrome extension") && !t.includes("manifest v3"))
+    !isDedicatedExtension && (
+      t.includes("solana") ||
+      t.includes("web3") ||
+      t.includes("saas platform") ||
+      t.includes("superdev pro") ||
+      t.includes("superx") ||
+      t.includes("fraktom") ||
+      t.includes("polybiuos") ||
+      t.includes("alphyre") ||
+      t.includes("design system") ||
+      t.includes("api design") ||
+      (t.includes("portfolio") && !t.includes("extension")) ||
+      t.includes("git workflow") ||
+      t.includes("next.js") ||
+      (t.includes("saas") && !t.includes("chrome extension") && !t.includes("manifest v3"))
+    )
   ) {
     return "websites";
   }
@@ -168,7 +180,9 @@ export default function ProjectsPage() {
       slug === "bonk-terminal" ||
       slug === "no-code-web-scraper" ||
       slug === "office-os" ||
-      slug === "amazon-product-scraper";
+      slug === "amazon-product-scraper" ||
+      slug === "polybiuos" ||
+      slug === "solana-tracker";
     const isFiverr = 
       !isExplicitNonFiverr && (
         post.isFiverr === true ||
@@ -182,7 +196,7 @@ export default function ProjectsPage() {
       
     const fiverrSub = isFiverr ? (post.fiverrSubCategory || detectFiverrSubCategory(post.title, post.summary, post.content)) : null;
     const category = getProjectCategory(post.title, post.summary, post.content);
-    const technologies = extractTechnologies(post.title, post.content);
+    const technologies = extractTechnologies(post.title, post.content, category);
     const hideFromFeatured = Boolean(
       post.hideFromFeatured === true ||
       slug === "business-os" ||
