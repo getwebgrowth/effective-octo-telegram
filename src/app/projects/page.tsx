@@ -20,80 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const ADDITIONAL_PROJECTS = [
-  {
-    title: "Business OS – Google Sheets Web App",
-    href: "/projects/business-os",
-    dates: "Nov 2025 - Dec 2025",
-    active: true,
-    description:
-      "Small Business OS is a modern web application built on top of Google Sheets using Google Apps Script. The project transforms a traditional spreadsheet into a fully interactive business management system with a clean web-app interface, removing the need to work directly with cells or formulas.",
-    technologies: [
-      "Google Apps Script",
-      "Javascript",
-      "Google Sheets API",
-      "HTML / CSS",
-      "Web App Deployment",
-      "Google Drive Integration",
-    ],
-    image: "",
-    video: "script3.mp4",
-    category: "google apps script" as TabType,
-    isFiverr: false,
-    fiverrSubCategory: null,
-  },
-  {
-    title: "Walmart Product Scraper",
-    href: "/projects/walmart-product-scraper",
-    dates: "Jan 2026 - Feb 2026",
-    active: true,
-    description:
-      "A powerful hybrid tool that automates the creation of optimized Walmart product listings. It leverages a Chrome Extension for robust client-side scraping and a Google Apps Script backend for secure AI processing using OpenAI's GPT-4o Vision.",
-    technologies: [
-      "Google Apps Script",
-      "Chrome Extension API",
-      "OpenAI GPT-4o Vision",
-      "GPT-4o-mini",
-      "Chrome Offscreen API",
-      "Web Scraping",
-      "Google Sheets API",
-      "JavaScript",
-      "Manifest V3",
-    ],
-    links: [
-      {
-        type: "Source",
-        href: "https://github.com/pasindupiumal03/Walmart-Product-Scrapes-Extension",
-      },
-    ],
-    image: "",
-    video: "walmart.mp4",
-    category: "google apps script" as TabType,
-    isFiverr: false,
-    fiverrSubCategory: null,
-  },
-  {
-    title: "Freelancer Workspace – Google Sheets SPA",
-    href: "/projects/freelancer-workspace",
-    dates: "Dec 2025 – Dec 2025",
-    active: true,
-    description:
-      "Freelancer Workspace is a lightweight business management web app built by transforming Google Sheets into a full Single Page Application (SPA). The project uses Google Apps Script to treat the spreadsheet as a backend database while delivering a modern frontend experience.",
-    technologies: [
-      "Google Apps Script",
-      "Javascript",
-      "Google Sheets API",
-      "HTML / CSS",
-      "Charts",
-      "PDF Generation APIs",
-    ],
-    image: "",
-    video: "script2.mp4",
-    category: "google apps script" as TabType,
-    isFiverr: false,
-    fiverrSubCategory: null,
-  },
-];
+const ADDITIONAL_PROJECTS: any[] = [];
 
 function extractTechnologies(title: string, content: string = ""): string[] {
   const techs: string[] = [];
@@ -194,18 +121,26 @@ function parseProjectDate(dateString: string): Date {
 export default function ProjectsPage() {
   const mdxProjects: SerializedProject[] = allPosts.map((post) => {
     const slug = post._meta.path.replace(/\.mdx$/, "");
+    const isExplicitNonFiverr = post.isFiverr === false || slug === "business-os" || slug === "freelancer-workspace";
     const isFiverr = 
-      post.isFiverr === true ||
-      post.content.includes("Commissioned on Fiverr") || 
-      post.content.includes("fiverr.com/pasinduxyz") || 
-      post.content.includes("Delivered on Fiverr") || 
-      post.content.includes("Fiverr Order Deliverable") ||
-      post.content.includes("Order on Fiverr") ||
-      post.content.includes("<TrustBanner");
+      !isExplicitNonFiverr && (
+        post.isFiverr === true ||
+        post.content.includes("Commissioned on Fiverr") || 
+        post.content.includes("fiverr.com/pasinduxyz") || 
+        post.content.includes("Delivered on Fiverr") || 
+        post.content.includes("Fiverr Order Deliverable") ||
+        post.content.includes("Order on Fiverr") ||
+        post.content.includes("<TrustBanner")
+      );
       
     const fiverrSub = isFiverr ? (post.fiverrSubCategory || detectFiverrSubCategory(post.title, post.summary, post.content)) : null;
     const category = getProjectCategory(post.title, post.summary, post.content);
     const technologies = extractTechnologies(post.title, post.content);
+    const hideFromFeatured = Boolean(
+      post.hideFromFeatured === true ||
+      slug === "business-os" ||
+      slug === "freelancer-workspace"
+    );
     
     const searchCorpus = (
       post.title + " " +
@@ -227,6 +162,7 @@ export default function ProjectsPage() {
       links: [],
       category,
       isFiverr,
+      hideFromFeatured,
       fiverrSubCategory: fiverrSub,
       searchCorpus,
     };
@@ -293,6 +229,10 @@ export default function ProjectsPage() {
   });
 
   const allProjects = Array.from(projectMap.values()).sort((a, b) => {
+    // Projects hidden from featured (e.g. apps script tools with no priority) should not be hoisted
+    if (a.hideFromFeatured && !b.hideFromFeatured) return 1;
+    if (!a.hideFromFeatured && b.hideFromFeatured) return -1;
+
     if (a.isFiverr && !b.isFiverr) return 1;
     if (!a.isFiverr && b.isFiverr) return -1;
     if (a.title.includes("FUT Snipe Bot")) return -1;

@@ -19,6 +19,7 @@ const posts = defineCollection({
         content: z.string(),
         isFiverr: z.boolean().optional(),
         fiverrSubCategory: z.enum(["ai", "extensions", "scraping", "web3"]).optional(),
+        hideFromFeatured: z.boolean().optional(),
     }),
     transform: async (document, context) => {
         const mdx = await compileMDX(context, document, {

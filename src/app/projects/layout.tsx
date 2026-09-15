@@ -87,9 +87,9 @@ const projectsJsonLd = {
           {
             "@type": "ListItem",
             position: 6,
-            name: "Business OS – Google Sheets Web App",
-            url: `${DATA.url}/projects/business-os`,
-            description: "Google Apps Script enterprise workspace turning spreadsheets into interactive full-stack management apps.",
+            name: "RoboApply & Sociax — AI Job Application Autofill",
+            url: `${DATA.url}/projects/roboapply-ats-automation`,
+            description: "AI-powered job application autofill Chrome extension that auto-fills and submits applications across 100+ ATS platforms.",
           },
         ],
       },

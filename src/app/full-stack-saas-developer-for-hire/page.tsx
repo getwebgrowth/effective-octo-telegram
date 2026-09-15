@@ -269,7 +269,7 @@ const SAAS_CAPABILITIES = [
     badge: "Next.js 15/16 • React 19 • TailwindCSS",
     description:
       "High-performance user interfaces built with Next.js App Router, Server Components, and responsive Tailwind layouts. Clean interactive dashboards, real-time metrics charts, dark/light modes, keyboard shortcuts, and frictionless onboarding flows that convert visitors into paying subscribers.",
-    projects: "Featured in: SuperDev Pro (6k+ users), SuperX Analytics, Business OS",
+    projects: "Featured in: SuperDev Pro (6k+ users), SuperX Analytics, Alphyre Platform",
   },
   {
     icon: Server,

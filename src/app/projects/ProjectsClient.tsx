@@ -22,6 +22,7 @@ export interface SerializedProject {
   links: { type: string; href: string }[];
   category: TabType;
   isFiverr: boolean;
+  hideFromFeatured?: boolean;
   fiverrSubCategory: FiverrSubFilter | null;
   searchCorpus: string;
 }
@@ -39,7 +40,7 @@ export function ProjectsClient({
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const primaryCount = useMemo(
-    () => initialProjects.filter((p) => !p.isFiverr).length,
+    () => initialProjects.filter((p) => !p.isFiverr && !p.hideFromFeatured).length,
     [initialProjects]
   );
   const fiverrCount = useMemo(
@@ -84,7 +85,7 @@ export function ProjectsClient({
       // 1. Tab & Sub-filter Check
       let passesTab = false;
       if (activeTab === "all") {
-        passesTab = !project.isFiverr;
+        passesTab = !project.isFiverr && !project.hideFromFeatured;
       } else if (activeTab === "fiverr") {
         if (!project.isFiverr) return false;
         if (fiverrSubFilter === "all") {
