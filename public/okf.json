@@ -61,6 +61,16 @@
       "title": "Extended LLM Context",
       "path": "/llms-full.txt",
       "type": "llm_context"
+    },
+    {
+      "title": "Curriculum Vitae (CV) & Career History",
+      "path": "/cv",
+      "type": "cv"
+    },
+    {
+      "title": "Official Resume PDF Download",
+      "path": "/pasindu-piumal-cv.pdf",
+      "type": "pdf_document"
     }
   ]
 }
