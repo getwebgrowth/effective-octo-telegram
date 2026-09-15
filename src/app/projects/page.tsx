@@ -205,7 +205,8 @@ export default function ProjectsPage() {
       slug === "business-os" ||
       slug === "freelancer-workspace" ||
       slug === "walmart-product-scraper" ||
-      slug === "amazon-product-scraper"
+      slug === "amazon-product-scraper" ||
+      slug === "bonk-terminal"
     );
     
     const searchCorpus = (
