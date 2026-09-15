@@ -6,9 +6,51 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useState, useRef, useEffect } from "react";
-import Markdown from "react-markdown";
+import { useState, useRef, useEffect, memo } from "react";
 import { Icons } from "@/components/icons";
+
+function renderFormattedText(text: string) {
+  if (!text) return null;
+  if (!text.includes("[") && !text.includes("*") && !text.includes("`")) {
+    return text;
+  }
+  const parts: (string | React.ReactNode)[] = [];
+  const regex = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*|`([^`]+)`/g;
+  let lastIndex = 0;
+  let match;
+  let key = 0;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    if (match[1] && match[2]) {
+      parts.push(
+        <a
+          key={`link-${key++}`}
+          href={match[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="text-primary underline underline-offset-2 hover:opacity-80"
+        >
+          {match[1]}
+        </a>
+      );
+    } else if (match[3]) {
+      parts.push(<strong key={`bold-${key++}`} className="font-semibold text-foreground">{match[3]}</strong>);
+    } else if (match[4]) {
+      parts.push(<code key={`code-${key++}`} className="px-1 py-0.5 rounded bg-muted font-mono text-[11px] text-foreground">{match[4]}</code>);
+    }
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts;
+}
 
 function cleanDescriptionForAlt(desc: string): string {
   // Strip markdown links [Text](url) to just Text
@@ -167,7 +209,7 @@ interface Props {
   className?: string;
 }
 
-export function ProjectCard({
+export const ProjectCard = memo(function ProjectCard({
   title,
   href,
   description,
@@ -292,7 +334,7 @@ export function ProjectCard({
           )}
         </div>
         <div className="text-xs flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
-          <Markdown>{description}</Markdown>
+          {renderFormattedText(description)}
         </div>
         {tags && tags.length > 0 && (
           <div className="flex flex-wrap gap-1 mt-auto">
@@ -310,4 +352,4 @@ export function ProjectCard({
       </div>
     </div>
   );
-}
+});

@@ -1,11 +1,8 @@
 "use client";
 
-import BlurFade from "@/components/magicui/blur-fade";
 import { ProjectCard } from "@/components/project-card";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useTransition } from "react";
 import { Star, CheckCircle, ShieldCheck, Zap, ArrowUpRight } from "lucide-react";
-
-const BLUR_FADE_DELAY = 0.04;
 
 export type TabType = "all" | "extensions" | "websites" | "google apps script" | "fiverr";
 export type FiverrSubFilter = "all" | "ai" | "extensions" | "scraping" | "web3";
@@ -45,6 +42,7 @@ export function ProjectsClient({
 }: {
   initialProjects: SerializedProject[];
 }) {
+  const [isPending, startTransition] = useTransition();
   const [activeTab, setActiveTab] = useState<TabType>("all");
   const [fiverrSubFilter, setFiverrSubFilter] = useState<FiverrSubFilter>("all");
   const [searchQuery, setSearchQuery] = useState("");
@@ -135,14 +133,18 @@ export function ProjectsClient({
   }, [filteredProjects, visibleCount, searchQuery]);
 
   const handleTabChange = (tab: TabType) => {
-    setActiveTab(tab);
-    setFiverrSubFilter("all");
-    setVisibleCount(PAGE_SIZE);
+    startTransition(() => {
+      setActiveTab(tab);
+      setFiverrSubFilter("all");
+      setVisibleCount(PAGE_SIZE);
+    });
   };
 
   const handleSubFilterChange = (filter: FiverrSubFilter) => {
-    setFiverrSubFilter(filter);
-    setVisibleCount(PAGE_SIZE);
+    startTransition(() => {
+      setFiverrSubFilter(filter);
+      setVisibleCount(PAGE_SIZE);
+    });
   };
 
   return (
@@ -398,8 +400,8 @@ export function ProjectsClient({
           </div>
 
           <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 w-full text-left">
-            {displayedProjects.map((project, id) => {
-              const card = (
+            {displayedProjects.map((project, id) => (
+              <div key={project.href} className="h-full animate-in fade-in duration-150">
                 <ProjectCard
                   href={project.href}
                   title={project.title}
@@ -411,22 +413,8 @@ export function ProjectsClient({
                   links={project.links}
                   priority={id < 4}
                 />
-              );
-
-              return id < 8 ? (
-                <BlurFade
-                  key={project.href}
-                  delay={BLUR_FADE_DELAY + (id % 8) * 0.02}
-                  className="h-full"
-                >
-                  {card}
-                </BlurFade>
-              ) : (
-                <div key={project.href} className="h-full">
-                  {card}
-                </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
 
           {!searchQuery.trim() && visibleCount < filteredProjects.length && (
