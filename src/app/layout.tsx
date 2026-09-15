@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import CVSlider from "@/components/cv-slider";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
@@ -285,6 +286,7 @@ export default function RootLayout({
               {children}
             </div>
             <Navbar />
+            <CVSlider />
             <Analytics />
             <SpeedInsights />
           </TooltipProvider>

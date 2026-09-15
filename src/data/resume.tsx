@@ -5,6 +5,7 @@ import {
   BriefcaseIcon,
   MailIcon,
   BookOpenIcon,
+  FileText,
   Bot,
   Workflow,
   Sparkles,
@@ -94,6 +95,7 @@ export const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/projects", icon: NotebookIcon, label: "Projects" },
     { href: "/chrome-extension-developer-for-hire", icon: BriefcaseIcon, label: "Hire Me" },
+    { href: "/cv", icon: FileText, label: "CV / Resume" },
     { href: "/contact", icon: MailIcon, label: "Contact" },
   ],
   contact: {

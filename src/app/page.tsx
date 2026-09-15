@@ -9,7 +9,7 @@ import ContactSection from "@/components/section/contact-section";
 import HackathonsSection from "@/components/section/hackathons-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, FileText } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -163,6 +163,13 @@ export default function Page() {
                     >
                       <span>113+ Projects Showcase</span>
                       <ArrowUpRight className="size-3 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </Link>
+                    <Link
+                      href="/cv"
+                      className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-primary/30 bg-primary/5 hover:bg-primary/10 text-xs font-semibold text-primary transition-all shadow-2xs hover:shadow-xs group"
+                    >
+                      <FileText className="size-3 text-primary" />
+                      <span>Curriculum Vitae (CV)</span>
                     </Link>
                   </div>
                 </BlurFade>

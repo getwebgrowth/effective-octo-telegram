@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { ModeToggle } from "@/components/mode-toggle";
@@ -9,6 +11,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
+import { openCVSlider } from "@/components/cv-slider";
 
 export default function Navbar() {
   return (
@@ -24,6 +27,12 @@ export default function Navbar() {
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noopener noreferrer" : undefined}
                   aria-label={item.label}
+                  onClick={(e) => {
+                    if (item.href === "/cv" && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                      e.preventDefault();
+                      openCVSlider();
+                    }
+                  }}
                   className="rounded-full focus:outline-none"
                 >
                   <DockIcon className="rounded-full cursor-pointer size-10 bg-background/80 text-muted-foreground hover:text-foreground hover:bg-muted border border-border transition-all">
