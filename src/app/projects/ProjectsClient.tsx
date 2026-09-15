@@ -1,7 +1,7 @@
 "use client";
 
 import { ProjectCard } from "@/components/project-card";
-import { useState, useMemo, useTransition } from "react";
+import { useState, useMemo, useTransition, useEffect } from "react";
 import { Star, CheckCircle, ShieldCheck, Zap, ArrowUpRight } from "lucide-react";
 
 export type TabType = "all" | "extensions" | "websites" | "google apps script" | "fiverr";
@@ -26,6 +26,27 @@ export interface SerializedProject {
 
 const PAGE_SIZE = 16;
 
+function parseProjectDate(dateString: string): Date {
+  if (!dateString) return new Date(0);
+  if (dateString.toLowerCase().includes("present")) {
+    return new Date();
+  }
+
+  const parts = dateString.split(/[-–—]/);
+  const lastPart = (parts.length > 1 ? parts[parts.length - 1] : parts[0]).trim();
+  const date = new Date(lastPart);
+  
+  if (isNaN(date.getTime())) {
+    const yearMatch = lastPart.match(/\d{4}/);
+    if (yearMatch) {
+      return new Date(parseInt(yearMatch[0]), 0, 1);
+    }
+    return new Date(0);
+  }
+  
+  return date;
+}
+
 function getGasOrder(slugOrHref: string, title: string): number {
   const s = (slugOrHref + " " + title).toLowerCase();
   if (s.includes("walmart")) return 1; // 1st: Walmart Product Scraper (Top)
@@ -35,6 +56,20 @@ function getGasOrder(slugOrHref: string, title: string): number {
   if (s.includes("business-os") || s.includes("business os")) return 5;
   if (s.includes("freelancer-workspace") || s.includes("freelancer workspace")) return 6;
   return 10;
+}
+
+export function getFiverrOrder(slugOrHref: string, title: string): number {
+  const h = slugOrHref.toLowerCase();
+  const t = title.toLowerCase();
+  if (h.includes("gmail-signature-manager") || t.includes("gmail signature manager")) return 1;
+  if (h.includes("easy-input") || t.includes("easy input")) return 2;
+  if (h.includes("auto-suggest") || t.includes("auto suggest")) return 3;
+  if (h.includes("comment-assistant") || t.includes("comment assistant")) return 4;
+  if (h.includes("positional-ai") || t.includes("positional ai")) return 5;
+  if (h.includes("webmind") || t.includes("webmind")) return 6;
+  if (h.includes("zillow-scraper") || t.includes("zillow real estate scraper")) return 7;
+  if (h.includes("tandem-ai-browsing-copilot") || t.includes("tandem ai")) return 8;
+  return 999;
 }
 
 export function ProjectsClient({
@@ -47,6 +82,24 @@ export function ProjectsClient({
   const [fiverrSubFilter, setFiverrSubFilter] = useState<FiverrSubFilter>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const tabParam = params.get("tab")?.toLowerCase();
+    const hash = window.location.hash.toLowerCase().replace("#", "");
+    const target = tabParam || hash;
+
+    if (target === "fiverr") {
+      setActiveTab("fiverr");
+    } else if (target === "extensions") {
+      setActiveTab("extensions");
+    } else if (target === "websites" || target === "saas") {
+      setActiveTab("websites");
+    } else if (target === "google apps script" || target === "gas") {
+      setActiveTab("google apps script");
+    }
+  }, []);
 
   const primaryCount = useMemo(
     () => initialProjects.filter((p) => !p.isFiverr && !p.hideFromFeatured).length,
@@ -119,6 +172,17 @@ export function ProjectsClient({
         const rankA = getGasOrder(a.href, a.title);
         const rankB = getGasOrder(b.href, b.title);
         return rankA - rankB;
+      });
+    }
+
+    if (activeTab === "fiverr" && searchTokens.length === 0) {
+      list.sort((a, b) => {
+        const rankA = getFiverrOrder(a.href, a.title);
+        const rankB = getFiverrOrder(b.href, b.title);
+        if (rankA !== rankB) return rankA - rankB;
+        const dateA = parseProjectDate(a.dates);
+        const dateB = parseProjectDate(b.dates);
+        return dateB.getTime() - dateA.getTime();
       });
     }
 

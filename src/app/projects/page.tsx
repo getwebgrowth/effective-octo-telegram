@@ -130,6 +130,20 @@ export function getGasOrder(slugOrHref: string, title: string): number {
   return 10;
 }
 
+export function getFiverrOrder(slugOrHref: string, title: string): number {
+  const h = slugOrHref.toLowerCase();
+  const t = title.toLowerCase();
+  if (h.includes("gmail-signature-manager") || t.includes("gmail signature manager")) return 1;
+  if (h.includes("easy-input") || t.includes("easy input")) return 2;
+  if (h.includes("auto-suggest") || t.includes("auto suggest")) return 3;
+  if (h.includes("comment-assistant") || t.includes("comment assistant")) return 4;
+  if (h.includes("positional-ai") || t.includes("positional ai")) return 5;
+  if (h.includes("webmind") || t.includes("webmind")) return 6;
+  if (h.includes("zillow-scraper") || t.includes("zillow real estate scraper")) return 7;
+  if (h.includes("tandem-ai-browsing-copilot") || t.includes("tandem ai")) return 8;
+  return 999;
+}
+
 function getPriorityRank(href: string, title: string): number {
   const h = href.toLowerCase();
   const t = title.toLowerCase();
@@ -272,6 +286,13 @@ export default function ProjectsPage() {
 
     if (a.isFiverr && !b.isFiverr) return 1;
     if (!a.isFiverr && b.isFiverr) return -1;
+
+    // Explicit priority order within Fiverr deliverables
+    if (a.isFiverr && b.isFiverr) {
+      const rankA = getFiverrOrder(a.href, a.title);
+      const rankB = getFiverrOrder(b.href, b.title);
+      if (rankA !== rankB) return rankA - rankB;
+    }
 
     const dateA = parseProjectDate(a.dates);
     const dateB = parseProjectDate(b.dates);
