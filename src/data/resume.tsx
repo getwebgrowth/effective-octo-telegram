@@ -308,7 +308,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "Automated Pro (2).png",
+      image: "/projects/roboapply-ats-automation.png",
       video: "",
     },
     {
