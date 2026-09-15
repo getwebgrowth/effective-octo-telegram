@@ -344,6 +344,7 @@ export const DATA = {
       href: "/projects/superdev-pro",
       dates: "Mar 2025 - May 2025",
       active: true,
+      featured: true,
       description:
         "Built and contributed to SuperDev Pro, a full-stack SaaS product and Chrome extension platform for developers and designers. Worked across extension development, frontend product features, SaaS workflows, commercial feature packaging, and product functionality including CSS editing, font detection, screenshots, image extraction, measurements, and export tools. The platform serves 6,000+ professionals and operates as a monetized software product with licensing, paid plans, and ongoing updates.",
       technologies: [
@@ -363,14 +364,15 @@ export const DATA = {
           icon: <Icons.store className="size-3" />,
         },
       ],
-      image: "image_original (2)",
-      video: "nrdh9axazvutuobd0ezc.mp4",
+      image: "/projects/superdev-pro.png",
+      video: "/nrdh9axazvutuobd0ezc.mp4",
     },
     {
       title: "SuperX - Chrome Extension and Full-Stack SaaS Platform",
       href: "/projects/superx-twitter-analytics",
       dates: "Jan 2025 - Mar 2025",
       active: true,
+      featured: true,
       description:
         "Built a full-stack SaaS platform with a Chrome extension frontend and backend services for authentication, data storage, automation, and analytics. Developed core product features including user dashboards, API integration, and payment-ready architecture. The system was designed to support scalable workflows, secure data handling, and a smooth user experience across web and browser extension interfaces.",
       technologies: [
@@ -390,8 +392,8 @@ export const DATA = {
           icon: <Icons.store className="size-3" />,
         },
       ],
-      image: "image_original",
-      video: "e0causakquxoglv8dn8i.mp4",
+      image: "/projects/superx-twitter-analytics.png",
+      video: "/e0causakquxoglv8dn8i.mp4",
     },
     {
       title: "FullGrab - Screenshot & Full Page Capture",

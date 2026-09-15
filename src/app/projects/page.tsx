@@ -130,6 +130,19 @@ export function getGasOrder(slugOrHref: string, title: string): number {
   return 10;
 }
 
+function getPriorityRank(href: string, title: string): number {
+  const h = href.toLowerCase();
+  const t = title.toLowerCase();
+  if (h.includes("fut-snipe-bot") || t.includes("elitefutbot") || t.includes("fut snipe")) return 1;
+  if (h.includes("tech-copilot") || t.includes("tech copilot")) return 2;
+  if (h.includes("roboapply") || t.includes("roboapply")) return 3;
+  if (h.includes("amazon-shift-sniper") || t.includes("amazon shift sniper")) return 4;
+  if (h.includes("superdev-pro") || t.includes("superdev pro")) return 5;
+  if (h.includes("superx") || t.includes("superx")) return 6;
+  if (h.includes("alphyre") || t.includes("alphyre")) return 7;
+  return 99;
+}
+
 export default function ProjectsPage() {
   const mdxProjects: SerializedProject[] = allPosts.map((post) => {
     const slug = post._meta.path.replace(/\.mdx$/, "");
@@ -252,16 +265,14 @@ export default function ProjectsPage() {
     if (a.hideFromFeatured && !b.hideFromFeatured) return 1;
     if (!a.hideFromFeatured && b.hideFromFeatured) return -1;
 
+    // Explicit top featured projects order
+    const priorityA = getPriorityRank(a.href, a.title);
+    const priorityB = getPriorityRank(b.href, b.title);
+    if (priorityA !== priorityB) return priorityA - priorityB;
+
     if (a.isFiverr && !b.isFiverr) return 1;
     if (!a.isFiverr && b.isFiverr) return -1;
-    if (a.title.includes("FUT Snipe Bot")) return -1;
-    if (b.title.includes("FUT Snipe Bot")) return 1;
-    if (a.title.includes("Tech Copilot")) return -1;
-    if (b.title.includes("Tech Copilot")) return 1;
-    if (a.title.includes("RoboApply")) return -1;
-    if (b.title.includes("RoboApply")) return 1;
-    if (a.title.includes("Amazon Shift Sniper")) return -1;
-    if (b.title.includes("Amazon Shift Sniper")) return 1;
+
     const dateA = parseProjectDate(a.dates);
     const dateB = parseProjectDate(b.dates);
     return dateB.getTime() - dateA.getTime();
