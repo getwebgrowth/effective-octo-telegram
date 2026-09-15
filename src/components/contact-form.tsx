@@ -47,24 +47,61 @@ export function ContactForm() {
         setErrors({});
         
         try {
-            const response = await fetch("/api/contact", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                },
-                body: JSON.stringify({
-                    firstName: formData.firstName,
-                    lastName: formData.lastName,
-                    email: formData.email,
-                    phone: formData.phone,
-                    message: formData.message,
-                }),
-            });
+            const fullName = `${formData.firstName} ${formData.lastName}`.trim();
+            const web3Key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "abd550dd-1538-4d45-887d-1f1be20b2556";
+            let isDelivered = false;
 
-            const result = await response.json();
-            
-            if (result.success || response.ok) {
+            // 1. Direct Web3Forms Submission (Instant deliverability to inbox)
+            try {
+                const web3Res = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json",
+                    },
+                    body: JSON.stringify({
+                        access_key: web3Key,
+                        name: fullName,
+                        email: formData.email,
+                        phone: formData.phone || "N/A",
+                        message: formData.message,
+                        subject: `New Portfolio Inquiry from ${fullName}`,
+                        from_name: "Portfolio Contact Form",
+                    }),
+                });
+
+                const web3Data = await web3Res.json();
+                if (web3Data.success) {
+                    isDelivered = true;
+                }
+            } catch (clientErr) {
+                console.warn("Client Web3Forms attempt failed, falling back to server route...", clientErr);
+            }
+
+            // 2. Fallback to /api/contact if client fetch was blocked or failed
+            if (!isDelivered) {
+                const response = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json",
+                    },
+                    body: JSON.stringify({
+                        firstName: formData.firstName,
+                        lastName: formData.lastName,
+                        email: formData.email,
+                        phone: formData.phone,
+                        message: formData.message,
+                    }),
+                });
+
+                const result = await response.json();
+                if (result.success || response.ok) {
+                    isDelivered = true;
+                }
+            }
+
+            if (isDelivered) {
                 setIsSubmitted(true);
                 setFormData({
                     firstName: "",
@@ -74,7 +111,7 @@ export function ContactForm() {
                     message: ""
                 });
             } else {
-                setErrors({ submit: result.message || "Something went wrong. Please try again or email directly." });
+                setErrors({ submit: "Something went wrong. Please try again or email directly." });
             }
         } catch (error) {
             console.error("Submission error:", error);
