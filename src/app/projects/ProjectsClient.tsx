@@ -50,9 +50,9 @@ function parseProjectDate(dateString: string): Date {
 function getGasOrder(slugOrHref: string, title: string): number {
   const s = (slugOrHref + " " + title).toLowerCase();
   if (s.includes("walmart")) return 1; // 1st: Walmart Product Scraper (Top)
-  if (s.includes("office-os") || s.includes("office os")) return 2; // 2nd: Office OS
-  if (s.includes("zillow")) return 3; // 3rd: Zillow Scraper (3rd)
-  if (s.includes("amazon-product-scraper") || (s.includes("amazon") && s.includes("scraper"))) return 4;
+  if (s.includes("amazon-product-scraper") || (s.includes("amazon") && s.includes("scraper"))) return 2; // 2nd: Amazon Product Scraper
+  if (s.includes("office-os") || s.includes("office os")) return 3; // 3rd: Office OS
+  if (s.includes("zillow")) return 4; // 4th: Zillow Scraper
   if (s.includes("business-os") || s.includes("business os")) return 5;
   if (s.includes("freelancer-workspace") || s.includes("freelancer workspace")) return 6;
   return 10;
