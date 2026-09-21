@@ -301,7 +301,7 @@ export default function CVPage() {
                 <div className="p-3 rounded-xl border bg-background/50 space-y-1">
                   <div className="font-bold text-foreground">Browser Extensions</div>
                   <p className="text-muted-foreground">
-                    Manifest V3, Chrome Extension APIs, Content Scripts, Background Service Workers, Side Panel, chrome.scripting, chrome.storage, chrome.identity, Main/Isolated World execution, DOM Manipulation, MutationObserver, Shadow DOM, cross-browser Chrome/Edge workflows.
+                    Manifest V3, WXT Framework, Plasmo, Vite / CRXJS, Chrome Extension APIs, Content Scripts, Background Service Workers, Side Panel API, declarativeNetRequest, Offscreen Documents, chrome.scripting, chrome.storage, chrome.identity, Main/Isolated World execution, DOM Manipulation, MutationObserver, Shadow DOM, cross-browser WebExtensions (Chrome, Firefox AMO, Safari macOS/iOS, Edge), MV2-to-MV3 migration, Chrome Web Store compliance & approval.
                   </p>
                 </div>
                 <div className="p-3 rounded-xl border bg-background/50 space-y-1">

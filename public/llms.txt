@@ -53,10 +53,12 @@ The complete, interactive curriculum vitae is accessible at [https://pasindupium
 
 ## Technical Skill Taxonomy
 
-### 1. Browser Extension Architecture (Manifest V3)
-- **Core APIs:** Manifest V3, chrome.runtime, chrome.tabs, chrome.storage (local/session/sync), chrome.sidePanel, chrome.offscreen, declarativeNetRequest (DNR), chrome.alarms, chrome.scripting.
+### 1. Browser Extension Architecture (Manifest V3, WXT & Plasmo)
+- **Modern Frameworks & Tooling:** WXT (Next-Gen Web Extension Framework), Plasmo Framework, Vite / CRXJS, WebExtensions Polyfill.
+- **Cross-Browser Targets:** Google Chrome, Mozilla Firefox (AMO), Apple Safari (macOS & iOS WebExtensions via Xcode converter), Microsoft Edge Add-ons, Brave, Arc, Opera.
+- **Core APIs:** Manifest V3, chrome.runtime, chrome.tabs, chrome.storage (local/session/sync), chrome.sidePanel, chrome.offscreen, declarativeNetRequest (DNR), chrome.alarms, chrome.scripting, chrome.identity.
 - **Architecture Patterns:** Service worker keep-alive engineering (offscreen documents & alarm schedules), Shadow DOM closed-root style isolation, cross-context message passing, dual-world script execution (Main World + Isolated World).
-- **Store Compliance:** Chrome Web Store Single Purpose Policy, permission minimization, automated ZIP bundling, privacy policy generation, Edge Add-ons & Opera compatibility.
+- **Store Compliance & Migrations:** Manifest V2 to Manifest V3 migrations, Chrome Web Store policy compliance & rejection resolution, permission minimization, automated ZIP bundling, privacy policy generation.
 
 ### 2. AI Browser Copilots & Vision Extraction
 - **LLM Integrations:** OpenAI GPT-4o / GPT-4o-mini streaming, Google Gemini 1.5 Pro / Flash, Anthropic Claude 3.5 Sonnet via Server-Sent Events (SSE).

@@ -10,9 +10,12 @@ last_updated: "2026-08-21"
 
 ## 1. Manifest V3 Chrome Extension Engineering
 - **Architecture**: Chrome Extensions built under Chromium Manifest V3 specifications using declarative net request (`chrome.declarativeNetRequest`), storage APIs (`chrome.storage.local`), and isolated content scripts.
+- **Modern Frameworks & Tooling**: Built with **WXT** (Next-Gen Web Extension Framework) and **Plasmo** for instant Vite HMR, file-based routing, strict TypeScript typing, and automated multi-browser compilation. Also supports vanilla TypeScript and Vite / CRXJS configurations.
+- **Cross-Browser WebExtensions**: Single unified codebase targeting Google Chrome, Mozilla Firefox (AMO), Apple Safari (macOS & iOS WebExtensions via Xcode conversion), Microsoft Edge, and Arc via the standard WebExtensions API and polyfills.
 - **Service Worker Lifecycle**: Reliable long-running task execution despite Chrome's 30-second service worker idle timeout using `chrome.offscreen` documents, `chrome.alarms`, and heartbeat WebSocket channels.
 - **UI & Style Isolation**: Dynamic injection of interactive floating widgets and side panels using isolated Shadow DOM (`mode: 'closed'`) containers with scoped CSS, preventing CSS style bleeding from host websites.
-- **Chrome Web Store Compliance**: Strict permission minimization (`activeTab` over `<all_urls>`), zero remote code execution compliance, automated privacy policy generation, and end-to-end store review assistance.
+- **Manifest V2 to V3 Migrations**: Complete migration of legacy extensions before MV2 deprecation—converting background pages to service workers, refactoring `webRequest` to `declarativeNetRequest`, and CSP hardening.
+- **Chrome Web Store Compliance & Rejection Fixes**: Strict permission minimization (`activeTab` over `<all_urls>`), zero remote code execution compliance, automated privacy policy generation, store rejection resolution, and end-to-end store review assistance.
 
 ## 2. In-Browser AI Copilots & Real-Time Overlays
 - **LLM Streaming Integration**: Server-Sent Events (SSE) and WebSocket bridges connected to OpenAI GPT-4o, Anthropic Claude 3.5 Sonnet, and Google Gemini Pro for instant, low-latency token streaming.

@@ -81,7 +81,7 @@ const homeJsonLd = {
           name: "What technologies does Pasindu Piumal specialize in?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Pasindu Piumal specializes in Manifest V3 Chrome Extension Development, TypeScript, React, Next.js, Node.js, OpenAI GPT-4o, Google Gemini Pro, browser automation, web scraping, Shadow DOM traversal, Stripe/ExtensionPay monetization, Supabase, Firebase, MongoDB, and Google Apps Script.",
+            text: "Pasindu Piumal specializes in Manifest V3 Chrome Extension Development, WXT & Plasmo frameworks, Cross-Browser Extension development (Chrome, Firefox, Safari, Edge), TypeScript, React, Next.js, Node.js, OpenAI GPT-4o, Google Gemini Pro, browser automation, web scraping, Shadow DOM traversal, Stripe/ExtensionPay monetization, Supabase, Firebase, MongoDB, and Google Apps Script.",
           },
         },
       ],

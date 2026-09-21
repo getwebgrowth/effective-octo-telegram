@@ -76,12 +76,14 @@ Pasindu Piumal operates with complete timezone flexibility to serve founders and
 
 ## Technical Skills & Architectural Taxonomy
 
-### 1. Chromium Manifest V3 Extension Engineering
-- **APIs & Runtime:** Manifest V3, chrome.runtime, chrome.tabs, chrome.storage (local, session, sync, managed), chrome.sidePanel, chrome.offscreen, declarativeNetRequest (DNR), chrome.alarms, chrome.scripting, chrome.action, chrome.contextMenus, chrome.cookies, chrome.webNavigation.
+### 1. Modern Web Extension Engineering (Manifest V3, WXT & Plasmo)
+- **Frameworks & Tooling:** WXT (Next-Gen Web Extension Framework), Plasmo Framework, Vite / CRXJS, WebExtensions Polyfill, TypeScript-first architecture, automated file-based routing.
+- **Cross-Browser Compilation:** Multi-target builds supporting Google Chrome, Mozilla Firefox (AMO), Apple Safari (macOS & iOS WebExtensions via Xcode conversion), Microsoft Edge Add-ons, Brave, Arc, and Opera from a single unified codebase.
+- **APIs & Runtime:** Manifest V3, chrome.runtime, chrome.tabs, chrome.storage (local, session, sync, managed), chrome.sidePanel, chrome.offscreen, declarativeNetRequest (DNR), chrome.alarms, chrome.scripting, chrome.action, chrome.contextMenus, chrome.cookies, chrome.identity, chrome.webNavigation.
 - **Lifecycle & Keep-Alive:** Service Worker ephemeral lifecycle management, offscreen document bridging for long-running DOM/audio/network tasks, chrome.alarms wake-up scheduling, IndexedDB and chrome.storage.session state restoration.
 - **DOM & CSS Isolation:** Closed-root Shadow DOM encapsulation to prevent host-page CSS leaking into extension UI, CSS custom properties scoping, iframe injection fallbacks, DOM MutationObserver throttling.
 - **Context Injection:** Dual-world script execution (Main World for window/prototype/token access paired with Isolated World for secure chrome.runtime communication), content script dynamic injection via chrome.scripting.executeScript.
-- **Store Compliance & Security:** Chrome Web Store Single Purpose Policy compliance, permission minimization audits, CSP (Content Security Policy) enforcement, automated production ZIP packaging, multi-browser compatibility (Google Chrome, Microsoft Edge, Brave, Opera, Arc).
+- **Store Compliance & Migrations:** Full Manifest V2 to Manifest V3 migrations, Chrome Web Store Single Purpose Policy compliance, permission minimization audits, CSP (Content Security Policy) enforcement, CWS review rejection remediation, automated production ZIP packaging.
 
 ### 2. In-Browser AI Copilots & Vision Extraction
 - **LLM Integration:** OpenAI GPT-4o, GPT-4o-mini streaming via Server-Sent Events (SSE), Google Gemini 1.5 Pro / Flash, Anthropic Claude 3.5 Sonnet, DeepSeek API integration.

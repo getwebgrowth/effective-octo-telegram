@@ -44,6 +44,8 @@ import {
   SiVercel,
   SiGooglegemini,
   SiSolana,
+  SiVite,
+  SiFirefox,
 } from "react-icons/si";
 
 export const DATA = {
@@ -53,9 +55,9 @@ export const DATA = {
   location: "Kegalle, Sri Lanka",
   locationLink: "https://www.google.com/maps/place/kegalle",
   description:
-    "Chrome Extension & Full-Stack SaaS Developer — Manifest V3, AI copilots, browser automation, and SaaS monetization. Built a 100k-user Chrome Extension SaaS generating $1M+ in revenue.",
+    "Chrome Extension & Full-Stack SaaS Developer — Manifest V3, WXT, Plasmo, cross-browser extensions (Chrome, Firefox, Safari, Edge), AI copilots, browser automation, and SaaS monetization. Built a 100k-user Chrome Extension SaaS generating $1M+ in revenue.",
   seoDescription:
-    "Pasindu Piumal is a Chrome Extension Developer & Full-Stack SaaS Engineer — Manifest V3, AI copilots, browser automation, web scraping, and SaaS extension development. Built a 100k-user Chrome Extension SaaS generating $1M+ in revenue. 175+ shipped projects, 100% Upwork JSS. View portfolio and case studies.",
+    "Pasindu Piumal is an expert Chrome Extension Developer & Full-Stack SaaS Engineer — Manifest V3, WXT Framework, Plasmo, cross-browser extensions (Chrome, Firefox, Safari, Edge), MV2 to MV3 migration, AI copilots, browser automation, web scraping, and SaaS monetization. Built a 100k-user Chrome Extension SaaS generating $1M+ in revenue. 175+ shipped projects, 100% Upwork JSS. View portfolio and case studies.",
   summary:
     "Since 2024, [I have been pursuing a BSc (Hons) in Software Engineering at the University of Westminster](/#education). In 2023, [I joined Bytesquadlabs as a Software Engineer](/#work). Where I work on full-stack web development and chrome extension projects. I enjoy building scalable applications using modern web technologies and creating browser extensions that enhance productivity and user experience. I’m driven by hands-on development and a strong interest in building practical, impactful software.",
   avatarUrl: "/me.webp",
@@ -70,6 +72,9 @@ export const DATA = {
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
     { name: "Chrome Extensions", icon: SiGooglechrome, color: "#4285F4" },
     { name: "Manifest V3", icon: ShieldCheck, color: "#3B82F6" },
+    { name: "WXT Framework", icon: SiVite, color: "#646CFF" },
+    { name: "Plasmo", icon: Terminal, color: "#6366F1" },
+    { name: "Cross-Browser (Firefox & Safari)", icon: SiFirefox, color: "#FF7139" },
     { name: "Content Scripts", icon: Workflow, color: "#6366F1" },
     { name: "Service Workers", icon: Terminal, color: "#F59E0B" },
     { name: "Chrome APIs", icon: SiGooglechrome, color: "#4285F4" },

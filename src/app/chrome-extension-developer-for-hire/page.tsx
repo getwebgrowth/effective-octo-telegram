@@ -14,9 +14,11 @@ import {
   ArrowRight,
   Bot,
   CheckCircle2,
+  Code2,
   Cpu,
   Database,
   ExternalLink,
+  Globe,
   Layers,
   Lock,
   Network,
@@ -37,13 +39,20 @@ import type { Metadata } from "next";
 const BLUR_FADE_DELAY = 0.04;
 
 export const metadata: Metadata = {
-  title: "Hire Expert Freelance Chrome Extension Developer (Manifest V3) | Pasindu Piumal",
+  title: "Hire Expert Freelance Chrome Extension Developer (Manifest V3, WXT, Plasmo) | Pasindu Piumal",
   description:
-    "Hire Pasindu Piumal — Top Rated Chrome Extension Developer with 175+ shipped projects, $1M+ software revenue generated, and 100k+ active users. Specializing in Manifest V3, AI overlays, ATS auto-apply, browser automation, and SaaS monetization. 175+ projects, 100% Upwork JSS.",
+    "Hire Pasindu Piumal — Top Rated Chrome Extension Developer with 175+ shipped projects, $1M+ software revenue generated, and 100k+ active users. Specializing in Manifest V3, WXT Framework, Plasmo, cross-browser extensions (Chrome, Firefox, Safari, Edge), AI overlays, browser automation, and SaaS monetization. 100% Upwork JSS.",
   keywords: [
     "Hire Chrome Extension Developer",
     "Freelance Chrome Extension Developer",
+    "WXT Extension Developer",
+    "Plasmo Framework Developer",
+    "CRXJS Developer",
+    "Cross-Browser Extension Developer",
+    "Safari Web Extension Developer",
+    "Firefox Addon Developer",
     "Manifest V3 Developer for hire",
+    "Manifest V2 to V3 Migration Specialist",
     "Custom Chrome Extension development",
     "Browser automation developer",
     "Upwork Chrome Extension Developer",
@@ -52,6 +61,8 @@ export const metadata: Metadata = {
     "Manifest V3 migration expert",
     "Web Scraping Chrome Extension",
     "Chrome Web Store approval help",
+    "Chrome Web Store rejection fix",
+    "WebExtensions API",
     "AI job application autofill",
     "auto apply Chrome extension",
     "AI apply helper",
@@ -63,9 +74,9 @@ export const metadata: Metadata = {
     canonical: "/chrome-extension-developer-for-hire",
   },
   openGraph: {
-    title: "Hire Expert Freelance Chrome Extension Developer (Manifest V3) | Pasindu Piumal",
+    title: "Hire Expert Freelance Chrome Extension Developer (Manifest V3, WXT, Plasmo) | Pasindu Piumal",
     description:
-      "Hire Pasindu Piumal — Top Rated Chrome Extension Developer with 175+ shipped projects, $1M+ software revenue generated, and 100k+ active users. Manifest V3, AI overlays, automation & SaaS monetization.",
+      "Hire Pasindu Piumal — Top Rated Chrome Extension Developer with 175+ shipped projects, $1M+ software revenue generated, and 100k+ active users. Manifest V3, WXT, Plasmo, cross-browser (Safari, Firefox, Chrome, Edge), AI overlays, automation & SaaS monetization.",
     url: `${DATA.url}/chrome-extension-developer-for-hire`,
     siteName: `${DATA.name} Portfolio`,
     locale: "en_US",
@@ -80,9 +91,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Hire Expert Freelance Chrome Extension Developer (Manifest V3) | Pasindu Piumal",
+    title: "Hire Expert Freelance Chrome Extension Developer (Manifest V3, WXT, Plasmo) | Pasindu Piumal",
     description:
-      "Hire Pasindu Piumal — Top Rated Chrome Extension Developer with 175+ shipped projects, $1M+ revenue generated, and 100k+ active users. Manifest V3, AI overlays, automation & SaaS monetization.",
+      "Hire Pasindu Piumal — Top Rated Chrome Extension Developer with 175+ shipped projects, $1M+ revenue generated, and 100k+ active users. Manifest V3, WXT, Plasmo, cross-browser (Safari, Firefox, Chrome, Edge), AI overlays, automation & SaaS monetization.",
     card: "summary_large_image",
     creator: "@pasindupiumal03",
     images: [`${DATA.url}/og-image.jpg`],
@@ -120,7 +131,19 @@ const FAQS = [
   },
   {
     q: "What is the best technology stack for building Chrome extensions?",
-    a: "For production Chrome extensions, I use Manifest V3 with React 19 or vanilla TypeScript for the popup and side panel UI, Tailwind CSS for styling, Chrome Extension APIs (chrome.storage, chrome.runtime, chrome.tabs, declarativeNetRequest), and Service Workers for background processing. For AI extensions, I integrate OpenAI GPT-4o or Google Gemini Pro via streaming APIs. For monetization, Stripe or ExtensionPay handles in-app subscriptions.",
+    a: "For production Chrome extensions, I engineer with Manifest V3 paired with modern toolkits like WXT (Next-Gen Web Extension Framework) and Plasmo for rapid Vite HMR, file-based routing, and TypeScript safety. For the UI layer, I use React 19 or vanilla TypeScript with Tailwind CSS for popups, side panels, and isolated Shadow DOM HUDs. For background processes, I leverage ephemeral Service Workers and Offscreen Documents. For AI extensions, I integrate OpenAI GPT-4o or Google Gemini Pro via streaming SSE. For monetization, Stripe and ExtensionPay power in-app subscriptions.",
+  },
+  {
+    q: "Do you work with modern extension frameworks like WXT, Plasmo, or CRXJS?",
+    a: "Yes, extensively. While I can build zero-dependency vanilla MV3 extensions when needed, WXT and Plasmo are my primary frameworks for complex commercial extensions. They provide instantaneous Vite hot-reloading, type-safe messaging between content scripts and service workers, automated manifest generation, and seamless multi-target builds across Chrome, Firefox, Edge, and Safari.",
+  },
+  {
+    q: "Can you build cross-browser extensions for Firefox, Safari, and Edge, or only Chrome?",
+    a: "I build fully cross-browser extensions compatible with Google Chrome, Microsoft Edge, Mozilla Firefox (AMO), Apple Safari (macOS and iOS), Brave, and Arc. Using WXT or Plasmo alongside the standard WebExtensions API polyfill, we maintain a single unified codebase that compiles cleanly into store-specific distributions without duplicate business logic.",
+  },
+  {
+    q: "Can you help migrate legacy Manifest V2 extensions or fix Chrome Web Store rejections?",
+    a: "Yes. With Google phasing out Manifest V2, I specialize in comprehensive MV2-to-MV3 migrations: replacing background pages with ephemeral service workers, transitioning blocking webRequest to declarativeNetRequest rulesets, configuring Offscreen Documents for persistent audio/DOM tasks, and resolving Content Security Policy (CSP) errors. I also audit rejected extensions to fix permission overreach and ensure immediate store approval.",
   },
   {
     q: "Should I hire a freelance Chrome extension developer or an agency?",
@@ -142,7 +165,7 @@ const structuredData = {
       url: `${DATA.url}/chrome-extension-developer-for-hire`,
       image: `${DATA.url}${DATA.avatarUrl}`,
       description:
-        "Professional Chrome Extension development specializing in Manifest V3, AI overlays, browser automation, web scraping, and full-stack SaaS monetization with 175+ shipped projects.",
+        "Professional Chrome Extension development specializing in Manifest V3, WXT, Plasmo, cross-browser extensions (Firefox, Safari, Edge), AI overlays, browser automation, web scraping, and full-stack SaaS monetization with 175+ shipped projects.",
       priceRange: "$$ - From $35/hr or Fixed Milestone",
       telephone: DATA.contact.tel,
       email: DATA.contact.email,
@@ -169,6 +192,30 @@ const structuredData = {
               "@type": "Service",
               name: "Manifest V3 Chrome Extension Development",
               description: "Custom MV3 browser extensions with modern background service workers and content scripts.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "WXT & Plasmo Modern Extension Framework Engineering",
+              description: "Vite-powered HMR, type-safe development, and automated multi-browser compilation with WXT and Plasmo.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Cross-Browser Web Extension Development",
+              description: "Unified WebExtensions codebases compiling to Chrome Web Store, Firefox AMO, Edge Add-ons, and Apple Safari.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Manifest V2 to V3 Migration & Store Approval",
+              description: "Upgrading legacy extensions to Manifest V3 service workers, declarativeNetRequest, and fixing Chrome Web Store rejections.",
             },
           },
           {
@@ -241,6 +288,22 @@ const SERVICES = [
     projects: "Featured in: Tech Copilot (Chrome Web Store), AI Apply Helper, Positional",
   },
   {
+    icon: Code2,
+    title: "Modern Frameworks: WXT & Plasmo",
+    badge: "WXT • Plasmo • Vite / CRXJS • TypeScript",
+    description:
+      "Engineered with modern frameworks like WXT and Plasmo for clean monorepo architecture, instant Vite-powered HMR, and end-to-end TypeScript safety. Rapidly prototype and ship production extensions with structured entrypoints and automated build pipelines.",
+    projects: "Modern TypeScript, Vite, React & Vue extension setups",
+  },
+  {
+    icon: Globe,
+    title: "Cross-Browser Extensions (Safari, Firefox, Edge, Arc)",
+    badge: "WebExtensions API • Safari Xcode • Firefox AMO",
+    description:
+      "Unified cross-browser architecture targeting Google Chrome, Mozilla Firefox (AMO), Apple Safari (macOS & iOS WebExtensions via Xcode conversion), Microsoft Edge, and Arc from a single shared codebase with store-specific manifest compilation.",
+    projects: "Chrome Web Store, Firefox AMO, Edge Add-ons & Safari workflows",
+  },
+  {
     icon: Zap,
     title: "High-Frequency Sniping & Slot Automation",
     badge: "Sub-Second • Anti-Bot • CSRF • AWS WAF Bypass",
@@ -274,15 +337,13 @@ const SERVICES = [
   },
   {
     icon: RefreshCw,
-    title: "Manifest V2 to Manifest V3 Migration",
-    badge: "Service Workers • declarativeNetRequest",
+    title: "Manifest V2 to Manifest V3 Migration & Store Approval",
+    badge: "Service Workers • declarativeNetRequest • CWS Rejections",
     description:
-      "Future-proof legacy extensions before Google removes MV2 support. Migrate background pages to ephemeral service workers, replace blocking webRequest with declarativeNetRequest, and resolve Content Security Policy (CSP) roadblocks.",
+      "Future-proof legacy extensions before Google removes MV2 support. Migrate background pages to ephemeral service workers, replace blocking webRequest with declarativeNetRequest, resolve CSP roadblocks, and audit rejected extensions to secure fast Chrome Web Store approval.",
     projects: "Over 50+ legacy extensions successfully migrated & approved on Chrome Web Store",
   },
 ];
-
-
 
 const ARCHITECTURE_PILLARS = [
   {
@@ -320,6 +381,24 @@ const ARCHITECTURE_PILLARS = [
     title: "In-App Monetization & Stripe / ExtensionPay",
     description:
       "Deploy robust licensing models: freemium monthly caps, one-time lifetime keys, or recurring Stripe/ExtensionPay subscriptions with instant feature unlocking and tamper-resistant verification.",
+  },
+  {
+    icon: Code2,
+    title: "WXT & Plasmo Next-Gen Tooling",
+    description:
+      "Leverage modern frameworks for instant Vite HMR, typed content scripts, automatic manifest generation, and seamless multi-target builds without fragile boilerplate.",
+  },
+  {
+    icon: Globe,
+    title: "Cross-Browser WebExtensions Core",
+    description:
+      "Target Google Chrome, Mozilla Firefox (AMO), Apple Safari (WebKit / Xcode conversion), and Microsoft Edge from a single clean codebase with store-specific packaging.",
+  },
+  {
+    icon: RefreshCw,
+    title: "MV2 to MV3 Migration & Store Compliance",
+    description:
+      "Full migration of legacy background pages to service workers, declarativeNetRequest rulesets, CSP hardening, and rapid Chrome Web Store rejection recovery.",
   },
 ];
 

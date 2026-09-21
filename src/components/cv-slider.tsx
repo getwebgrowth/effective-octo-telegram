@@ -287,7 +287,7 @@ export default function CVSlider() {
                   <div className="p-3 rounded-lg border bg-background/50 space-y-1">
                     <span className="font-bold text-foreground text-[11px]">Browser Extensions (MV3)</span>
                     <p className="text-[11px] text-muted-foreground leading-normal">
-                      Manifest V3, Service Workers, Side Panel, Content Scripts, chrome.scripting, chrome.storage, MutationObserver, Shadow DOM, React Fiber Synthetic Events.
+                      Manifest V3, WXT Framework, Plasmo, Vite / CRXJS, Service Workers, Side Panel API, Content Scripts, declarativeNetRequest, Offscreen Documents, chrome.scripting, chrome.storage, MutationObserver, Shadow DOM, cross-browser WebExtensions.
                     </p>
                   </div>
                   <div className="p-3 rounded-lg border bg-background/50 space-y-1">
