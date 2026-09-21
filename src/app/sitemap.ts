@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = DATA.url.replace(/\/$/, "");
   // Use a fixed date for static pages to avoid misleading search engines
   // Update this date when static page content actually changes
-  const staticLastModified = new Date("2026-09-15");
+  const staticLastModified = new Date("2026-09-21");
 
   // Core static routes
   const staticRoutes: MetadataRoute.Sitemap = [

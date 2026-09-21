@@ -39,7 +39,7 @@ const BLUR_FADE_DELAY = 0.04;
 export const metadata: Metadata = {
   title: "Hire Expert Freelance Chrome Extension Developer (Manifest V3) | Pasindu Piumal",
   description:
-    "Hire Pasindu Piumal — Top Rated Chrome Extension Developer with 175+ shipped projects, $1M+ software revenue generated, and 100k+ active users. Specializing in Manifest V3, AI overlays, ATS auto-apply, browser automation, and SaaS monetization. $20/hr or fixed milestones.",
+    "Hire Pasindu Piumal — Top Rated Chrome Extension Developer with 175+ shipped projects, $1M+ software revenue generated, and 100k+ active users. Specializing in Manifest V3, AI overlays, ATS auto-apply, browser automation, and SaaS monetization. 175+ projects, 100% Upwork JSS.",
   keywords: [
     "Hire Chrome Extension Developer",
     "Freelance Chrome Extension Developer",
@@ -112,11 +112,11 @@ const FAQS = [
   },
   {
     q: "How do we work together (hourly vs. fixed price)?",
-    a: "I work through Upwork (Top Rated, 100% Job Success Score at $20/hr with transparent time tracking) or via fixed-price milestone contracts where each feature is verified before milestone release.",
+    a: "I work through Upwork (Top Rated, 100% Job Success Score at $35/hr with transparent time tracking) or via fixed-price milestone contracts where each feature is verified before milestone release.",
   },
   {
     q: "How much does it cost to build a Chrome extension?",
-    a: "Costs vary by complexity. Simple Chrome extensions (popup, basic API calls) start at $150–$400. AI-powered copilot extensions with OpenAI or Gemini Pro integration typically range from $400–$900. Browser automation bots with anti-detection and multi-site support run $500–$1,200. Full-stack SaaS platforms with Chrome Web Store extensions, backend APIs, subscription billing, and user dashboards range from $1,200–$3,500. My hourly rate is $20/hr tracked on Upwork.",
+    a: "Costs vary by complexity. Simple Chrome extensions (popup, basic API calls) start at $150–$400. AI-powered copilot extensions with OpenAI or Gemini Pro integration typically range from $400–$900. Browser automation bots with anti-detection and multi-site support run $500–$1,200. Full-stack SaaS platforms with Chrome Web Store extensions, backend APIs, subscription billing, and user dashboards range from $1,200–$3,500. My hourly rate is $35/hr tracked on Upwork.",
   },
   {
     q: "What is the best technology stack for building Chrome extensions?",
@@ -124,7 +124,7 @@ const FAQS = [
   },
   {
     q: "Should I hire a freelance Chrome extension developer or an agency?",
-    a: "For specialized Chrome extension work, a dedicated freelance developer with deep Manifest V3 expertise typically delivers faster and at lower cost than agencies. Agencies often charge $80–$150/hr and assign junior developers without Chrome API experience. I work directly as a senior engineer at $20/hr with transparent Upwork time tracking, full communication access, and hands-on architecture decisions — no middlemen or handoffs.",
+    a: "For specialized Chrome extension work, a dedicated freelance developer with deep Manifest V3 expertise typically delivers faster and at lower cost than agencies. Agencies often charge $80–$150/hr and assign junior developers without Chrome API experience. I work directly as a senior engineer at $35/hr with transparent Upwork time tracking, full communication access, and hands-on architecture decisions — no middlemen or handoffs.",
   },
   {
     q: "Where is Pasindu Piumal based and what time zones does he work with?",
@@ -143,7 +143,7 @@ const structuredData = {
       image: `${DATA.url}${DATA.avatarUrl}`,
       description:
         "Professional Chrome Extension development specializing in Manifest V3, AI overlays, browser automation, web scraping, and full-stack SaaS monetization with 175+ shipped projects.",
-      priceRange: "$$ - $20/hr or Fixed Milestone",
+      priceRange: "$$ - From $35/hr or Fixed Milestone",
       telephone: DATA.contact.tel,
       email: DATA.contact.email,
       provider: {
@@ -347,7 +347,7 @@ const COMPARISON_POINTS = [
   {
     criteria: "Pricing & Transparency",
     others: "Unpredictable agency hourly rates ($80-$150/hr) with junior handoffs",
-    pasindu: "Direct senior engineer at $20/hr with transparent Upwork work diary or fixed escrow",
+    pasindu: "Direct senior engineer from $35/hr with transparent Upwork work diary or fixed escrow",
   },
 ];
 
@@ -599,8 +599,8 @@ export default function ChromeExtensionDeveloperForHirePage() {
               </div>
               <div className="relative p-3.5 sm:p-4 rounded-xl border border-blue-200/60 dark:border-blue-800/40 bg-gradient-to-b from-blue-50/80 to-white/50 dark:from-blue-950/30 dark:to-background/50 backdrop-blur-md overflow-hidden group hover:border-blue-300/80 dark:hover:border-blue-700/60 transition-all shadow-xs hover:shadow-sm">
                 <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-                <div className="text-xl sm:text-2xl font-extrabold bg-gradient-to-br from-blue-700 to-indigo-700 dark:from-blue-300 dark:to-indigo-300 bg-clip-text text-transparent">$20/hr</div>
-                <div className="text-[11px] sm:text-xs text-muted-foreground font-medium">Or Fixed Milestone</div>
+                <div className="text-xl sm:text-2xl font-extrabold bg-gradient-to-br from-blue-700 to-indigo-700 dark:from-blue-300 dark:to-indigo-300 bg-clip-text text-transparent">5.0★</div>
+                <div className="text-[11px] sm:text-xs text-muted-foreground font-medium">Client Rating</div>
               </div>
             </div>
           </BlurFade>
@@ -615,7 +615,7 @@ export default function ChromeExtensionDeveloperForHirePage() {
               >
                 <Button size="sm" className="rounded-xl h-10 px-6 text-xs sm:text-sm font-bold shadow-[0_4px_14px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.25)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 w-full sm:w-auto bg-gradient-to-r from-primary to-primary/90">
                   <Icons.upwork className="mr-1.5 size-4 fill-current" />
-                  Hire on Upwork ($20/hr)
+                  Hire on Upwork
                   <ArrowRight className="ml-1.5 size-3.5" />
                 </Button>
               </Link>
@@ -702,7 +702,7 @@ export default function ChromeExtensionDeveloperForHirePage() {
                   <li className="flex items-start gap-1.5"><CheckCircle2 className="size-3.5 text-primary mt-0.5 shrink-0" /><span><strong>175+</strong> production projects shipped</span></li>
                   <li className="flex items-start gap-1.5"><CheckCircle2 className="size-3.5 text-primary mt-0.5 shrink-0" /><span><strong>100,000+</strong> peak users on flagship extension</span></li>
                   <li className="flex items-start gap-1.5"><CheckCircle2 className="size-3.5 text-primary mt-0.5 shrink-0" /><span><strong>$1M+</strong> in client software revenue enabled</span></li>
-                  <li className="flex items-start gap-1.5"><CheckCircle2 className="size-3.5 text-primary mt-0.5 shrink-0" /><span><strong>$20/hr</strong> tracked rate on Upwork (Top Rated)</span></li>
+                  <li className="flex items-start gap-1.5"><CheckCircle2 className="size-3.5 text-primary mt-0.5 shrink-0" /><span><strong>5.0★</strong> client rating across all platforms</span></li>
                   <li className="flex items-start gap-1.5"><CheckCircle2 className="size-3.5 text-primary mt-0.5 shrink-0" /><span><strong>100%</strong> Job Success Score on Upwork</span></li>
                   <li className="flex items-start gap-1.5"><CheckCircle2 className="size-3.5 text-primary mt-0.5 shrink-0" /><span><strong>5.0★</strong> client rating across all platforms</span></li>
                   <li className="flex items-start gap-1.5"><CheckCircle2 className="size-3.5 text-primary mt-0.5 shrink-0" /><span>BSc Software Engineering, University of Westminster</span></li>
@@ -712,7 +712,7 @@ export default function ChromeExtensionDeveloperForHirePage() {
 
             <p className="text-xs text-foreground/80 dark:text-muted-foreground leading-relaxed pt-2 border-t">
               <strong className="text-foreground">Available for hire globally</strong> at{" "}
-              <strong className="text-foreground">$20/hr</strong> via{" "}
+              <strong className="text-foreground">competitive rates</strong> via{" "}
               <Link href="https://www.upwork.com/freelancers/pasindupiumal" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:opacity-80">Upwork</Link>{" "}
               (with transparent work diary tracking), commission-free milestone contracts via{" "}
               <Link href="https://contra.com/pasindu_piumal?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=pasindu_piumal" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:opacity-80">Contra</Link>, or direct engagement via{" "}
@@ -1099,17 +1099,20 @@ export default function ChromeExtensionDeveloperForHirePage() {
               <div className="space-y-2.5">
                 <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-lg bg-primary/10 text-primary border border-primary/20">Hourly</span>
                 <div className="text-2xl font-bold flex items-baseline gap-1">
-                  $20 <span className="text-xs font-normal text-foreground/80 dark:text-muted-foreground">/ hr</span>
+                  Request a Quote
                 </div>
                 <p className="text-xs text-foreground/80 dark:text-muted-foreground leading-relaxed">
-                  Ideal for agile development, maintenance, bug fixes, or dedicated engineering.
+                  Ideal for agile development, maintenance, bug fixes, or dedicated engineering. Transparent Upwork time tracking.
                 </p>
                 <ul className="space-y-1.5 text-xs text-foreground/80 dark:text-muted-foreground pt-1">
                   <li className="flex items-center gap-1.5">
-                    <CheckCircle2 className="size-3.5 text-primary" /> Upwork Top Rated
+                    <CheckCircle2 className="size-3.5 text-primary" /> Upwork Top Rated (100% JSS)
                   </li>
                   <li className="flex items-center gap-1.5">
                     <CheckCircle2 className="size-3.5 text-primary" /> Tracked work diary
+                  </li>
+                  <li className="flex items-center gap-1.5">
+                    <CheckCircle2 className="size-3.5 text-primary" /> 175+ projects delivered
                   </li>
                 </ul>
               </div>
@@ -1121,7 +1124,7 @@ export default function ChromeExtensionDeveloperForHirePage() {
                 >
                   <Button size="sm" className="w-full text-xs font-bold rounded-lg h-9 bg-primary hover:bg-primary/90 text-primary-foreground">
                     <Icons.upwork className="mr-1.5 size-3.5 fill-current" />
-                    Hire on Upwork ($20/hr)
+                    Hire on Upwork
                   </Button>
                 </Link>
                 <Link

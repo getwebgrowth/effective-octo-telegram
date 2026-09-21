@@ -65,7 +65,7 @@ const homeJsonLd = {
           name: "How much does Pasindu Piumal charge for Chrome extension development?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Pasindu Piumal charges $20/hr tracked on Upwork with automatic work diary and escrow protection. He also offers fixed-price milestones: simple extensions from $150-$400, AI copilot extensions $400-$900, browser automation bots $500-$1,200, and full-stack SaaS platforms $1,200-$3,500. He is also available on Contra with 0% client commission.",
+            text: "Pasindu Piumal charges $35/hr for Chrome extension development and $25/hr for full-stack SaaS work, tracked on Upwork with automatic work diary and escrow protection. He also offers fixed-price milestones: simple extensions from $150-$400, AI copilot extensions $400-$900, browser automation bots $500-$1,200, and full-stack SaaS platforms $1,200-$3,500. He is also available on Contra with 0% client commission.",
           },
         },
         {
@@ -171,8 +171,8 @@ export default function Page() {
                       <div className="text-[10px] text-muted-foreground">Peak Users</div>
                     </div>
                     <div className="p-2 rounded-xl border bg-background/50 backdrop-blur-xs text-center">
-                      <div className="text-sm font-bold text-primary">$20/hr</div>
-                      <div className="text-[10px] text-muted-foreground">Tracked Rate</div>
+                      <div className="text-sm font-bold text-primary">5.0★</div>
+                      <div className="text-[10px] text-muted-foreground">Client Rating</div>
                     </div>
                   </div>
                 </BlurFade>
@@ -186,7 +186,7 @@ export default function Page() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-primary-foreground text-xs font-bold shadow-xs hover:opacity-90 transition-opacity"
                     >
-                      <span>Hire Me on Upwork ($20/hr)</span>
+                      <span>Hire Me on Upwork</span>
                       <ArrowUpRight className="size-3" />
                     </Link>
                     <Link

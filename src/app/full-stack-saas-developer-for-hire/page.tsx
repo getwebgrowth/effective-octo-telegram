@@ -42,7 +42,7 @@ const BLUR_FADE_DELAY = 0.04;
 export const metadata: Metadata = {
   title: "Hire Expert Freelance Full-Stack SaaS Developer (Next.js · Node · AI · Stripe) | Pasindu Piumal",
   description:
-    "Hire Pasindu Piumal — Top Rated Full-Stack SaaS Developer with 175+ shipped projects, $1M+ software revenue enabled, and 100k+ active users. Specializing in Next.js, React, Node.js, AI copilots (GPT-4o/Claude/Gemini), Stripe subscription billing, micro-SaaS monorepos, and cloud architecture. $20/hr or fixed milestones.",
+    "Hire Pasindu Piumal — Top Rated Full-Stack SaaS Developer with 175+ shipped projects, $1M+ software revenue enabled, and 100k+ active users. Specializing in Next.js, React, Node.js, AI copilots (GPT-4o/Claude/Gemini), Stripe subscription billing, micro-SaaS monorepos, and cloud architecture. 175+ projects, 100% Upwork JSS.",
   keywords: [
     "Hire Full-Stack SaaS Developer",
     "Freelance SaaS Developer for hire",
@@ -113,15 +113,15 @@ const FAQS = [
   },
   {
     q: "What are your hiring rates and engagement models?",
-    a: "I offer both hourly contracts ($20/hr tracked on Upwork with full time tracking and work diary) and fixed-price milestone projects (commission-free via Contra or verified escrow) with clearly defined deliverables and acceptance criteria. You only pay for code that meets your specifications.",
+    a: "I offer both hourly contracts ($25/hr tracked on Upwork with full time tracking and work diary) and fixed-price milestone projects (commission-free via Contra or verified escrow) with clearly defined deliverables and acceptance criteria. You only pay for code that meets your specifications.",
   },
   {
     q: "How much does it cost to build a full-stack SaaS application?",
-    a: "A focused MVP SaaS ranges between $800 and $1,800. An AI-powered SaaS with RAG pipelines ranges from $1,500 to $3,500. Micro-SaaS monorepos pairing browser extensions with web dashboards range from $1,800 to $4,500. Dedicated development is $20/hr on Upwork.",
+    a: "A focused MVP SaaS ranges between $800 and $1,800. An AI-powered SaaS with RAG pipelines ranges from $1,500 to $3,500. Micro-SaaS monorepos pairing browser extensions with web dashboards range from $1,800 to $4,500. Dedicated development is $25/hr on Upwork.",
   },
   {
     q: "Should I hire a freelance SaaS developer or an agency?",
-    a: "Agencies often charge $100–$200/hr, add unnecessary management layers, and frequently assign the real work to junior developers. Working with me gives you direct senior engineer communication, faster turnarounds, and top-tier craftsmanship at $20/hr with 100% accountability.",
+    a: "Agencies often charge $100–$200/hr, add unnecessary management layers, and frequently assign the real work to junior developers. Working with me gives you direct senior engineer communication, faster turnarounds, and top-tier craftsmanship at $25/hr with 100% accountability.",
   },
   {
     q: "How do you handle database security, authentication, and user data privacy?",
@@ -144,7 +144,7 @@ const structuredData = {
       image: `${DATA.url}${DATA.avatarUrl}`,
       description:
         "Professional full-stack SaaS engineering specializing in Next.js, React 19, Node.js, AI integrations (OpenAI GPT-4o, Claude, Gemini Pro RAG), Stripe subscription monetization, and micro-SaaS browser extension monorepos with 175+ shipped production projects.",
-      priceRange: "$$ - $20/hr or Fixed Milestone",
+      priceRange: "$$ - From $25/hr or Fixed Milestone",
       telephone: DATA.contact.tel,
       email: DATA.contact.email,
       provider: {
@@ -295,7 +295,7 @@ const COMPARISON_POINTS = [
   {
     criteria: "Hourly Rate & Value",
     others: "$100 - $200/hr (Agencies) or $15/hr (Unverified code)",
-    pasindu: "$20/hr tracked on Upwork (Top Rated, 100% JSS, $1M+ software revenue)",
+    pasindu: "From $25/hr tracked on Upwork (Top Rated, 100% JSS, $1M+ software revenue)",
   },
   {
     criteria: "MVP Delivery Timeline",
@@ -460,7 +460,7 @@ export default function FullStackSaaSDeveloperPage() {
               <span className="text-muted-foreground">•</span>
               <span className="text-emerald-600 dark:text-emerald-400 font-bold">$1M+ Software Revenue</span>
               <span className="text-muted-foreground">•</span>
-              <span className="text-foreground font-semibold">$20/hr Tracked Rate</span>
+              <span className="text-foreground font-semibold">100% Job Success</span>
             </div>
           </BlurFade>
 
@@ -493,7 +493,7 @@ export default function FullStackSaaSDeveloperPage() {
               >
                 <Button size="lg" className="rounded-xl h-11 px-6 font-bold shadow-md hover:shadow-lg transition-all text-xs sm:text-sm bg-primary hover:bg-primary/90 text-primary-foreground">
                   <Icons.upwork className="mr-2 size-4 fill-current" />
-                  Hire Pasindu on Upwork ($20/hr)
+                  Hire Pasindu on Upwork
                 </Button>
               </Link>
               <Link
@@ -562,7 +562,7 @@ export default function FullStackSaaSDeveloperPage() {
             <strong>$1,000,000 in software revenue</strong>. His core expertise encompasses Next.js 15/16 App Router, React 19,
             TypeScript, Node.js, Express, PostgreSQL with Supabase/Prisma, Stripe subscription billing, and native AI
             copilots using OpenAI GPT-4o, Claude 3.5, and Gemini Pro RAG. He is Top Rated on Upwork with a 100% Job Success
-            Score and is available globally at <strong>$20/hour tracked</strong> or milestone-based contracts.
+            Score and is available globally at <strong>competitive hourly rates</strong> or milestone-based contracts.
           </p>
           <div className="flex flex-wrap items-center gap-2 pt-1 text-[11px] text-muted-foreground">
             <span className="font-semibold text-foreground">Verified Credentials:</span>
@@ -866,7 +866,7 @@ export default function FullStackSaaSDeveloperPage() {
               <div className="space-y-2.5">
                 <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-lg bg-primary/10 text-primary border border-primary/20">Hourly Retainer</span>
                 <div className="text-2xl font-bold flex items-baseline gap-1">
-                  $20 <span className="text-xs font-normal text-foreground/80 dark:text-muted-foreground">/ hr</span>
+                  Request a Quote
                 </div>
                 <p className="text-xs text-foreground/80 dark:text-muted-foreground leading-relaxed">
                   Ideal for ongoing feature sprints, agile product iterations, refactoring, or dedicated engineering.
@@ -891,7 +891,7 @@ export default function FullStackSaaSDeveloperPage() {
                 >
                   <Button size="sm" className="w-full text-xs font-bold rounded-lg h-9 bg-primary hover:bg-primary/90 text-primary-foreground">
                     <Icons.upwork className="mr-1.5 size-3.5 fill-current" />
-                    Hire on Upwork ($20/hr)
+                    Hire on Upwork
                   </Button>
                 </Link>
                 <Link

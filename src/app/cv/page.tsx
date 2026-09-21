@@ -177,7 +177,7 @@ export default function CVPage() {
               className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-[#14a800] hover:bg-[#129400] text-white text-xs sm:text-sm font-bold shadow-xs transition-opacity"
             >
               <Icons.upwork className="size-4 fill-current" />
-              <span>Hire Me on Upwork ($20/hr)</span>
+              <span>Hire Me on Upwork</span>
               <ArrowUpRight className="size-3.5" />
             </a>
 
@@ -218,9 +218,9 @@ export default function CVPage() {
             <div className="text-[10px] text-muted-foreground mt-0.5">$1M+ software revenue</div>
           </div>
           <div className="p-3.5 rounded-2xl border border-border bg-card/60 backdrop-blur-xs text-left">
-            <div className="text-xl sm:text-2xl font-black text-primary">$20/hr</div>
-            <div className="text-xs font-semibold text-foreground/80 mt-0.5">Tracked Rate</div>
-            <div className="text-[10px] text-muted-foreground mt-0.5">Milestone escrow available</div>
+            <div className="text-xl sm:text-2xl font-black text-primary">5.0★</div>
+            <div className="text-xs font-semibold text-foreground/80 mt-0.5">Client Rating</div>
+            <div className="text-[10px] text-muted-foreground mt-0.5">Across all platforms</div>
           </div>
         </div>
 
@@ -358,6 +358,109 @@ export default function CVPage() {
                   <p className="text-muted-foreground mt-1">
                     Build custom Chrome extensions, browser automation tools, AI integrations, scraping/data workflows and SaaS-connected products for international clientele.
                   </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Selected Projects */}
+            <div className="space-y-3 pt-3 border-t border-border/60">
+              <h3 className="text-base font-bold text-foreground flex items-center gap-2">
+                <Sparkles className="size-4 text-primary" />
+                <span>Selected Projects</span>
+              </h3>
+              <div className="space-y-3 text-xs">
+                <div className="p-3 rounded-xl border bg-background/50 space-y-1.5">
+                  <div className="flex flex-wrap justify-between items-baseline gap-1">
+                    <span className="font-bold text-foreground text-sm">Tech Copilot</span>
+                    <span className="text-muted-foreground font-mono text-[11px]">Manifest V3, OpenAI, Gemini RAG, ExtensionPay</span>
+                  </div>
+                  <p className="text-muted-foreground leading-normal">
+                    Live automotive AI copilot for technicians that works alongside OEM manuals and service systems. It helps decode VIN context, capture/reference technical content, surface service/TSB information, explain repair steps and stream AI diagnostic guidance inside Chrome/Edge. Built through six paid Upwork milestones worth $1,875+ with a 5.0 client review, plus usage-based free trial and subscription gating.
+                  </p>
+                  <div className="flex flex-wrap items-center gap-3 pt-1 text-[11px] text-primary">
+                    <a href="https://www.techaicopilot.com/how-it-works" target="_blank" rel="noopener noreferrer" className="hover:underline inline-flex items-center gap-1">
+                      <span>Live Product</span>
+                      <ExternalLink className="size-3" />
+                    </a>
+                    <span className="text-muted-foreground">•</span>
+                    <Link href="/projects/tech-copilot" className="hover:underline">
+                      Case Study
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-xl border bg-background/50 space-y-1.5">
+                  <div className="flex flex-wrap justify-between items-baseline gap-1">
+                    <span className="font-bold text-foreground text-sm">RoboApply & Sociax</span>
+                    <span className="text-muted-foreground font-mono text-[11px]">Multi-ATS Automation, OpenAI, Browser Automation</span>
+                  </div>
+                  <p className="text-muted-foreground leading-normal">
+                    AI-powered job application automation that fills and submits applications across Greenhouse, Workable, Ashby, Workday and Oracle, handles resume uploads, and supports AI-generated resumes/cover letters. Delivered RoboApply&apos;s first working Ashby integration in one week after 20+ previous developer attempts, then expanded the working multi-ATS system.
+                  </p>
+                  <div className="flex flex-wrap items-center gap-3 pt-1 text-[11px] text-primary">
+                    <Link href="/projects/roboapply-ats-automation" className="hover:underline">
+                      Case Study
+                    </Link>
+                    <span className="text-muted-foreground">•</span>
+                    <Link href="/projects" className="hover:underline">
+                      All Projects
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-xl border bg-background/50 space-y-1.5">
+                  <div className="flex flex-wrap justify-between items-baseline gap-1">
+                    <span className="font-bold text-foreground text-sm">Amazon Shift Sniper Series</span>
+                    <span className="text-muted-foreground font-mono text-[11px]">Manifest V3, Real-Time Monitoring, DOM/Session Automation</span>
+                  </div>
+                  <p className="text-muted-foreground leading-normal">
+                    Series of six production extensions for Amazon hiring and scheduling workflows: sub-second shift detection and booking, OTP capture, real-time slot analytics, multi-profile synchronization, session-aware execution and automatic recovery from broken states. Used Main/Isolated World execution, MutationObserver, Shadow DOM traversal, persistent MV3 runtime patterns and 403/session recovery for long-running reliability.
+                  </p>
+                  <div className="flex flex-wrap items-center gap-3 pt-1 text-[11px] text-primary">
+                    <Link href="/projects/amazon-shift-sniper" className="hover:underline">
+                      Case Study
+                    </Link>
+                    <span className="text-muted-foreground">•</span>
+                    <a href="https://www.upwork.com/freelancers/pasindupiumal?p=2062560822872154112" target="_blank" rel="noopener noreferrer" className="hover:underline inline-flex items-center gap-1">
+                      <span>Verified Upwork Contract</span>
+                      <ExternalLink className="size-3" />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-xl border bg-background/50 space-y-1.5">
+                  <div className="flex flex-wrap justify-between items-baseline gap-1">
+                    <span className="font-bold text-foreground text-sm">SiteSafety Shield</span>
+                    <span className="text-muted-foreground font-mono text-[11px]">Manifest V3, Google Safe Browsing, VirusTotal, PhishTank</span>
+                  </div>
+                  <p className="text-muted-foreground leading-normal">
+                    Client browser-security extension built in 2023 through ByteSquad Labs. Checks URLs against multiple threat-intelligence sources, applies configurable risk scoring and local caching, and warns or blocks users before proceeding to known phishing, malware or scam pages.
+                  </p>
+                  <div className="flex flex-wrap items-center gap-3 pt-1 text-[11px] text-primary">
+                    <Link href="/projects/sitesafety-shield-extension" className="hover:underline">
+                      Case Study
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-xl border bg-background/50 space-y-1.5">
+                  <div className="flex flex-wrap justify-between items-baseline gap-1">
+                    <span className="font-bold text-foreground text-sm">High-Scale Chrome Extension + SaaS (EliteFutBot)</span>
+                    <span className="text-muted-foreground font-mono text-[11px]">Next.js, Supabase/PostgreSQL, Stripe, Browser Automation</span>
+                  </div>
+                  <p className="text-muted-foreground leading-normal">
+                    Engineered a commercial browser-automation product as a complete extension + SaaS platform: Manifest V3 client, Next.js dashboard, Supabase/PostgreSQL backend, Stripe subscriptions, licensing and real-time automation. The public portfolio case study reports 100K+ users and $1M+ software revenue, demonstrating product architecture beyond a standalone extension.
+                  </p>
+                  <div className="flex flex-wrap items-center gap-3 pt-1 text-[11px] text-primary">
+                    <a href="https://elitefutbot.com" target="_blank" rel="noopener noreferrer" className="hover:underline inline-flex items-center gap-1">
+                      <span>Live Product</span>
+                      <ExternalLink className="size-3" />
+                    </a>
+                    <span className="text-muted-foreground">•</span>
+                    <Link href="/projects/fut-snipe-bot" className="hover:underline">
+                      Case Study
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

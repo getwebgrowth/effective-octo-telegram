@@ -225,8 +225,8 @@ export default function CVSlider() {
                   <div className="text-[10px] text-muted-foreground">Software Scale</div>
                 </div>
                 <div className="p-2.5 rounded-xl border border-border bg-card/60">
-                  <div className="text-base font-black text-primary">$20/hr</div>
-                  <div className="text-[10px] text-muted-foreground">Tracked Rate</div>
+                  <div className="text-base font-black text-primary">5.0★</div>
+                  <div className="text-[10px] text-muted-foreground">Client Rating</div>
                 </div>
               </div>
 
@@ -234,7 +234,7 @@ export default function CVSlider() {
               <div className="p-3 rounded-xl border border-primary/25 bg-primary/5 flex flex-wrap items-center justify-between gap-2.5">
                 <div className="text-xs">
                   <span className="font-bold text-foreground">Available for immediate hire: </span>
-                  <span className="text-primary font-semibold">$20/hr or fixed milestones</span>
+                  <span className="text-primary font-semibold">hourly or fixed milestones</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <a

@@ -11,7 +11,7 @@ interface ClientHireCardProps {
 export function ClientHireCard({
   headline = "Need a High-Speed Bot or Browser Automation SaaS?",
   subheadline = "I engineer high-frequency web automation, custom Chrome extensions, and monetized SaaS monorepos that handle massive scale without getting banned.",
-  rate = "$20/hr on Upwork",
+  rate = "competitive rates on Upwork",
 }: ClientHireCardProps) {
   return (
     <div className="not-prose my-8 relative overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/10 via-card to-background p-6 sm:p-8 shadow-xl">
@@ -58,7 +58,7 @@ export function ClientHireCard({
           </div>
           <div className="flex items-start gap-2 text-xs sm:text-sm text-foreground/90">
             <CheckCircle2 className="size-4 text-emerald-500 shrink-0 mt-0.5" />
-            <span><strong>Transparent Upwork Rate</strong>: Tracked {rate} or fixed-price milestones</span>
+            <span><strong>Transparent Upwork Engagement</strong>: {rate} or fixed-price milestones</span>
           </div>
           <div className="flex items-start gap-2 text-xs sm:text-sm text-foreground/90">
             <CheckCircle2 className="size-4 text-emerald-500 shrink-0 mt-0.5" />
@@ -75,7 +75,7 @@ export function ClientHireCard({
             className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary text-primary-foreground font-bold text-sm shadow-lg hover:shadow-primary/25 hover:scale-[1.02] active:scale-[0.98] transition-all"
           >
             <Icons.upwork className="size-4 fill-current" />
-            <span>Hire on Upwork ({rate})</span>
+            <span>Hire on Upwork</span>
             <ArrowUpRight className="size-4" />
           </a>
 

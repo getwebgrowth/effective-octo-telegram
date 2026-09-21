@@ -61,7 +61,7 @@ export function TrustBanner({
             className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl border-2 border-border bg-background hover:bg-muted text-foreground font-bold text-xs transition-all hover:border-primary/30"
           >
             <Icons.upwork className="size-3.5 fill-current" />
-            <span>Hire ($20/hr)</span>
+            <span>Hire on Upwork</span>
           </a>
         </div>
       </div>

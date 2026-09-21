@@ -8,8 +8,10 @@ last_updated: "2026-08-21"
 
 # Pricing & Procurement Terms
 
-## Tracked Hourly Rate
-- **Rate**: $20.00 USD per hour.
+## Tracked Hourly Rates
+- **Chrome Extension Development**: $35.00 USD per hour.
+- **Full-Stack SaaS Development**: $25.00 USD per hour.
+- **Blended / Median Rate**: $30.00 USD per hour.
 - **Billing Platform**: Upwork Escrow & Work Diary with automated screenshot tracking.
 - **Profile**: [https://www.upwork.com/freelancers/pasindupiumal](https://www.upwork.com/freelancers/pasindupiumal) (Top Rated, 100% Job Success Score).
 - **Includes**: Daily code commits, live staging builds, direct Slack/Discord/Email communication.

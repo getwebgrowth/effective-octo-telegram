@@ -238,7 +238,7 @@ export function ProjectsClient({
             <div className="w-full p-3.5 rounded-2xl border-2 border-primary/30 bg-primary/5 dark:bg-primary/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-left my-1">
               <div className="space-y-0.5">
                 <span className="text-xs font-bold text-foreground">Need a custom extension or automation bot?</span>
-                <p className="text-[11px] text-foreground/80 dark:text-muted-foreground">Available for $20/hr tracked work, Contra 0% fee contracts, or fixed-milestone deliverables.</p>
+                <p className="text-[11px] text-foreground/80 dark:text-muted-foreground">Available for tracked hourly work, Contra 0% fee contracts, or fixed-milestone deliverables.</p>
               </div>
               <div className="flex flex-wrap items-center gap-2">
                 <a

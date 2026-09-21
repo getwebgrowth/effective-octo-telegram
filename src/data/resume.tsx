@@ -57,7 +57,7 @@ export const DATA = {
   seoDescription:
     "Pasindu Piumal is a Chrome Extension Developer & Full-Stack SaaS Engineer — Manifest V3, AI copilots, browser automation, web scraping, and SaaS extension development. Built a 100k-user Chrome Extension SaaS generating $1M+ in revenue. 175+ shipped projects, 100% Upwork JSS. View portfolio and case studies.",
   summary:
-    "Since 2024, [I have been pursuing a BSc (Hons) in Software Engineering at the University of Westminster](/#education). In 2025, [I joined Bytesquadlabs as a Software Engineer](/#work). Where I work on full-stack web development and chrome extension projects. I enjoy building scalable applications using modern web technologies and creating browser extensions that enhance productivity and user experience. I’m driven by hands-on development and a strong interest in building practical, impactful software.",
+    "Since 2024, [I have been pursuing a BSc (Hons) in Software Engineering at the University of Westminster](/#education). In 2023, [I joined Bytesquadlabs as a Software Engineer](/#work). Where I work on full-stack web development and chrome extension projects. I enjoy building scalable applications using modern web technologies and creating browser extensions that enhance productivity and user experience. I’m driven by hands-on development and a strong interest in building practical, impactful software.",
   avatarUrl: "/me.webp",
   skills: [
     { name: "TypeScript", icon: Typescript },
@@ -171,7 +171,7 @@ export const DATA = {
       location: "Remote",
       title: "Software Engineer",
       logoUrl: "/bytesquadlabs.jpg",
-      start: "2025",
+      start: "2023",
       end: "Present",
       description:
         "I'm creating fullstack websites and developing chrome extensions. Working with modern web technologies to build scalable applications and browser extensions that enhance user productivity and experience.",

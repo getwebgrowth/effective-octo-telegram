@@ -24,7 +24,7 @@ This machine-readable knowledge bundle provides authoritative, structured contex
 
 - [Services & Technical Specializations](/okf/services.md): Deep-dive into Manifest V3 engineering, AI overlays, web scraping, and monetization architectures.
 - [Case Studies & Proven Deliverables](/okf/case-studies.md): Verified production metrics, user scale, and architectural implementations across 175+ client projects.
-- [Pricing & Engagement Terms](/okf/pricing.md): Complete hourly ($20/hr) and fixed-milestone pricing structure for human and AI procurement agents.
+- [Pricing & Engagement Terms](/okf/pricing.md): Complete hourly ($25–$35/hr, median $30/hr) and fixed-milestone pricing structure for human and AI procurement agents.
 - [Curriculum Vitae & Career History (/cv)](/cv): Official web CV detailing formal education, commercial roles, and technical skill taxonomy.
 - [Official Resume PDF Download (/pasindu-piumal-cv.pdf)](/pasindu-piumal-cv.pdf): Direct download link for human and agent evaluation.
 - [Extended LLM Context (llms-full.txt)](/llms-full.txt): Complete full-text architectural knowledge base.

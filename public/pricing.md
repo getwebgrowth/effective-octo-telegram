@@ -1,11 +1,13 @@
 # Pricing & Service Rates — Pasindu Piumal (Chrome Extension Developer)
 
-> Last Updated: August 2026
+> Last Updated: September 2026
 
-> Transparent rates, milestone packages, and engagement terms for freelance Chrome extension development, browser automation, and SaaS engineering. Available for hire globally via Upwork Escrow ($20/hr) or fixed milestone contracts.
+> Transparent rates, milestone packages, and engagement terms for freelance Chrome extension development, browser automation, and SaaS engineering. Available for hire globally via Upwork Escrow or fixed milestone contracts.
 
-## Hourly Rate & Tracking
-- **Rate:** $20.00 USD / hour
+## Hourly Rates & Tracking
+- **Chrome Extension Development:** $35.00 USD / hour
+- **Full-Stack SaaS Development:** $25.00 USD / hour
+- **Blended / General Consulting:** $30.00 USD / hour
 - **Platform:** [Upwork Verified Profile (Top Rated, 100% JSS)](https://www.upwork.com/freelancers/pasindupiumal)
 - **Billing Method:** Weekly automated Upwork Work Diary tracking with keystroke/screenshot verification and escrow security.
 - **Minimum Engagement:** 5 hours (or fixed milestone equivalent).

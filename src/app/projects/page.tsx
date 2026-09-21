@@ -346,5 +346,68 @@ export default function ProjectsPage() {
     return dateB.getTime() - dateA.getTime();
   });
 
-  return <ProjectsClient initialProjects={allProjects} />;
+  const projectsJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${DATA.url}/projects#webpage`,
+        url: `${DATA.url}/projects`,
+        name: "Complete Project Portfolio & Client Case Studies",
+        description:
+          "Explore 113+ production Manifest V3 Chrome extensions, AI copilots, high-frequency web scrapers, and verified freelance deliverables built by Pasindu Piumal.",
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": `${DATA.url}/#website`,
+        },
+        about: {
+          "@type": "Person",
+          "@id": `${DATA.url}/#person`,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${DATA.url}/projects#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: DATA.url,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Projects",
+            item: `${DATA.url}/projects`,
+          },
+        ],
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${DATA.url}/projects#itemlist`,
+        name: "Projects & Production Case Studies",
+        numberOfItems: allProjects.length,
+        itemListElement: allProjects.slice(0, 30).map((project, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: project.title,
+          url: project.href.startsWith("http") ? project.href : `${DATA.url}${project.href}`,
+        })),
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(projectsJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <ProjectsClient initialProjects={allProjects} />
+    </>
+  );
 }

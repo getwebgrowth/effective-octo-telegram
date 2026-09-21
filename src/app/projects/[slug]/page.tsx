@@ -195,9 +195,9 @@ export default async function ProjectPage({
       url: `${DATA.url}/projects/${slug}`,
       offers: {
         "@type": "Offer",
-        price: "20.00",
+        price: "30.00",
         priceCurrency: "USD",
-        description: "Available for custom development at $20/hr tracked or fixed milestones.",
+        description: "Available for custom development — tracked hourly or fixed milestones.",
         seller: {
           "@type": "Person",
           "@id": `${DATA.url}/#person`,
@@ -340,7 +340,7 @@ export default async function ProjectPage({
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-primary text-primary-foreground text-xs font-bold shadow-xs hover:opacity-90 transition-opacity"
             >
-              <span>Hire Pasindu ($20/hr)</span>
+              <span>Hire Pasindu</span>
               <ArrowUpRight className="size-3" />
             </Link>
 
@@ -429,8 +429,8 @@ export default async function ProjectPage({
               </h2>
             </div>
             <div className="text-left sm:text-right shrink-0">
-              <div className="text-xl font-extrabold text-primary">$20 / hr</div>
-              <div className="text-xs text-foreground/80 dark:text-muted-foreground font-medium">Tracked or Milestone Escrow</div>
+              <div className="text-xl font-extrabold text-primary">175+</div>
+              <div className="text-xs text-foreground/80 dark:text-muted-foreground font-medium">Projects Shipped</div>
             </div>
           </div>
 
@@ -448,7 +448,7 @@ export default async function ProjectPage({
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary text-primary-foreground px-4 py-2.5 text-xs font-bold shadow-md hover:opacity-90 transition-opacity"
             >
               <Icons.upwork className="size-4 fill-current" />
-              <span>Hire Me on Upwork ($20/hr)</span>
+              <span>Hire Me on Upwork</span>
               <ChevronRight className="size-3.5" />
             </Link>
             <Link

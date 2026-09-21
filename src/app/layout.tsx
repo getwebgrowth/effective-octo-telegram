@@ -10,15 +10,18 @@ import "./globals.css";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 
 const geist = Geist({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -152,7 +155,10 @@ const jsonLd = {
             "@type": "MonetaryAmountDistribution",
             name: "Hourly Tracked Rate",
             currency: "USD",
-            median: 20,
+            minValue: 15,
+            median: 30,
+            maxValue: 45,
+            unitText: "HOUR",
           },
         ],
       },
@@ -263,20 +269,18 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Google tag (gtag.js) */}
-        <script
-          async
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-VHP9Y6BHW3"
+          strategy="afterInteractive"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-VHP9Y6BHW3');
-            `,
-          }}
-        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VHP9Y6BHW3');
+          `}
+        </Script>
         {/* AI/AEO Discovery Links — enables AI crawlers to find machine-readable knowledge bundles */}
         <link rel="alternate" type="text/plain" title="LLM Context" href="/llms.txt" />
         <link rel="alternate" type="text/plain" title="LLM Full Context" href="/llms-full.txt" />

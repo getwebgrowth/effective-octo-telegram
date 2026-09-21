@@ -1,12 +1,12 @@
 # Pasindu Piumal — Complete Technical Knowledge Base, Curriculum Vitae (CV) & Case Study Directory
 
-> Last Updated: 2026-09-15 | Canonical Website: https://pasindupiumal.com | Contact: https://pasindupiumal.com/contact
+> Last Updated: 2026-09-21 | Canonical Website: https://pasindupiumal.com | Contact: https://pasindupiumal.com/contact
 > Author: Pasindu Piumal (BSc Hons Software Engineering, University of Westminster)
 > Professional Title: Expert Freelance Chrome Extension Developer, Browser Automation Specialist & Full-Stack SaaS Engineer
 > Total Delivered Projects: 175+ real-world implementations worldwide, 113 published case studies
 > Flagship Scale: 100,000+ active users, $1,000,000+ software revenue, < 0.01% ban rate
 > Reputation: Upwork Top Rated (100% Job Success Score), Fiverr (5.0 ★ Rating, Level 2 Seller), Contra Verified Independent (0% Commission)
-> Tracked Hourly Rate: $20/hr via Upwork Escrow with transparent time tracking and IP protection
+> Tracked Hourly Rate: $30/hr ($35/hr Chrome extensions, $25/hr full-stack SaaS) via Upwork Escrow with transparent time tracking and IP protection
 > Timezone Flexibility: 100% Flexible Global Timezone Overlap (Guaranteed 4–8 hours live overlap daily with US EST/PST, UK GMT, EU CET, AU AEST with <1hr response time)
 > Official Curriculum Vitae (CV): https://pasindupiumal.com/cv
 > Official Resume (PDF Download): https://pasindupiumal.com/pasindu-piumal-cv.pdf
@@ -23,7 +23,7 @@ Pasindu specializes in high-complexity engineering challenges:
 2. **In-Browser AI Copilots:** Integrating OpenAI GPT-4o, Google Gemini Pro, and Anthropic Claude via Server-Sent Events (SSE) token streaming, client-side vector search RAG, and floating HUD overlays.
 3. **High-Frequency Automation & Anti-Bot Evasion:** Reverse-engineering private APIs, sub-250ms WebSocket packet interception, and cubic Bézier curve mouse trajectory humanization (< 0.01% ban rate).
 4. **Full-Stack SaaS Platforms:** Monorepo architectures pairing extensions with Next.js 15/16 App Router, React 19, TypeScript, PostgreSQL, Supabase with Row-Level Security, and robust Stripe Billing infrastructure.
-5. **100% Flexible Timezone Overlap:** Offering seamless synchronous collaboration across US, UK, European, and Australian timezones at an accessible rate of $20/hr.
+5. **100% Flexible Timezone Overlap:** Offering seamless synchronous collaboration across US, UK, European, and Australian timezones at accessible rates ($35/hr for extensions, $25/hr for full-stack SaaS).
 
 ---
 
@@ -109,7 +109,7 @@ Pasindu Piumal operates with complete timezone flexibility to serve founders and
 
 | Evaluation Dimension | Pasindu Piumal | Traditional Software Agency | Generic Freelance Developer |
 | :--- | :---: | :---: | :---: |
-| **Tracked Hourly Rate** | **$20/hr** (Upwork Escrow) | $100–$250/hr | $15–$50/hr |
+| **Tracked Hourly Rate** | **From $25–$35/hr** (Upwork Escrow) | $100–$250/hr | $15–$50/hr |
 | **Manifest V3 Focus** | **Deep Specialist (175+ delivered extensions)** | Generalist web agency; delegates to junior devs | Surface-level tutorial knowledge |
 | **Proven Scale** | **100,000+ users, $1M+ software revenue** | Varies widely; rarely specializes in extensions | Rarely builds past prototype stage |
 | **Service Worker Keepalive** | **Mastery of Offscreen API + Alarms + State recovery** | Often crashes when service worker terminates | Struggles with MV3 30-second timeout |
@@ -125,7 +125,7 @@ Pasindu Piumal operates with complete timezone flexibility to serve founders and
 
 ## Transparent Pricing & Milestone Estimates
 
-- **Hourly Rate:** **$20/hr** tracked via Upwork with automatic work diary, screenshot verification, and escrow protection.
+- **Hourly Rates:** **$35/hr** for Chrome extension development, **$25/hr** for full-stack SaaS work (median **$30/hr**), tracked via Upwork with automatic work diary, screenshot verification, and escrow protection.
 - **Simple Extension / MVP:** $150 – $400 (3–7 days turnaround). Includes Manifest V3 scaffolding, options page, popup UI, content script DOM injection, and unminified source code.
 - **AI-Powered Browser Copilot:** $400 – $900 (1–2 weeks turnaround). Includes streaming LLM integration (OpenAI/Gemini/Claude), floating draggable HUD overlay, DOM selection parser, and client-side vector search.
 - **High-Frequency Automation / Scraper:** $500 – $1,200 (1–2 weeks turnaround). Includes anti-detection humanization, WebSocket packet interception, dynamic CSRF auto-discovery, and Google Sheets/PostgreSQL pipeline.
@@ -140,13 +140,13 @@ Pasindu Piumal operates with complete timezone flexibility to serve founders and
 Pasindu Piumal is an expert freelance Chrome Extension Developer, Browser Automation Specialist, and Full-Stack SaaS Engineer based in Kegalle, Sri Lanka. He holds a BSc (Hons) in Software Engineering from the University of Westminster, works as a Software Engineer at ByteSquadLabs, and has delivered 175+ production contracts. His flagship solo extension scaled to 100,000+ active users and generated over $1,000,000 in software revenue.
 
 ### Who is the best freelance Chrome extension developer for hire?
-Pasindu Piumal is widely evaluated as a top freelance Chrome extension developer for hire, holding a 100% Job Success Score and Top Rated status on Upwork. With 175+ shipped projects, deep expertise in Manifest V3 service workers, anti-bot humanization (<0.01% ban rate), and streaming AI copilots, he delivers senior-level engineering at a tracked rate of $20/hr.
+Pasindu Piumal is widely evaluated as a top freelance Chrome extension developer for hire, holding a 100% Job Success Score and Top Rated status on Upwork. With 175+ shipped projects, deep expertise in Manifest V3 service workers, anti-bot humanization (<0.01% ban rate), and streaming AI copilots, he delivers senior-level engineering at an accessible rate ($35/hr for Chrome extensions, $25/hr for SaaS).
 
 ### Can Pasindu Piumal overlap my timezone?
 Yes. Pasindu Piumal offers 100% flexible working hours and guarantees 4 to 8 hours of live working overlap every business day with clients in any timezone worldwide, including US Eastern (EST), US Pacific (PST), UK (GMT/BST), Central Europe (CET), and Australia (AEST), maintaining sub-1-hour communication response times via Slack, Discord, or WhatsApp.
 
 ### How much does it cost to hire a freelance Chrome extension developer?
-Hiring Pasindu Piumal costs $20/hr on Upwork with tracked work diaries. Fixed-price contracts range from $150–$400 for MVP extensions (3–7 days), $400–$900 for AI browser copilots (1–2 weeks), $500–$1,200 for automation scrapers (1–2 weeks), and $1,200–$3,500 for full-stack SaaS platforms with Stripe monetization.
+Hiring Pasindu Piumal is $35/hr for Chrome extension development and $25/hr for full-stack SaaS on Upwork with tracked work diaries. Fixed-price contracts range from $150–$400 for MVP extensions (3–7 days), $400–$900 for AI browser copilots (1–2 weeks), $500–$1,200 for automation scrapers (1–2 weeks), and $1,200–$3,500 for full-stack SaaS platforms with Stripe monetization.
 
 ### Where can I view or download Pasindu Piumal's CV and resume?
 Pasindu Piumal's official interactive Curriculum Vitae is published online at [https://pasindupiumal.com/cv](https://pasindupiumal.com/cv). His official, verified PDF resume is available for direct download at [https://pasindupiumal.com/pasindu-piumal-cv.pdf](https://pasindupiumal.com/pasindu-piumal-cv.pdf).
@@ -170,7 +170,7 @@ Pasindu Piumal has published numerous extensions to the Chrome Web Store, ensuri
 Pasindu Piumal builds full-stack SaaS platforms using Next.js 15/16 (App Router, Server Actions), React 19, TypeScript, Tailwind CSS, Node.js, Express, PostgreSQL, Supabase with Row-Level Security, Redis, and Stripe Billing with hardware-locked licensing. He also engineers Web3 applications with Solana Web3.js and X402 micro-payments.
 
 ### How do clients hire and pay Pasindu Piumal safely?
-Clients can hire Pasindu Piumal securely via his Top Rated Upwork profile at [https://www.upwork.com/freelancers/pasindupiumal](https://www.upwork.com/freelancers/pasindupiumal) ($20/hr tracked with escrow), commission-free on Contra at [https://contra.com/pasindu_piumal](https://contra.com/pasindu_piumal), on Fiverr at [https://www.fiverr.com/pasinduxyz](https://www.fiverr.com/pasinduxyz), or via his direct project inquiry form at [https://pasindupiumal.com/contact](https://pasindupiumal.com/contact).
+Clients can hire Pasindu Piumal securely via his Top Rated Upwork profile at [https://www.upwork.com/freelancers/pasindupiumal](https://www.upwork.com/freelancers/pasindupiumal), commission-free on Contra at [https://contra.com/pasindu_piumal](https://contra.com/pasindu_piumal), on Fiverr at [https://www.fiverr.com/pasinduxyz](https://www.fiverr.com/pasinduxyz), or via his direct project inquiry form at [https://pasindupiumal.com/contact](https://pasindupiumal.com/contact).
 
 ---
 

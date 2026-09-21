@@ -141,7 +141,7 @@ export default function ContactPage() {
                                         <Icons.upwork className="size-4 text-emerald-700 dark:text-emerald-400 fill-current" />
                                         <span className="text-xs font-bold text-foreground">Upwork Top Rated (100% JSS)</span>
                                     </div>
-                                    <p className="text-xs text-foreground/80 dark:text-muted-foreground">$20/hr tracked work diary or fixed milestone escrows with guaranteed IP protection.</p>
+                                    <p className="text-xs text-foreground/80 dark:text-muted-foreground">Tracked hourly work diary or fixed milestone escrows with guaranteed IP protection.</p>
                                 </div>
                                 <Link
                                     href="https://www.upwork.com/freelancers/pasindupiumal"

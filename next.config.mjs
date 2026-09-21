@@ -21,10 +21,17 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: [
+      "lucide-react",
+      "motion",
+      "motion/react",
       "react-icons",
       "react-icons/si",
-      "motion",
       "@radix-ui/react-icons",
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-avatar",
+      "@radix-ui/react-separator",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-tooltip",
     ],
   },
   async redirects() {
