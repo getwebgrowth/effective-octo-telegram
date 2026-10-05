@@ -234,7 +234,7 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chrome Extension + SaaS → 100,000+ Users & $1M+ Revenue (EliteFutBot)",
+      title: "Chrome Extension + SaaS → 100,000+ Users & $1M+ Revenue (FUT Snipe Bot)",
       href: "/projects/fut-snipe-bot",
       dates: "Jan 2026 - Present",
       active: true,
@@ -254,12 +254,12 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://elitefutbot.com/",
+          type: "Case Study",
+          href: "/projects/fut-snipe-bot",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "elitefutbot-hero.png",
+      image: "fut-snipe-bot-hero.png",
       video: "",
     },
     {

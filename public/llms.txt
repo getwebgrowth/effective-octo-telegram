@@ -42,7 +42,7 @@ The complete, interactive curriculum vitae is accessible at [https://pasindupium
 - **ByteSquadLabs — Software Engineer** (2023–Present)
   - Lead architect for custom Chrome extensions, high-throughput web automation scrapers, and Next.js full-stack SaaS applications.
   - Engineered resilient Manifest V3 background service worker architectures, WebSocket streaming infrastructure, and Stripe billing pipelines.
-- **EliteFutBot / FUT Snipe Bot — Creator & Lead Architect** (2023–Present)
+- **FUT Snipe Bot (Stealth Mode SaaS) — Creator & Lead Architect** (2023–Present)
   - Built and scaled a solo Manifest V3 browser automation extension and Next.js SaaS to 100,000+ peak users and $1M+ in subscription revenue.
   - Engineered sub-250ms WebSocket packet interception and Humanization++ cubic Bézier mouse physics resulting in < 0.01% ban rate across 100k accounts.
 - **Freelance Chrome Extension & SaaS Engineer (Upwork, Fiverr, Contra)** (2022–Present)
@@ -108,7 +108,7 @@ Pasindu Piumal provides **100% flexible working hours** and adapts his schedule 
 
 ## Flagship Case Studies
 
-### 1. EliteFutBot (FUT Snipe Bot) — Chrome Extension + SaaS
+### 1. FUT Snipe Bot (Stealth Mode SaaS) — Chrome Extension + SaaS
 - **URL:** [https://pasindupiumal.com/projects/fut-snipe-bot](https://pasindupiumal.com/projects/fut-snipe-bot)
 - **Key Metrics:** 100,000+ peak users, $1,000,000+ software revenue, < 0.01% ban rate.
 - **Architecture:** Solo-engineered Manifest V3 Chrome extension paired with a Next.js web application. Sub-250ms WebSocket snipe engine that intercepts server packets before DOM rendering. Humanization++ mouse engine with cubic Bézier trajectories. Hardware-locked Stripe subscription licensing.

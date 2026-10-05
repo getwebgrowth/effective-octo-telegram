@@ -14,7 +14,8 @@ import {
   CheckCircle2, 
   Layers, 
   Code2, 
-  Cpu
+  Cpu,
+  Lock
 } from "lucide-react";
 import { Icons } from "@/components/icons";
 
@@ -445,19 +446,19 @@ export default function CVPage() {
 
                 <div className="p-3 rounded-xl border bg-background/50 space-y-1.5">
                   <div className="flex flex-wrap justify-between items-baseline gap-1">
-                    <span className="font-bold text-foreground text-sm">High-Scale Chrome Extension + SaaS (EliteFutBot)</span>
+                    <span className="font-bold text-foreground text-sm">High-Scale Chrome Extension + SaaS (FUT Snipe Bot · Stealth)</span>
                     <span className="text-muted-foreground font-mono text-[11px]">Next.js, Supabase/PostgreSQL, Stripe, Browser Automation</span>
                   </div>
                   <p className="text-muted-foreground leading-normal">
                     Engineered a commercial browser-automation product as a complete extension + SaaS platform: Manifest V3 client, Next.js dashboard, Supabase/PostgreSQL backend, Stripe subscriptions, licensing and real-time automation. The public portfolio case study reports 100K+ users and $1M+ software revenue, demonstrating product architecture beyond a standalone extension.
                   </p>
-                  <div className="flex flex-wrap items-center gap-3 pt-1 text-[11px] text-primary">
-                    <a href="https://elitefutbot.com" target="_blank" rel="noopener noreferrer" className="hover:underline inline-flex items-center gap-1">
-                      <span>Live Product</span>
-                      <ExternalLink className="size-3" />
-                    </a>
+                  <div className="flex flex-wrap items-center gap-3 pt-1 text-[11px]">
+                    <span className="inline-flex items-center gap-1 text-muted-foreground">
+                      <Lock className="size-3 text-amber-500" />
+                      <span>Private Commercial SaaS</span>
+                    </span>
                     <span className="text-muted-foreground">•</span>
-                    <Link href="/projects/fut-snipe-bot" className="hover:underline">
+                    <Link href="/projects/fut-snipe-bot" className="text-primary hover:underline">
                       Case Study
                     </Link>
                   </div>

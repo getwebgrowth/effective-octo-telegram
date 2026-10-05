@@ -147,9 +147,9 @@ This document is a comprehensive, standalone breakdown of all **113 production s
 - **Core Focus**: Chrome Extension Developer • SaaS Monorepo Architect • High-Frequency Bot Engineer • Manifest V3 Specialist • Anti-Bot & Anti-Detection
 
 ### 📌 Executive Summary & Problem Solved
-EliteFutBot is a real Chrome Extension + SaaS I engineered from scratch. It scaled to 100,000+ active users, generated over $1M+ in subscription revenue, and runs at sub-250ms speed with a < 0.01% ban rate. If you're looking to hire a Chrome Extension or SaaS developer who has actually done this at scale, this is my proof.
+FUT Snipe Bot is a real Chrome Extension + SaaS I engineered from scratch. It scaled to 100,000+ active users, generated over $1M+ in subscription revenue, and runs at sub-250ms speed with a < 0.01% ban rate. If you're looking to hire a Chrome Extension or SaaS developer who has actually done this at scale, this is my proof.
 
-EliteFutBot is a **browser automation Chrome Extension** for the EA Sports FC Ultimate Team Web App. It:
+FUT Snipe Bot is a **browser automation Chrome Extension** for the EA Sports FC Ultimate Team Web App. It:
 
 - **Monitors the transfer market in real-time** — intercepting WebSocket packets before listings even appear in the DOM.
 - **Executes buy orders in < 250ms** — faster than any human, and faster than most competing scripts.

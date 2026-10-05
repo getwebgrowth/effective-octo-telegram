@@ -126,9 +126,7 @@ export default function Page() {
             {/* TOP CREDIBILITY PILL */}
             <BlurFade delay={BLUR_FADE_DELAY * 0.5}>
               <Link
-                href="https://elitefutbot.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/projects/fut-snipe-bot"
                 className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 hover:bg-primary/10 transition-all text-xs font-semibold text-primary group shadow-xs"
               >
                 <span className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />

@@ -177,7 +177,7 @@ export function getFiverrOrder(slugOrHref: string, title: string): number {
 function getPriorityRank(href: string, title: string): number {
   const h = href.toLowerCase();
   const t = title.toLowerCase();
-  if (h.includes("fut-snipe-bot") || t.includes("elitefutbot") || t.includes("fut snipe")) return 1;
+  if (h.includes("fut-snipe-bot") || t.includes("fut snipe") || t.includes("snipe bot")) return 1;
   if (h.includes("tech-copilot") || t.includes("tech copilot")) return 2;
   if (h.includes("roboapply") || t.includes("roboapply")) return 3;
   if (h.includes("amazon-shift-sniper") || t.includes("amazon shift sniper")) return 4;

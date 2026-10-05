@@ -194,7 +194,7 @@ SKILLS_TAGS: "Chrome Extension, Manifest V3, JavaScript, TypeScript, High-Freque
 ### **UPWORK_DESCRIPTION**
 
 **Project Overview & Problem Solved**:
-EliteFutBot is a real Chrome Extension + SaaS I engineered from scratch. It scaled to 100,000+ active users, generated over $1M+ in subscription revenue, and runs at sub-250ms speed with a < 0.01% ban rate. If you're looking to hire a Chrome Extension or SaaS developer who has actually done this at scale, this is my proof.
+FUT Snipe Bot is a real Chrome Extension + SaaS I engineered from scratch. It scaled to 100,000+ active users, generated over $1M+ in subscription revenue, and runs at sub-250ms speed with a < 0.01% ban rate. If you're looking to hire a Chrome Extension or SaaS developer who has actually done this at scale, this is my proof.
 
 **Tech Stack & Key Tools**:
 Chrome Extension, Manifest V3, JavaScript, TypeScript, High-Frequency Automation, Bot Protection Bypass, Shadow DOM, Next.js, React.js, Tailwind CSS, Stripe API, SaaS Architecture
@@ -206,7 +206,7 @@ Chrome Extension, Manifest V3, JavaScript, TypeScript, High-Frequency Automation
 Looking for high-performance browser automation or custom full-stack solutions? Here is what was engineered for this project:
 
 **What Was Built**:
-EliteFutBot is a real Chrome Extension + SaaS I engineered from scratch. It scaled to 100,000+ active users, generated over $1M+ in subscription revenue, and runs at sub-250ms speed with a < 0.01% ban rate. If you're looking to hire a Chrome Extension or SaaS developer who has actually done this at scale, this is my proof.
+FUT Snipe Bot is a real Chrome Extension + SaaS I engineered from scratch. It scaled to 100,000+ active users, generated over $1M+ in subscription revenue, and runs at sub-250ms speed with a < 0.01% ban rate. If you're looking to hire a Chrome Extension or SaaS developer who has actually done this at scale, this is my proof.
 
 **Technologies**: Chrome Extension, Manifest V3, JavaScript, TypeScript, High-Frequency Automation, Bot Protection Bypass, Shadow DOM, Next.js, React.js, Tailwind CSS, Stripe API, SaaS Architecture
 **Live Case Study**: https://effective-octo-telegram-three.vercel.app/projects/fut-snipe-bot

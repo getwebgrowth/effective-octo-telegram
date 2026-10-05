@@ -106,7 +106,7 @@ export function SystemArchitectureDiagram({ title }: SystemArchitectureDiagramPr
           <span className="size-2.5 rounded-full bg-yellow-500/80" />
           <span className="size-2.5 rounded-full bg-green-500/80" />
         </div>
-        <span className="text-[11px] font-mono text-muted-foreground">{title ?? "EliteFutBot — System Architecture"}</span>
+        <span className="text-[11px] font-mono text-muted-foreground">{title ?? "FUT Snipe Bot — System Architecture"}</span>
         <span className="text-[10px] uppercase font-mono text-muted-foreground tracking-wider">Manifest V3</span>
       </div>
 
@@ -147,7 +147,7 @@ export function SystemArchitectureDiagram({ title }: SystemArchitectureDiagramPr
 
           {/* Layer 3: Cloud backend */}
           <div className="flex items-stretch gap-2 sm:gap-3 justify-center">
-            <DiagramNode label="EliteFutBot Cloud API" sublabel="License auth · Stripe billing" color="emerald" size="md" />
+            <DiagramNode label="FUT Snipe Cloud API" sublabel="License auth · Stripe billing" color="emerald" size="md" />
             <HorizontalArrow label="webhook" />
             <DiagramNode label="Discord Alerts" sublabel="Real-time trade receipts" color="blue" size="sm" />
             <HorizontalArrow label="DB" />

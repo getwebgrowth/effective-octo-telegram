@@ -45,7 +45,7 @@ An interactive web version of this curriculum vitae is accessible at [https://pa
   - Lead architect for client-commissioned Manifest V3 Chrome extensions, high-throughput web automation crawlers, and Next.js full-stack SaaS applications.
   - Engineered resilient service worker keepalive mechanisms, WebSocket packet sniffing pipelines, and multi-tenant Stripe billing backends.
   - Collaborated with remote international engineering teams across US, UK, and European client accounts.
-- **EliteFutBot / FUT Snipe Bot — Founder & Lead Systems Architect** (2023–Present)
+- **FUT Snipe Bot (Stealth Mode SaaS) — Founder & Lead Systems Architect** (2023–Present)
   - Conceived, architected, and built a flagship Manifest V3 browser automation extension and Next.js subscription SaaS from scratch.
   - Scaled the platform to **100,000+ active users** and surpassed **$1,000,000+ in software subscription revenue**.
   - Developed a sub-250ms WebSocket packet interception engine that captures market data before DOM rendering.
@@ -160,7 +160,7 @@ Pasindu Piumal overcomes the Manifest V3 service worker 30-second idle terminati
 Yes. Pasindu Piumal specializes in integrating Manifest V3 Chrome extensions with OpenAI GPT-4o, Google Gemini Pro, and Anthropic Claude APIs using Server-Sent Events (SSE) for real-time streaming token delivery, client-side vector search RAG via IndexedDB, and draggable floating HUD overlays that parse active web page DOM context.
 
 ### How does Pasindu Piumal prevent bot detection and account bans in browser automation?
-Pasindu Piumal engineers Humanization++ anti-detection systems utilizing cubic Bézier curve mouse trajectory modeling, randomized acceleration curves, and Gaussian dwell timing. By sniffing WebSocket frames sub-250ms before DOM rendering and emulating human dispatch patterns, his systems achieved a ban rate of less than 0.01% across 100,000+ accounts on EliteFutBot.
+Pasindu Piumal engineers Humanization++ anti-detection systems utilizing cubic Bézier curve mouse trajectory modeling, randomized acceleration curves, and Gaussian dwell timing. By sniffing WebSocket frames sub-250ms before DOM rendering and emulating human dispatch patterns, his systems achieved a ban rate of less than 0.01% across 100,000+ accounts on his flagship automation SaaS.
 
 ### How did Pasindu Piumal solve the Ashby ATS dynamic form autofill challenge?
 When 20+ senior developers failed over 12 months to automate Ashby ATS job applications due to dynamic React Shadow DOM fields, Pasindu Piumal reverse-engineered the internal input dispatchers and delivered a working multi-ATS autofill extension within 1 week, now supporting 100+ platforms including Workday, Greenhouse, Ashby, and Lever.
@@ -189,7 +189,7 @@ Clients can hire Pasindu Piumal securely via his Top Rated Upwork profile at [ht
   - URL: https://pasindupiumal.com/projects/amazon-shift-sniper
   - Overview: High-frequency slot monitoring and automated booking Chrome extension (Manifest V3). Features dual-layer script injection (Isolated & Main World), dynamic session token discovery, and CloudFront 403 error auto-cooldown recovery.
 
-- **Chrome Extension + SaaS → 100,000+ Users & $1M+ Revenue (EliteFutBot / FUT Snipe Bot)**
+- **Chrome Extension + SaaS → 100,000+ Users & $1M+ Revenue (FUT Snipe Bot · Stealth SaaS)**
   - URL: https://pasindupiumal.com/projects/fut-snipe-bot
   - Overview: A Manifest V3 Chrome Extension + Next.js SaaS monorepo built and scaled solo to 100,000+ active users generating $1M+ in subscription revenue. Features a sub-250ms WebSocket snipe engine (packet interception before DOM renders), Humanization++ anti-ban mouse physics with cubic Bézier trajectories and Gaussian dwell timing (< 0.01% ban rate across 100k accounts), native chrome.sidePanel UI, Stripe billing with hardware-locked license keys, Futbin live API integration, and Supabase/PostgreSQL backend. The flagship proof-point for Chrome Extension + SaaS developer capabilities.
 

@@ -250,7 +250,7 @@ const htmlContent = `<!DOCTYPE html>
       <li>Engineered a commercial browser-automation product as a complete extension + SaaS platform: Manifest V3 client, Next.js dashboard, Supabase/PostgreSQL backend, Stripe subscriptions, licensing and real-time automation. The public portfolio case study reports 100K+ users and $1M+ software revenue, demonstrating product architecture beyond a standalone extension.</li>
     </ul>
     <div class="links-inline">
-      Live product: <a href="https://elitefutbot.com" target="_blank">elitefutbot.com</a> &nbsp;|&nbsp; Case study: <a href="https://pasindupiumal.com/projects/fut-snipe-bot" target="_blank">pasindupiumal.com/projects/fut-snipe-bot</a>
+      Live product: <span style="color: #64748b; font-weight: 600;">Confidential / Stealth SaaS</span> &nbsp;|&nbsp; Case study: <a href="https://pasindupiumal.com/projects/fut-snipe-bot" target="_blank">pasindupiumal.com/projects/fut-snipe-bot</a>
     </div>
   </div>
 

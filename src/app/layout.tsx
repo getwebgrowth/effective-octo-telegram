@@ -131,7 +131,6 @@ const jsonLd = {
         DATA.contact.social.Upwork.url,
         DATA.contact.social.Fiverr.url,
         DATA.contact.social.Contra.url,
-        "https://elitefutbot.com/",
         "https://chromewebstore.google.com/detail/tech-copilot/iipllbfcpkhafndcobpljgkjhlhohkbl",
         "https://chromewebstore.google.com/detail/superdev-pro/jlkikimlceonbmfjieipbonnglnlchhl",
         "https://chromewebstore.google.com/detail/censor/elgfhammpjfmmgiflpjbohhbimlfdimm",

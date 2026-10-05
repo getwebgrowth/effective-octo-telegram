@@ -62,7 +62,7 @@ const projectsJsonLd = {
           {
             "@type": "ListItem",
             position: 1,
-            name: "FUT Snipe Bot (EliteFutBot)",
+            name: "FUT Snipe Bot (Stealth SaaS)",
             url: `${DATA.url}/projects/fut-snipe-bot`,
             description: "Real-time EA FC web app sniper extension scaling to 100k+ active users and $1M+ revenue.",
           },

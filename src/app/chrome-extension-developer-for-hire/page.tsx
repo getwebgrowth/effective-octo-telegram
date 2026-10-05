@@ -556,11 +556,9 @@ export default function ChromeExtensionDeveloperForHirePage() {
                 </p>
               </div>
 
-              {/* Credibility Pill Badge linking to EliteFutBot */}
+              {/* Credibility Pill Badge linking to Case Study */}
               <Link
-                href="https://elitefutbot.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/projects/fut-snipe-bot"
                 className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-lime-600/30 bg-lime-500/10 hover:bg-lime-500/20 hover:border-lime-500/50 backdrop-blur-md text-[11px] sm:text-xs font-semibold text-lime-800 dark:text-lime-300 shadow-xs transition-all group"
               >
                 <span className="size-1.5 rounded-full bg-lime-500 animate-pulse" />
@@ -753,7 +751,7 @@ export default function ChromeExtensionDeveloperForHirePage() {
             </p>
 
             <p className="text-xs sm:text-sm text-foreground/90 dark:text-muted-foreground leading-relaxed">
-              His flagship Chrome extension, <strong className="text-foreground">FUT Snipe Bot (EliteFutBot)</strong>, scaled
+              His flagship Chrome extension, <strong className="text-foreground">FUT Snipe Bot (Stealth SaaS)</strong>, scaled
               to <strong className="text-foreground">100,000+ peak concurrent users</strong> and
               enabled <strong className="text-foreground">over $1,000,000 in software revenue</strong>. He is the engineer behind
               production-grade tools like <strong className="text-foreground">Tech Copilot</strong> (automotive AI overlay on the Chrome Web Store),{" "}

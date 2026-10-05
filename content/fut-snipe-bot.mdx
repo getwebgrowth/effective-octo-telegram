@@ -3,8 +3,8 @@ title: "Chrome Extension + SaaS I Built Scaled to 100,000+ Users & Generated $1M
 publishedAt: "2026-08-10"
 updatedAt: "2026-09-09"
 author: "Pasindu Piumal"
-summary: "EliteFutBot is a real Chrome Extension + SaaS I engineered from scratch. It scaled to 100,000+ active users, generated over $1M+ in subscription revenue, and runs at sub-250ms speed with a < 0.01% ban rate. If you're looking to hire a Chrome Extension or SaaS developer who has actually done this at scale, this is my proof."
-image: "/elitefutbot-hero.png"
+summary: "FUT Snipe Bot is a real Chrome Extension + SaaS I engineered from scratch. It scaled to 100,000+ active users, generated over $1M+ in subscription revenue, and runs at sub-250ms speed with a < 0.01% ban rate. If you're looking to hire a Chrome Extension or SaaS developer who has actually done this at scale, this is my proof."
+image: "/fut-snipe-bot-hero.png"
 content: ""
 ---
 
@@ -20,7 +20,7 @@ content: ""
 
 > **If you're a founder or product team looking to hire a Chrome Extension developer who can ship a full SaaS around it — this page is your proof of what I've already built.**
 
-I built **EliteFutBot** (formerly FUT Snipe Bot) solo — a **Manifest V3 Chrome Extension + Next.js SaaS monorepo** that executes automated transfer market sniping in under 250ms. It scaled to **100,000+ active users** and generated **$1,000,000+ in subscription revenue** against one of the most aggressive anti-bot environments in gaming.
+I built **FUT Snipe Bot** (Stealth Mode Commercial SaaS) solo — a **Manifest V3 Chrome Extension + Next.js SaaS monorepo** that executes automated transfer market sniping in under 250ms. It scaled to **100,000+ active users** and generated **$1,000,000+ in subscription revenue** against one of the most aggressive anti-bot environments in gaming.
 
 This is not a concept. It is a live commercial product with real users, real Stripe subscriptions, and real engineering depth behind it.
 
@@ -31,9 +31,9 @@ This is not a concept. It is a live commercial product with real users, real Str
 
 ---
 
-## The Product: What EliteFutBot Does
+## The Product: What FUT Snipe Bot Does
 
-EliteFutBot is a **browser automation Chrome Extension** for the EA Sports FC Ultimate Team Web App. It:
+FUT Snipe Bot is a **browser automation Chrome Extension** for the EA Sports FC Ultimate Team Web App. It:
 
 - **Monitors the transfer market in real-time** — intercepting WebSocket packets before listings even appear in the DOM.
 - **Executes buy orders in < 250ms** — faster than any human, and faster than most competing scripts.
@@ -47,7 +47,7 @@ It ships as a **full-stack SaaS**: the Chrome Extension is paired with a **Next.
 
 ## How the Auto-Snipe Engine Works
 
-Most automation scripts poll the DOM. EliteFutBot does not. Here is what actually happens when the snipe engine fires:
+Most automation scripts poll the DOM. FUT Snipe Bot does not. Here is what actually happens when the snipe engine fires:
 
 **Step 1 — WebSocket Stream Interception (0ms)**
 
@@ -71,7 +71,7 @@ Instead of calling `.click()` directly on the button element (which triggers beh
 - Introduces a **dwell delay** sampled from a Gaussian distribution (mean: 35ms, σ: 12ms) to simulate natural reaction time.
 - Dispatches `pointerdown` → `mousedown` → `mouseup` → `pointerup` → `click` in the correct sequence with human-accurate timestamps.
 
-This is why EliteFutBot maintained a **< 0.01% ban rate** at 100,000+ scale — the behavioral fingerprint is statistically indistinguishable from a real person.
+This is why FUT Snipe Bot maintained a **< 0.01% ban rate** at 100,000+ scale — the behavioral fingerprint is statistically indistinguishable from a real person.
 
 **Step 4 — Trade Confirmation & Auto-Relist (< 250ms total)**
 
@@ -86,7 +86,7 @@ The full cycle — from packet arrival to confirmed purchase — completes in **
 
 ## System Architecture
 
-<SystemArchitectureDiagram title="EliteFutBot — Full-Stack Chrome Extension + SaaS Architecture" />
+<SystemArchitectureDiagram title="FUT Snipe Bot — Full-Stack Chrome Extension + SaaS Architecture" />
 
 The architecture spans three distinct layers:
 
@@ -94,7 +94,7 @@ The architecture spans three distinct layers:
 
 **Extension Engine (Service Worker)**: Handles sub-250ms snipe execution, Humanization++ mouse physics rendering, Futbin live API polling with 30s refresh intervals, and dynamic RPM throttling to avoid rate-limit bans.
 
-**Cloud Backend**: EliteFutBot's cloud API handles Stripe subscription management, hardware-bound license validation, and activation telemetry. Discord webhook dispatches and Supabase (PostgreSQL) store 100k+ user account data.
+**Cloud Backend**: The platform's cloud API handles Stripe subscription management, hardware-bound license validation, and activation telemetry. Discord webhook dispatches and Supabase (PostgreSQL) store 100k+ user account data.
 
 ---
 
@@ -226,12 +226,12 @@ Whether you have an idea or an existing product that needs an upgrade:
 
 <FaqCard 
   question="Can you build a Chrome Extension + SaaS from scratch for my project?"
-  answer="Yes. That's exactly what EliteFutBot is. I'll architect and deliver the full stack: Manifest V3 Chrome Extension, Next.js/React web dashboard, Stripe subscription billing, Supabase database, and hardware-locked licensing. MVP in 1–2 weeks."
+  answer="Yes. That's exactly what this platform is. I'll architect and deliver the full stack: Manifest V3 Chrome Extension, Next.js/React web dashboard, Stripe subscription billing, Supabase database, and hardware-locked licensing. MVP in 1–2 weeks."
 />
 
 <FaqCard 
   question="How do you prevent automation bots from getting banned?"
-  answer="I implement Humanization++ — a physics-based behavioral emulation layer using cubic Bézier mouse trajectories, Gaussian dwell timing, and randomized click coordinates. Combined with dynamic RPM throttling and session fingerprint variation, this kept EliteFutBot under a 0.01% ban rate across 100,000+ accounts."
+  answer="I implement Humanization++ — a physics-based behavioral emulation layer using cubic Bézier mouse trajectories, Gaussian dwell timing, and randomized click coordinates. Combined with dynamic RPM throttling and session fingerprint variation, this kept the bot under a 0.01% ban rate across 100,000+ accounts."
 />
 
 <FaqCard 

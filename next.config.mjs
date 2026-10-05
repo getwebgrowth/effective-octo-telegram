@@ -20,6 +20,7 @@ const nextConfig = {
     minimumCacheTTL: 31536000,
   },
   experimental: {
+    workerThreads: true,
     optimizePackageImports: [
       "lucide-react",
       "motion",
